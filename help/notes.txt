@@ -1,0 +1,12 @@
+Brothers and sisters:
+
+DO NOT FORGET TO:
+    - Add sets & gets for every member!
+    - Add operator<< when its rational to do.
+    - Test every new function! Do not procrastinate (remember those days(```~~~~```])
+
+Things to consider:
+    * using smart pointers!
+    * commenting reasonably
+    * DO NOT BREAK THE CONVENTIONS:
+        + most important part is to devide to big function to smaller functions;
