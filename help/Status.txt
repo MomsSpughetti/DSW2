@@ -1,5 +1,12 @@
 Consider adding:
 
 Must add:
+player class should have operator*(const &size_t, player& obj)!
 
 Not sure:
+
+
+TO-Do:
+    - UF
+    - rank tree
+    - Think of a solution!

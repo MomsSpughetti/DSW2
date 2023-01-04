@@ -16,12 +16,21 @@
 #define WORLDCUP23A2_H_
 
 #include "wet2util.h"
+#include "Structures/RankedAvlTree.h"
+#include "Structures/UnionFind.h"
+#include "team/team.h"
 
 class world_cup_t {
 private:
 	//
 	// Here you may add anything you want
-	//
+	UnionFind<int, player*> ZoomInTeams;
+	AVLTree<int, team*> Teams;
+	AVLTree<int, team*> EleminatedTeams;
+	
+	
+
+	//end of our edit
 	
 public:
 	// <DO-NOT-MODIFY> {

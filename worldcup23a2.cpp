@@ -1,9 +1,6 @@
 #include "worldcup23a2.h"
 
-world_cup_t::world_cup_t()
-{
-	// TODO: Your code goes here
-}
+world_cup_t::world_cup_t() = default;
 
 world_cup_t::~world_cup_t()
 {
