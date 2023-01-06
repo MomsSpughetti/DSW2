@@ -24,6 +24,10 @@
     {
         return this->num_played_games;
     }
+    int team::get_IdOfLastPlayer() const
+    {
+        return this->IdOfLastPlayer;
+    }
     permutation_t& team::get_permutation()
     {
         return this->permutation;
@@ -56,4 +60,8 @@
     void team::set_get_permutation(permutation_t& pr)
     {
         this->permutation = permutation * pr;
+    }
+    void team::set_IdOfLastPlayer(int val)
+    {
+        this->IdOfLastPlayer = val;
     }

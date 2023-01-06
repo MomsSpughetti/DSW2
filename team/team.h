@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include "wet2util.h"
-#include "player/player.h"
 
 class team
 {
@@ -12,6 +11,7 @@ private:
     int points;
     int abilities;
     int num_played_games;
+    int IdOfLastPlayer;
     
     permutation_t permutation;
 
@@ -23,7 +23,8 @@ public:
     goalKeeper(false), 
     points(0), 
     abilities(0), 
-    num_played_games(0) {};
+    num_played_games(0),
+    IdOfLastPlayer(0) {};
     
     ~team() = default;
 
@@ -35,6 +36,7 @@ public:
     int get_points() const;
     int get_abilities() const;
     int get_num_played_games() const;
+    int get_IdOfLastPlayer() const;
     permutation_t& get_permutation();
 
     void set_teamId(int val);
@@ -43,6 +45,7 @@ public:
     void set_points(int val);
     void set_abilities(int val);
     void set_num_played_games(int val);
+    void set_IdOfLastPlayer(int val);
     void set_get_permutation(permutation_t&);
 };
 

@@ -4,9 +4,32 @@ world_cup_t::world_cup_t() = default;
 
 world_cup_t::~world_cup_t()
 {
-	Node<int, team*>** teams = this->Teams.TreeNodesToArray();;
-	Node<int, team*>** TeamsByAbility = this->TeamsByAbility.TreeNodesToArray();
+	Node<int, team*>** QTeams = this->QualifiedTeams.TreeNodesToArray();;
+	Node<int, team*>** ETeams = this->EliminatedTeams.TreeNodesToArray();
+	player*** players = ZoomInTeams.get_all_data();
+
+	//delete players
+	for (int i = 0; i < ZoomInTeams.used_size(); i++)
+	{
+		delete *players[i];
+	}
 	
+	//delete qualified teams
+	for(int i = 0; i < this->QualifiedTeams.get_size(); i++)
+	{
+		delete QTeams[i]->data;
+	}
+
+	//delete eleminated teams
+	for(int i = 0; i < this->EliminatedTeams.get_size(); i++)
+	{
+		delete ETeams[i]->data;
+	}
+
+	//delete arrays
+	delete [] QTeams;
+	delete [] ETeams;
+	delete [] players;
 }
 
 StatusType world_cup_t::add_team(int teamId)
@@ -71,8 +94,63 @@ output_t<permutation_t> world_cup_t::get_partial_spirit(int playerId)
 	return permutation_t();
 }
 
-StatusType world_cup_t::buy_team(int teamId1, int teamId2)
+StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminated team!
 {
-	// TODO: Your code goes here
+	//check inputs
+	if(teamId1 <= 0 || teamId2 <= 0 || teamId1 == teamId2)
+		return StatusType::INVALID_INPUT;
+
+	//get teams and check if valid
+	team** team1 = QualifiedTeams.Find(teamId1);
+	team** team2 = QualifiedTeams.Find(teamId2);
+
+	if(!team1 || !team2)
+		return StatusType::FAILURE;
+	
+	//team1 buys team2
+
+	//get the root player of team1 tree
+	int playerInTeam1Id = (*team1)->get_IdOfLastPlayer();
+	int playerInTeam2Id = (*team2)->get_IdOfLastPlayer();
+
+	NodeExtra<int, player*, permutation_modified>* root1 = ZoomInTeams.Find(playerInTeam1Id);
+	NodeExtra<int, player*, permutation_modified>* root2 = ZoomInTeams.Find(playerInTeam2Id);
+
+	//case 1: team1 and team 2 do not have players
+	if(!playerInTeam1Id && !playerInTeam2Id)
+	{
+		//remove team 2
+			//removed later
+	}
+
+	//case 2: team 1 has players but team 2 doesn't
+	if(playerInTeam1Id && !playerInTeam2Id)
+	{
+		//remove team2
+			//removed later
+	}
+
+	//case 3: team 2 has players but team 1 doesn't
+	if(!playerInTeam1Id && playerInTeam2Id)
+	{
+		//simply:
+			//make the root2 player points to team1
+			//update IdOfLastPlayer in team1
+		root2->data->set_team(*team1);
+		(*team1)->set_IdOfLastPlayer((*team2)->get_IdOfLastPlayer());
+
+		//remove team2
+			//removed later
+	}
+
+	//case 4: both has players
+	if(playerInTeam1Id && playerInTeam2Id)
+	{
+		//merge team 2 into team 1
+		ZoomInTeams.Union(playerInTeam1Id, playerInTeam2Id);
+	}
+
+	//remove team2
+	QualifiedTeams.Remove(teamId2);
 	return StatusType::SUCCESS;
 }

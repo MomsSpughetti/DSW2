@@ -27,9 +27,9 @@ private:
 	//
 	// Here you may add anything you want
 	UnionFindExtra<int, player*, permutation_modified> ZoomInTeams;
-	RankedAVLTree<int, team*> Teams;
+	RankedAVLTree<int, team*> QualifiedTeams;
 	RankedAVLTree<int, team*> TeamsByAbility;
-	RankedAVLTree<int, team*> EleminatedTeams;
+	RankedAVLTree<int, team*> EliminatedTeams;
 
 	
 

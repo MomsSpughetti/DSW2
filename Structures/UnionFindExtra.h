@@ -24,14 +24,15 @@ If it is, then it decreases the capacity of the upSideDownTree array by a factor
     the operator action doesn't have to suit his name!
 */
 template <class Key, class Data, class Extra>
-struct Node {
+class NodeExtra {
+  public:
   Key key;
   Data data;
-  Node* parent;
+  NodeExtra* parent;
   int rank;
   Extra extra;
 
-  Node(Key key, Data data, Extra extra) : key(key), data(data), parent(nullptr), rank(0), extra(extra){}
+  NodeExtra(Key key, Data data, Extra extra) : key(key), data(data), parent(nullptr), rank(0), extra(extra){}
 };
 
 template <class Key, class Data, class Extra>
@@ -41,8 +42,8 @@ class UnionFindExtra {
  //Obj_1 comes first
   void Union(Key keyForObj_1, Key keyForObj_2) {
 
-    Node<Key, Data, Extra>* Obj_1Root = Find(keyForObj_1);
-    Node<Key, Data, Extra>* Obj_2Root = Find(keyForObj_2);
+    NodeExtra<Key, Data, Extra>* Obj_1Root = Find(keyForObj_1);
+    NodeExtra<Key, Data, Extra>* Obj_2Root = Find(keyForObj_2);
 
     //at least one key does not exist
     if(!Obj_1Root || !Obj_2Root)
@@ -77,17 +78,17 @@ class UnionFindExtra {
     }
   }
 
-  Node<Key, Data, Extra>* Find(Key key) {
+  NodeExtra<Key, Data, Extra>* Find(Key key) {
 
     // get pointer to the wanted node
-    Node<Key, Data, Extra>** ptrToTargetNode = forest.get(key);
+    NodeExtra<Key, Data, Extra>** ptrToTargetNode = forest.get(key);
     
     //Key not found
     if(ptrToTargetNode == nullptr)
     {
       return nullptr;
     }
-    Node<Key, Data, Extra>* TargetNode = *ptrToTargetNode;
+    NodeExtra<Key, Data, Extra>* TargetNode = *ptrToTargetNode;
 
     //update extra before reshaping the tree
     updateExtrasFromNode_x_ToRoot(TargetNode);
@@ -98,19 +99,34 @@ class UnionFindExtra {
 
   void Insert(Key key, Data data, Extra extra) {
 
-    forest.put(key, new Node<Key, Data, Extra>(key, data, extra));
+    forest.put(key, new NodeExtra<Key, Data, Extra>(key, data, extra));
   }
 
+//do not forget to free the returned array
+  Data** get_all_data()
+  {
+    return forest.get_data();
+  }
 
   template <class D, class E>
   friend std::ostream& operator<<(std::ostream& os, UnionFindExtra<int, D, E>& obj);
 
-  HashTable<Key, Node<Key, Data, Extra>*> forest;
- private:
+  int used_size()
+  {
+    return forest.size();
+  }
 
-  Extra FindSumOfExtrasFromNode_x_ToRoot(Node<Key, Data, Extra>* x) {
+  int unused_size()
+  {
+    return forest.Table_size();
+  }
+  
+ private:
+  HashTable<Key, NodeExtra<Key, Data, Extra>*> forest;
+
+  Extra FindSumOfExtrasFromNode_x_ToRoot(NodeExtra<Key, Data, Extra>* x) {
     Extra sum;
-    Node<Key, Data, Extra>* temp = x; //no need for temp, but looks nicer with it
+    NodeExtra<Key, Data, Extra>* temp = x; //no need for temp, but looks nicer with it
     while(temp)
     {
         sum = sum + temp->extra;
@@ -119,11 +135,11 @@ class UnionFindExtra {
     return sum;
   }
 
-  void updateExtrasFromNode_x_ToRoot(Node<Key, Data, Extra>* x) {
+  void updateExtrasFromNode_x_ToRoot(NodeExtra<Key, Data, Extra>* x) {
 
     Extra sumOfExtras = FindSumOfExtrasFromNode_x_ToRoot(x);
     Extra PrevExtra; // Extra() - the empty contructor should set the new object to a neutral value => like 0 for - and +
-    Node<Key, Data, Extra>* temp = x;
+    NodeExtra<Key, Data, Extra>* temp = x;
 
     //it does not affect the root nor the first son in the series
     while(temp->parent && temp->parent->parent)
@@ -136,7 +152,7 @@ class UnionFindExtra {
     }
   }
 
-  Node<Key, Data, Extra>* Find(Node<Key, Data, Extra>* x) {
+  NodeExtra<Key, Data, Extra>* Find(NodeExtra<Key, Data, Extra>* x) {
 
     if (x->parent == nullptr) {
       return x;
@@ -174,7 +190,7 @@ class UnionFindExtra {
     for (int i = 0; i < obj.forest.size(); i++)
     {
       //get the parent of node with key i
-      Node<int, D, E>* parent = obj.Find(i);
+      NodeExtra<int, D, E>* parent = obj.Find(i);
       
       //get the number of how many childrens do parent have (parent included)
       int* parentDataInParents = parents.get(parent->key);
