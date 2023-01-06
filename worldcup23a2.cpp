@@ -4,7 +4,9 @@ world_cup_t::world_cup_t() = default;
 
 world_cup_t::~world_cup_t()
 {
-	// TODO: Your code goes here
+	Node<int, team*>** teams = this->Teams.TreeNodesToArray();;
+	Node<int, team*>** TeamsByAbility = this->TeamsByAbility.TreeNodesToArray();
+	
 }
 
 StatusType world_cup_t::add_team(int teamId)

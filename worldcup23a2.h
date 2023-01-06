@@ -17,17 +17,20 @@
 
 #include "wet2util.h"
 #include "Structures/RankedAvlTree.h"
-#include "Structures/UnionFind.h"
+#include "Structures/UnionFindExtra.h"
 #include "team/team.h"
+#include "player/player.h"
+#include "Permutation_modified.h"
 
 class world_cup_t {
 private:
 	//
 	// Here you may add anything you want
-	UnionFind<int, player*> ZoomInTeams;
-	AVLTree<int, team*> Teams;
-	AVLTree<int, team*> EleminatedTeams;
-	
+	UnionFindExtra<int, player*, permutation_modified> ZoomInTeams;
+	RankedAVLTree<int, team*> Teams;
+	RankedAVLTree<int, team*> TeamsByAbility;
+	RankedAVLTree<int, team*> EleminatedTeams;
+
 	
 
 	//end of our edit

@@ -53,3 +53,7 @@
     {
         this->num_played_games = val;
     }
+    void team::set_get_permutation(permutation_t& pr)
+    {
+        this->permutation = permutation * pr;
+    }

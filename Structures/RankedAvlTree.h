@@ -33,11 +33,11 @@ class Node {
 
 // AVL tree class template
 template <typename Key, typename Data>
-class AVLTree {
+class RankedAVLTree {
  public:
-  AVLTree() : root(nullptr) {}
+ RankedAVLTree() : root(nullptr) {}
 
-  ~AVLTree() {
+  ~RankedAVLTree() {
     DeleteTree(root);
   }
 
@@ -74,19 +74,17 @@ Node<Key, Data>* FindByRank(int k) {
     std::cout << std::endl;
   }
 
-  void TreeNodesToArray(Node<Key, Data>* root, Node<Key, Data>** arr, int &i)
+  Node<Key, Data>** TreeNodesToArray()
   {
-    if(!root)
-    {
-      return;
-    }
-
-    TreeNodesToArray(root->left, arr, i);
-    arr[i] = root;
-    i++;
-    TreeNodesToArray(root->right, arr, i);
+    Node<Key, Data>** array = new Node<Key, Data>*[this->root->size];
+    int place = 0;
+    TreeNodesToArray(this->root, array, place);
+    return array;
   }
 
+  int get_size() const{
+    return root->size;
+  }
 
  private:
   Node<Key, Data> *root;
@@ -103,8 +101,8 @@ Node<Key, Data>* FindByRank(int k) {
             node->right = Insert(node->right, key, data);
         } else {
             // Key already exists, update the value
-            node->data = data;
-            return node;
+            //node->data = data;
+            return nullptr;
         }
         // Update the size of the node
         node->size = 1 + GetSize(node->left) + GetSize(node->right);
@@ -231,6 +229,8 @@ int GetBalanceFactor(Node<Key, Data> *node) {
 Node<Key, Data>* Balance(Node<Key, Data> *node) {
   // Update the height of the node
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
+
   // Get the balance factor
   int balance_factor = GetBalanceFactor(node);
   // Left left case
@@ -262,6 +262,9 @@ Node<Key, Data> *RotateLeft(Node<Key, Data> *node) {
   // Update the height of the nodes
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
   temp->height = 1 + max(GetHeight(temp->left), GetHeight(temp->right));
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
+  temp->size = 1 + GetSize(temp->left) + GetSize(temp->right);
+
   return temp;
 }
 
@@ -273,6 +276,9 @@ Node<Key, Data>* RotateRight(Node<Key, Data> *node) {
   // Update the height of the nodes
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
   temp->height = 1 + max(GetHeight(temp->left), GetHeight(temp->right));
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
+  temp->size = 1 + GetSize(temp->left) + GetSize(temp->right);
+
   return temp;
 }
 
@@ -303,16 +309,21 @@ void printInOrder_aux(Node<Key, Data>* router)
 
 }
 
-};
+  void TreeNodesToArray(Node<Key, Data>* root, Node<Key, Data>** arr, int &i)
+  {
+    if(!root)
+    {
+      return;
+    }
 
-template <class Key, class Data>
-Node<Key, Data>** TreeNodesToArray(AVLTree<Key, Data>* obj)
-{
-  Node<Key, Data>** array = new Node<Key, Data>*[obj->root->size];
-  int place = 0;
-  obj->TreeNodesToArray()
-  
-}
+    TreeNodesToArray(root->left, arr, i);
+    arr[i] = root;
+    i++;
+    TreeNodesToArray(root->right, arr, i);
+  }
+
+
+};
 
 
 #endif

@@ -43,6 +43,6 @@ public:
     void set_points(int val);
     void set_abilities(int val);
     void set_num_played_games(int val);
-
+    void set_get_permutation(permutation_t&);
 };
 
