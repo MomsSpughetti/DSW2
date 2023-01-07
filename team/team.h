@@ -47,5 +47,16 @@ public:
     void set_num_played_games(int val);
     void set_IdOfLastPlayer(int val);
     void set_get_permutation(permutation_t&);
+
+
+    //Abo Ghanem additions
+
+    void set_winpoints();
+
+    void increasebyone();
+
+    void increasegamesplayed();
+
+    int get_permstrength() const;
 };
 

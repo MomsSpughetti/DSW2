@@ -65,3 +65,25 @@
     {
         this->IdOfLastPlayer = val;
     }
+
+    //Abo Ghanem additions
+
+    void team::set_winpoints()
+    {
+        this->points +=3;
+    }
+
+        void team::increasebyone()
+    {
+        this->points+=1;
+    }
+
+    void team::increasegamesplayed()
+    {
+        this->num_played_games+=1;
+    }
+
+    int team::get_permstrength() const
+    {
+      return this->permutation.strength();
+    }
