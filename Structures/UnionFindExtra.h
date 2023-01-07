@@ -78,6 +78,11 @@ class UnionFindExtra {
     }
   }
 
+  NodeExtra<Key, Data, Extra>* getNode(Key key)
+  {
+    return (*forest.get(key));
+  }
+  
   NodeExtra<Key, Data, Extra>* Find(Key key) {
 
     // get pointer to the wanted node

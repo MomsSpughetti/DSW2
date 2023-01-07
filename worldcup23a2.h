@@ -21,6 +21,7 @@
 #include "team/team.h"
 #include "player/player.h"
 #include "Permutation_modified.h"
+#include "SimpleList.h"
 
 class world_cup_t {
 private:
@@ -29,8 +30,7 @@ private:
 	UnionFindExtra<int, player*, permutation_modified> ZoomInTeams;
 	RankedAVLTree<int, team*> QualifiedTeams;
 	RankedAVLTree<int, team*> TeamsByAbility;
-	RankedAVLTree<int, team*> EliminatedTeams;
-
+	Simplelist<team*>* EliminatedTeams;
 	
 
 	//end of our edit

@@ -4,8 +4,7 @@ world_cup_t::world_cup_t() = default;
 
 world_cup_t::~world_cup_t()
 {
-	Node<int, team*>** QTeams = this->QualifiedTeams.TreeNodesToArray();;
-	Node<int, team*>** ETeams = this->EliminatedTeams.TreeNodesToArray();
+	Node<int, team*>** QTeams = this->QualifiedTeams.TreeNodesToArray();
 	player*** players = ZoomInTeams.get_all_data();
 
 	//delete players
@@ -21,20 +20,50 @@ world_cup_t::~world_cup_t()
 	}
 
 	//delete eleminated teams
-	for(int i = 0; i < this->EliminatedTeams.get_size(); i++)
+	SimpleNode<team*>* temp = EliminatedTeams->getFirstNode();
+	while (!temp)
 	{
-		delete ETeams[i]->data;
+		delete temp->data;
 	}
+	
 
 	//delete arrays
 	delete [] QTeams;
-	delete [] ETeams;
 	delete [] players;
 }
 
 StatusType world_cup_t::add_team(int teamId)
 {
 	// TODO: Your code goes here
+	
+	//invalid inputs
+	if(teamId <= 0)
+	{
+		return StatusType::INVALID_INPUT;
+	}
+     // try to add the team
+	try
+	{ 
+		if(!QualifiedTeams.Find(teamId))
+		{ 
+			return StatusType::FAILURE;
+		}
+		team *newteam = new team(teamId);
+
+		QualifiedTeams.Insert(teamId, newteam);
+		TeamsByAbility.Insert(teamId,newteam);
+	}
+	//bad_alloc
+	catch(const std::bad_alloc& e)
+	{
+	return StatusType::ALLOCATION_ERROR;
+	}
+	//other exceptions
+	catch(const std::exception& e)
+	{
+		std::cerr << e.what() << '\n';
+	}
+	
 	return StatusType::SUCCESS;
 }
 
