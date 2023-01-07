@@ -21,7 +21,7 @@ StatusType world_cup_t::add_team(int teamId)
      // try to add the team
 	try
 	{ 
-		if(Teams.Find(teamId))
+		if(!Teams.Find(teamId))// fix it 
 		{ 
 			return StatusType::FAILURE;
 		}
@@ -191,7 +191,7 @@ StatusType world_cup_t::add_player_cards(int playerId, int cards)
 		return StatusType::FAILURE;
 	 }
 	 playernode->data->addcards(cards);
-	 
+
 	}
 	catch(const std::bad_alloc& e)
 	{
@@ -233,14 +233,60 @@ output_t<int> world_cup_t::get_player_cards(int playerId)
 
 output_t<int> world_cup_t::get_team_points(int teamId)
 {
-	// TODO: Your code goes here
-	return 30003;
+	
+	if (teamId<=0)
+	{
+	output_t<int> x(StatusType::INVALID_INPUT);
+	return x;
+	}
+	try
+	{
+	team** team1=this->Teams.Find(teamId);
+	if (team1 == nullptr||(*team1)==nullptr)
+	{
+	output_t<int> x(StatusType::FAILURE);
+	return x;
+	}
+
+	int points=(*team1)->get_points();
+	output_t<int> x(points);
+	return x;
+	
+	}
+	catch(const std::exception& e)
+	{
+	output_t<int> x(StatusType::ALLOCATION_ERROR);
+	return x;
+	}	
+	
 }
 
 output_t<int> world_cup_t::get_ith_pointless_ability(int i)
 {
-	// TODO: Your code goes here
-	return 12345;
+	if(i<0)
+	{
+	output_t<int> x(StatusType::FAILURE);
+	return x;
+	}
+	try
+	{
+		Node<int,team*>* team1=this->Teamsbyability.FindByRank(i);
+		if (team1==nullptr)
+		{
+			output_t<int> x(StatusType::FAILURE);
+	        return x;
+		}
+
+		int teamid= team1->data->get_teamId();
+		output_t<int> x(teamid);
+		return x;		
+	}
+	catch(const std::bad_alloc& e)
+	{
+	output_t<int> x(StatusType::ALLOCATION_ERROR);
+	return x;
+	}
+	
 }
 
 output_t<permutation_t> world_cup_t::get_partial_spirit(int playerId)
