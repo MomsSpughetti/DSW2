@@ -51,8 +51,9 @@ StatusType world_cup_t::add_team(int teamId)
 		team *newteam = new team(teamId);
 
 		QualifiedTeams.Insert(teamId, newteam);
-		TeamsByAbility.Insert(teamId,newteam);
+		TeamsByAbility.Insert(teamId, newteam);
 	}
+
 	//bad_alloc
 	catch(const std::bad_alloc& e)
 	{
@@ -69,7 +70,30 @@ StatusType world_cup_t::add_team(int teamId)
 
 StatusType world_cup_t::remove_team(int teamId)
 {
-	// TODO: Your code goes here
+	//check inputs
+	if(teamId <= 0)
+	{
+		return StatusType::INVALID_INPUT;
+	}
+
+	//get team
+	team** TeamToRemove = QualifiedTeams.Find(teamId);
+	if (!TeamToRemove)
+	{
+		//Not found
+		return StatusType::FAILURE;
+	}
+	
+	//Remove from QualifiedTeams Tree
+	QualifiedTeams.Remove(teamId);
+
+	//set eliminated to True
+	(*TeamToRemove)->set_eleminated(true);
+
+	//add to Eliminated Tree
+	EliminatedTeams->push_back(*TeamToRemove);
+
+	//Exit
 	return StatusType::FAILURE;
 }
 
@@ -78,6 +102,40 @@ StatusType world_cup_t::add_player(int playerId, int teamId,
                                    int ability, int cards, bool goalKeeper)
 {
 	// TODO: Your code goes here
+	//check inputs
+if(playerId <= 0 ||
+	teamId <= 0 ||
+	!spirit.isvalid() ||
+	gamesPlayed < 0 ||
+	cards <0){
+		return StatusType::INVALID_INPUT;
+	}
+
+	//check team
+	team** team_ = QualifiedTeams.Find(teamId);
+	if(!team_){
+		//team not found
+		return StatusType::FAILURE;
+	}
+
+	//put player in UF
+	player* newPLayer = new player(playerId, teamId, spirit, gamesPlayed, ability, cards, goalKeeper);
+	newPLayer->set_team(*team_);
+	ZoomInTeams.Insert(playerId, newPLayer, PlayerExtra(spirit));
+
+
+	//union on them
+
+		//get an id of last added player in team
+	int lastPlayerId = (**team_).get_IdOfLastPlayer();
+	
+	//union call
+	//nothing happens if this is the first player added
+	ZoomInTeams.Union(lastPlayerId, playerId);
+
+	//update team values
+	(*team_)->set_IdOfLastPlayer(playerId);
+
 	return StatusType::SUCCESS;
 }
 
@@ -101,9 +159,17 @@ output_t<int> world_cup_t::play_match(int teamId1, int teamId2)
 	}
 	int resultforteam1=(*team1)->get_points()+(*team1)->get_abilities();
 	int resultforteam2=(*team2)->get_points()+(*team2)->get_abilities();
+
 	// pay attention that we increase the gamesplayed before comparing the strength and spirit
 	(*team1)->increasegamesplayed();
 	(*team2)->increasegamesplayed();
+
+	//needs some changes, but they don't affect a thing
+	//this is enouph:
+
+	increaseGamesPlayedForGivenTeamsBy(1, team1, team2);
+	//end of enough
+
 	if (resultforteam1<resultforteam2)
 	{
 		(*team2)->set_winpoints();
@@ -123,6 +189,7 @@ output_t<int> world_cup_t::play_match(int teamId1, int teamId2)
 	{
      resultforteam1=(*team1)->get_permstrength();
      resultforteam2=(*team2)->get_permstrength();
+
 	 if (resultforteam1<resultforteam2)
 	{
 		(*team2)->set_winpoints();
@@ -139,6 +206,7 @@ output_t<int> world_cup_t::play_match(int teamId1, int teamId2)
 	}
 
 	}
+
 	// if the teams are equal in spirits and strength
 
     (*team1)->increasebyone();
@@ -170,18 +238,17 @@ output_t<int> world_cup_t::num_played_games_for_player(int playerId)
 	try
 	{
 		//get the root of the tree and the player node
-     NodeExtra<int,player*,permutation_modified>* playernode=ZoomInTeams.Find(playerId);	
-     NodeExtra<int,player*,permutation_modified>* rootnode=ZoomInTeams.Find(playerId);
+     NodeExtra<int,player*,PlayerExtra>* playernode=ZoomInTeams.Find(playerId);	
+
 	 if (playernode==nullptr)
 	 {
 	  output_t<int> x(StatusType::FAILURE);
 	  return x;
 	 }
 	 // calculate the real gamesplayedgames
-	 int gamesplayed=(playernode->data->getgamesplayed()) - (playernode->data->getgamesforteams()) + 
-	 (rootnode->data->get_team()->get_num_played_games());
+	 int gamesPlayed = ZoomInTeams.get_validExtra(playerId).gamesPlayed;
 
-    output_t<int> x(gamesplayed);
+    output_t<int> x(gamesPlayed);
 	return x;
 	}
 	catch(const std::bad_alloc& e)
@@ -201,12 +268,13 @@ StatusType world_cup_t::add_player_cards(int playerId, int cards)
 	}
     try
 	{
-	 NodeExtra<int,player*,permutation_modified>* playernode=ZoomInTeams.Find(playerId);
+	 NodeExtra<int,player*,PlayerExtra>* playernode = ZoomInTeams.getNode(playerId);
+
 	 if (playernode==nullptr)
 	 {
 	   return StatusType::FAILURE;
 	 }	 	
-     NodeExtra<int,player*,permutation_modified>* rootnode=ZoomInTeams.Find(playerId);
+     NodeExtra<int,player*,PlayerExtra>* rootnode = ZoomInTeams.Find(playerId);
 	 if (rootnode==nullptr||rootnode->data->get_team()==nullptr||rootnode->data->get_team()->get_eleminated()==true)
 	 {
 		return StatusType::FAILURE;
@@ -232,7 +300,7 @@ output_t<int> world_cup_t::get_player_cards(int playerId)
 	}
 	try
 	{
-	NodeExtra<int,player*,permutation_modified>* playernode=ZoomInTeams.Find(playerId);
+	NodeExtra<int,player*,PlayerExtra>* playernode=ZoomInTeams.Find(playerId);
 	if (playernode==nullptr)
 	 {
 	  output_t<int> x(StatusType::FAILURE);
@@ -254,20 +322,53 @@ output_t<int> world_cup_t::get_player_cards(int playerId)
 
 output_t<int> world_cup_t::get_team_points(int teamId)
 {
-	// TODO: Your code goes here
-	return 30003;
+	//inputs check
+	if(teamId <= 0)
+	{
+		return StatusType::INVALID_INPUT;
+	}
+
+	//getv team
+	team** team_ = QualifiedTeams.Find(teamId);
+	if(!team_)
+	{
+		return StatusType::FAILURE;
+	}
+
+	return (*team_)->get_points();
 }
 
 output_t<int> world_cup_t::get_ith_pointless_ability(int i)
 {
-	// TODO: Your code goes here
-	return 12345;
+	//simply get the ith
+	Node<team, team*>* team = TeamsByAbility.FindByRank(i);
+
+	//checkk if team exists
+	if(!team) {return output_t<int>(StatusType::FAILURE);}
+
+	return team->data->get_teamId();
 }
 
 output_t<permutation_t> world_cup_t::get_partial_spirit(int playerId)
 {
-	// TODO: Your code goes here
-	return permutation_t();
+	//inputs check
+	if(playerId <= 0)
+	{
+		return StatusType::INVALID_INPUT;
+	}
+
+	//get the root node of that team
+    NodeExtra<int, player* ,PlayerExtra>* playernode = ZoomInTeams.Find(playerId);	
+	 
+	if (playernode == nullptr || playernode->data->get_team()->get_eleminated() == true)
+	{
+	  	return StatusType::FAILURE;
+	}
+
+	 //calculate the partial permutation
+	permutation_t permutation_ = ZoomInTeams.get_validExtra(playerId).permutation;
+
+	return permutation_;
 }
 
 StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminated team!
@@ -289,8 +390,8 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 	int playerInTeam1Id = (*team1)->get_IdOfLastPlayer();
 	int playerInTeam2Id = (*team2)->get_IdOfLastPlayer();
 
-	NodeExtra<int, player*, permutation_modified>* root1 = ZoomInTeams.Find(playerInTeam1Id);
-	NodeExtra<int, player*, permutation_modified>* root2 = ZoomInTeams.Find(playerInTeam2Id);
+	NodeExtra<int, player*, PlayerExtra>* root1 = ZoomInTeams.Find(playerInTeam1Id);
+	NodeExtra<int, player*, PlayerExtra>* root2 = ZoomInTeams.Find(playerInTeam2Id);
 
 	//case 1: team1 and team 2 do not have players
 	if(!playerInTeam1Id && !playerInTeam2Id)
@@ -328,5 +429,32 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 
 	//remove team2
 	QualifiedTeams.Remove(teamId2);
+
+	
+
+	//update the root node
+		//get it
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot = ZoomInTeams.getNode((*team1)->get_IdOfLastPlayer()); //or any other id in that team
+
+		//make sure the root points to the buyer team
+	playerInRoot->data->set_team(*team1);
+
 	return StatusType::SUCCESS;
+}
+
+//My Functions
+
+void world_cup_t::increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team** team2)
+{
+	//increase gamesPlayed extra by one in root for both teams
+		//get it
+	int Team1_lastPlayerId = (*team1)->get_IdOfLastPlayer();
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot1 = ZoomInTeams.getNode(Team1_lastPlayerId); //or any other id in that team
+
+	int Team2_lastPlayerId = (*team2)->get_IdOfLastPlayer();
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot2 = ZoomInTeams.getNode(Team2_lastPlayerId); //or any other id in that team
+
+		//update extra in root
+	playerInRoot1->extra.increaseGamesPlayed(1);
+	playerInRoot2->extra.increaseGamesPlayed(1);
 }

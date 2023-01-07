@@ -87,3 +87,22 @@
     {
       return this->permutation.strength();
     }
+
+
+    //operators
+    bool team::operator<(const team& obj) const
+    {
+        if(this->abilities < obj.abilities){return true;}
+        return false;
+    }
+
+    bool team::operator>(const team& obj) const
+    {
+        if(this->abilities > obj.abilities){return true;}
+        return false;
+    }
+
+    bool team::operator==(const team& obj) const
+    {
+        return this->teamId == obj.teamId;
+    }

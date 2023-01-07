@@ -20,18 +20,18 @@
 #include "Structures/UnionFindExtra.h"
 #include "team/team.h"
 #include "player/player.h"
-#include "Permutation_modified.h"
+#include "PlayerExtra.h"
 #include "SimpleList.h"
 
 class world_cup_t {
 private:
 	//
 	// Here you may add anything you want
-	UnionFindExtra<int, player*, permutation_modified> ZoomInTeams;
+	UnionFindExtra<int, player*, PlayerExtra> ZoomInTeams;
 	RankedAVLTree<int, team*> QualifiedTeams;
-	RankedAVLTree<int, team*> TeamsByAbility;
+	RankedAVLTree<team, team*> TeamsByAbility;
 	Simplelist<team*>* EliminatedTeams;
-	
+	void increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team** team2);
 
 	//end of our edit
 	

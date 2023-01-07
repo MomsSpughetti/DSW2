@@ -48,6 +48,10 @@ public:
     void set_IdOfLastPlayer(int val);
     void set_get_permutation(permutation_t&);
 
+    //operators
+    bool operator<(const team& obj) const;
+    bool operator>(const team& obj) const;
+    bool operator==(const team& obj) const;
 
     //Abo Ghanem additions
 
