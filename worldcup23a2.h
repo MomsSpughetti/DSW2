@@ -20,15 +20,16 @@
 #include "Structures/UnionFind.h"
 #include "team/team.h"
 #include<player.h>
+#include "Permutation_modified.h"
 
 class world_cup_t {
 private:
 	//
 	// Here you may add anything you want
-	UnionFind<int, player*> ZoomInTeams;
-	AVLTree<int, team*> Teams;
-	AVLTree<int, team*> Teamsbyability;
-	AVLTree<int, team*> EleminatedTeams;
+	UnionFindExtra<int, player*,permutation_modified> ZoomInTeams;
+	RankedAVLTree<int, team*> Teams;
+	RankedAVLTree<int, team*> Teamsbyability;
+	RankedAVLTree<int, team*> EleminatedTeams;
 	
 	//end of our edit
 	

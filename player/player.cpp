@@ -35,4 +35,7 @@
     {
         this->Cards=cards;
     }
-
+    int player::getgamesforteams()
+    {
+        return gamesforteams;
+    }

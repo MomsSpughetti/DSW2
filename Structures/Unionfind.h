@@ -17,38 +17,60 @@ If it is, then it decreases the capacity of the upSideDownTree array by a factor
 #include <ostream>
 #include "HashTable.h"
 
-template <class Key, class Data>
-struct Node {
+/*
+    member extra is an object of kind Extra.
+    Extra class should have default constructor!
+    Kind Extra sholud have operator+ and operato-!
+    the operator action doesn't have to suit his name!
+*/
+template <class Key, class Data, class Extra>
+class NodeExtra {
+  public:
   Key key;
   Data data;
-  Node* parent;
+  NodeExtra* parent;
   int rank;
+  Extra extra;
 
-  Node(Key key, Data data) : key(key), data(data), parent(nullptr), rank(0){}
-
+  NodeExtra(Key key, Data data, Extra extra) : key(key), data(data), parent(nullptr), rank(0), extra(extra){}
 };
 
-template <class Key, class Data>
-class UnionFind {
+template <class Key, class Data, class Extra>
+class UnionFindExtra {
  public:
 
+ //Obj_1 comes first
   void Union(Key keyForObj_1, Key keyForObj_2) {
 
-    Node<Key, Data>* Obj_1Root = Find(keyForObj_1);
-    Node<Key, Data>* Obj_2Root = Find(keyForObj_2);
+    NodeExtra<Key, Data, Extra>* Obj_1Root = Find(keyForObj_1);
+    NodeExtra<Key, Data, Extra>* Obj_2Root = Find(keyForObj_2);
+
+    //at least one key does not exist
+    if(!Obj_1Root || !Obj_2Root)
+    {
+      return;
+    }
 
     //united
     if (Obj_1Root == Obj_2Root) return;
 
-    if (Obj_1Root->rank < Obj_2Root->rank) {
+    if (Obj_1Root->rank < Obj_2Root->rank) { //case 1
 
       Obj_1Root->parent = Obj_2Root;
+      //extra_b_new = extra_a_old + extra_b_old
+      Obj_2Root->extra = Obj_1Root->extra + Obj_2Root->extra;
+      //extra_a_new = extra_a_old - extra_b_new
+      Obj_1Root->extra = Obj_1Root->extra - Obj_2Root->extra;
 
-    } else if (Obj_1Root->rank > Obj_2Root->rank) {
+    } else if (Obj_1Root->rank > Obj_2Root->rank) { //case 2
 
       Obj_2Root->parent = Obj_1Root;
+      //extra_b_new = extra_b_old
+      //Obj_2Root->extra = Obj_2Root->extra;
+      //extra_a_new = extra_a_old
+      //Obj_1Root->extra = Obj_1Root->extra
 
-    } else {
+    } else { //case 3
 
       Obj_2Root->parent = Obj_1Root;
 
@@ -56,42 +78,89 @@ class UnionFind {
     }
   }
 
-  Node<Key, Data>* Find(Key key) {
+  NodeExtra<Key, Data, Extra>* Find(Key key) {
 
-    return Find(forest.get(key));
-
-  }
-
-  void Insert(Key key, Data data) {
-
-    forest.put(key, new Node<Key, Data>(key, data));
-  }
-
-  int get_size(){
-    return size;
-  }
-
-  int get_capacity() { 
-    return StructureCapacity; 
+    // get pointer to the wanted node
+    NodeExtra<Key, Data, Extra>** ptrToTargetNode = forest.get(key);
+    
+    //Key not found
+    if(ptrToTargetNode == nullptr)
+    {
+      return nullptr;
     }
+    NodeExtra<Key, Data, Extra>* TargetNode = *ptrToTargetNode;
+
+    //update extra before reshaping the tree
+    updateExtrasFromNode_x_ToRoot(TargetNode);
+
+    //reshape
+    return Find(TargetNode);
+  }
+
+  void Insert(Key key, Data data, Extra extra) {
+
+    forest.put(key, new NodeExtra<Key, Data, Extra>(key, data, extra));
+  }
+
+//do not forget to free the returned array
+  Data** get_all_data()
+  {
+    return forest.get_data();
+  }
+
+  template <class D, class E>
+  friend std::ostream& operator<<(std::ostream& os, UnionFindExtra<int, D, E>& obj);
+
+  int used_size()
+  {
+    return forest.size();
+  }
+
+  int unused_size()
+  {
+    return forest.Table_size();
+  }
   
-  template <class K, class D>
-  friend std::ostream& operator<<(const std::ostream&, const UnionFind<K, D>&);
-
  private:
-  HashTable<Key, Node<Key, Data>*> forest;
-  int size;
-  int StructureCapacity;
+  HashTable<Key, NodeExtra<Key, Data, Extra>*> forest;
 
-  Node<Key, Data>* Find(Node<Key, Data>* x) {
+  Extra FindSumOfExtrasFromNode_x_ToRoot(NodeExtra<Key, Data, Extra>* x) {
+    Extra sum;
+    NodeExtra<Key, Data, Extra>* temp = x; //no need for temp, but looks nicer with it
+    while(temp)
+    {
+        sum = sum + temp->extra;
+        temp = temp->parent;
+    }
+    return sum;
+  }
+
+  void updateExtrasFromNode_x_ToRoot(NodeExtra<Key, Data, Extra>* x) {
+
+    Extra sumOfExtras = FindSumOfExtrasFromNode_x_ToRoot(x);
+    Extra PrevExtra; // Extra() - the empty contructor should set the new object to a neutral value => like 0 for - and +
+    NodeExtra<Key, Data, Extra>* temp = x;
+
+    //it does not affect the root nor the first son in the series
+    while(temp->parent && temp->parent->parent)
+    {
+        temp->extra = sumOfExtras - PrevExtra;
+        sumOfExtras = sumOfExtras - temp->extra;
+        PrevExtra = temp->extra;
+        temp = temp->parent;
+
+    }
+  }
+
+  NodeExtra<Key, Data, Extra>* Find(NodeExtra<Key, Data, Extra>* x) {
 
     if (x->parent == nullptr) {
       return x;
     }
 
-    //recursive operation that traverse the upSideDownTree!
-
+    //recursive operation that traverse the upSideDownTree! it also updates the extra for each x
     x->parent = Find(x->parent);
+
     return x->parent;
   }
 
@@ -104,11 +173,56 @@ class UnionFind {
       
   }
 
+
+//Errors
 };
 
-  template <class K, class D>
-  std::ostream& operator<<(const std::ostream& os, const UnionFind<K, D>& obj)
+  template <class D, class E>
+  std::ostream& operator<<(std::ostream& os, UnionFindExtra<int, D, E>& obj)
   {
+    //obj.forest.Table_Diagram();
+    //obj.forest.Table_Diagram();
+    HashTable<int, int> parents;
+
+    try
+    {
+    //works when the keys are from 0 to size()!
+    for (int i = 0; i < obj.forest.size(); i++)
+    {
+      //get the parent of node with key i
+      NodeExtra<int, D, E>* parent = obj.Find(i);
+      
+      //get the number of how many childrens do parent have (parent included)
+      int* parentDataInParents = parents.get(parent->key);
+
+      if(!parentDataInParents)
+      {
+        parents.put(parent->key, 1);
+        continue;
+      }
+
+      //increase children count
+      (*parentDataInParents)++;
+
+    }
+    }
+    catch(const std::exception& e)
+    {
+      std::cerr << e.what() << '\n';
+    }
+    
+    for (int i = 0; i < obj.forest.size(); i++)
+    {
+      int* pp = parents.get(i);
+      if(!pp)
+      {
+        continue;
+      }
+      std::cout << std::endl;
+      std::cout << "[" << i <<", " << *pp << "] ";
+    }
+    parents.Table_Diagram();
+    std::cout << std::endl;
     return os;
   }
 

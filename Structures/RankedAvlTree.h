@@ -24,24 +24,25 @@ class Node {
   int height;
   Node<Key, Data> *left;
   Node<Key, Data> *right;
+  int size;
 
   explicit Node(const Key &key, const Data &data)
-      : key(key), data(data), height(1), left(nullptr), right(nullptr) {}
+      : key(key), data(data), height(1), left(nullptr), right(nullptr), size(1) {}
+
 };
 
 // AVL tree class template
 template <typename Key, typename Data>
-class AVLTree {
+class RankedAVLTree {
  public:
-  AVLTree() : root(nullptr) {}
+ RankedAVLTree() : root(nullptr) {}
 
-  ~AVLTree() {
+  ~RankedAVLTree() {
     DeleteTree(root);
   }
 
   // Insert a new key-value pair into the tree
-  void Insert(const Key &key, const Data &data) 
-  {
+  void Insert(const Key &key, const Data &data) {
     root = Insert(root, key, data);
   }
 
@@ -55,6 +56,16 @@ class AVLTree {
     return Find(root, key);
   }
 
+// Find the rank of a given key (i.e. the number of nodes with a smaller key)
+int GetRank(const Key &key) {
+  return GetRank(root, key);
+}
+
+// Find the kth smallest node in the tree (0-indexed)
+Node<Key, Data>* FindByRank(int k) {
+  return FindByRank(root, k);
+}
+
   //print the nodes in order
   void printInOrder()
   {
@@ -63,46 +74,60 @@ class AVLTree {
     std::cout << std::endl;
   }
 
+  //do not forget to free the returned array
+  Node<Key, Data>** TreeNodesToArray()
+  {
+    Node<Key, Data>** array = new Node<Key, Data>*[this->root->size];
+    int place = 0;
+    TreeNodesToArray(this->root, array, place);
+    return array;
+  }
+
+  int get_size() const{
+    return root->size;
+  }
+
  private:
   Node<Key, Data> *root;
 
   // Recursive helper function to insert a new key-value pair into the tree
-  Node<Key, Data>* Insert(Node<Key, Data> *node, const Key &key, const Data &data)
-   {
-    if (!node) {
-      return new Node<Key, Data>(key, data);
-    }
-    if (key < node->key) {
-      node->left = Insert(node->left, key, data);
-    } else if (key > node->key) {
-      node->right = Insert(node->right, key, data);
-    } else {
-      // Key already exists, update the value
-      node->data = data;
-      return node;
-    }
-    // Update the height of the node
-    node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
-    // Balance the tree
-    return Balance(node);
+// Recursive helper function to insert a new key-value pair into the tree
+    Node<Key, Data>* Insert(Node<Key, Data> *node, const Key &key, const Data &data) {
+        if (!node) {
+            return new Node<Key, Data>(key, data);
+        }
+        if (key < node->key) {
+            node->left = Insert(node->left, key, data);
+        } else if (key > node->key) {
+            node->right = Insert(node->right, key, data);
+        } else {
+            // Key already exists, update the value
+            //node->data = data;
+            return nullptr;
+        }
+        // Update the size of the node
+        node->size = 1 + GetSize(node->left) + GetSize(node->right);
+        // Update the height of the node
+        node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
+        // Balance the tree
+        return Balance(node);
+        }
+  
+// Recursive helper function to remove a key and its associated value from the tree
+Node<Key, Data>* Remove(Node<Key, Data> *node, const Key &key) {
+  if (!node) {
+    return nullptr;
   }
-
-  // Recursive helper function to remove a key and its associated value from the tree
-  Node<Key, Data>* Remove(Node<Key, Data> *node, const Key &key) 
-  {
-    if (!node) {
-      return nullptr;
-    }
-    if (key < node->key) {
-      node->left = Remove(node->left, key);
-    } else if (key > node->key) {
-      node->right = Remove(node->right, key);
-    } else {
-      // Key found
-      if (!node->left || !node->right) {
-        // Node has at most one child
-        Node<Key, Data> *temp = node->left ? node->left : node->right;
-        if (!temp) {
+  if (key < node->key) {
+    node->left = Remove(node->left, key);
+  } else if (key > node->key) {
+    node->right = Remove(node->right, key);
+  } else {
+    // Key found
+    if (!node->left || !node->right) {
+      // Node has at most one child
+      Node<Key, Data> *temp = node->left ? node->left : node->right;
+      if (!temp) {
         // Node has no children
         delete node;
         return nullptr;
@@ -121,6 +146,8 @@ class AVLTree {
       node->right = Remove(node->right, temp->key);
     }
   }
+  // Update the size of the node
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
   // Update the height of the node
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
   // Balance the tree
@@ -128,13 +155,12 @@ class AVLTree {
 }
 
 // Find the value associated with a given key
-Data* Find(Node<Key, Data> *node, const Key &key) 
-{
+Data* Find(Node<Key, Data> *node, const Key &key) {
   if (!node) {
     return nullptr;
   }
   if (key == node->key) {
-    return node->data;
+    return &node->data;
   } else if (key < node->key) {
     return Find(node->left, key);
   } else {
@@ -142,9 +168,48 @@ Data* Find(Node<Key, Data> *node, const Key &key)
   }
 }
 
+// Recursive helper function to find the kth smallest node in the tree (0-indexed)
+Node<Key, Data>* FindByRank(Node<Key, Data> *node, int k) {
+  if (!node) {
+    return nullptr;
+  }
+  int leftSize = GetSize(node->left);
+  if (k < leftSize) {
+    // kth smallest node is in the left subtree
+    return FindByRank(node->left, k);
+  } else if (k > leftSize) {
+    // kth smallest node is in the right subtree
+    return FindByRank(node->right, k - leftSize - 1);
+  } else {
+    // kth smallest node is this node
+    return node;
+  }
+}
+
+// Get the number of nodes in the subtree rooted at a given node
+int GetSize(Node<Key, Data> *node) {
+  return node ? node->size : 0;
+}
+
+// Recursive helper function to find the rank of a given key (i.e. the number of nodes with a smaller key)
+int GetRank(Node<Key, Data> *node, const Key &key) {
+  if (!node) {
+    return 0;
+  }
+  if (key < node->key) {
+    // Key is in the left subtree
+    return GetRank(node->left, key);
+  } else if (key > node->key) {
+    // Key is in the right subtree
+    return 1 + GetSize(node->left) + GetRank(node->right, key);
+  } else {
+    // Key is this node
+    return GetSize(node->left);
+  }
+}
+
 // Find the node with the minimum key in the tree
-Node<Key, Data>* FindMin(Node<Key, Data> *node)
- {
+Node<Key, Data>* FindMin(Node<Key, Data> *node) {
   if (!node->left) {
     return node;
   }
@@ -152,8 +217,7 @@ Node<Key, Data>* FindMin(Node<Key, Data> *node)
 }
 
 // Get the height of a node
-int GetHeight(Node<Key, Data> *node)
- {
+int GetHeight(Node<Key, Data> *node) {
   return node ? node->height : 0;
 }
 
@@ -163,10 +227,11 @@ int GetBalanceFactor(Node<Key, Data> *node) {
 }
 
 // Balance the tree
-Node<Key, Data>* Balance(Node<Key, Data> *node) 
-{
+Node<Key, Data>* Balance(Node<Key, Data> *node) {
   // Update the height of the node
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
+
   // Get the balance factor
   int balance_factor = GetBalanceFactor(node);
   // Left left case
@@ -191,14 +256,16 @@ Node<Key, Data>* Balance(Node<Key, Data> *node)
 }
 
 // Perform left rotation
-Node<Key, Data> *RotateLeft(Node<Key, Data> *node) 
-{
+Node<Key, Data> *RotateLeft(Node<Key, Data> *node) {
   Node<Key, Data> *temp = node->right;
   node->right = temp->left;
   temp->left = node;
   // Update the height of the nodes
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
   temp->height = 1 + max(GetHeight(temp->left), GetHeight(temp->right));
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
+  temp->size = 1 + GetSize(temp->left) + GetSize(temp->right);
+
   return temp;
 }
 
@@ -210,6 +277,9 @@ Node<Key, Data>* RotateRight(Node<Key, Data> *node) {
   // Update the height of the nodes
   node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
   temp->height = 1 + max(GetHeight(temp->left), GetHeight(temp->right));
+  node->size = 1 + GetSize(node->left) + GetSize(node->right);
+  temp->size = 1 + GetSize(temp->left) + GetSize(temp->right);
+
   return temp;
 }
 
@@ -239,20 +309,22 @@ void printInOrder_aux(Node<Key, Data>* router)
   printInOrder_aux(router->right);
 
 }
-public:
- bool checkifexist(const Key &key) const
+
+  void TreeNodesToArray(Node<Key, Data>* root, Node<Key, Data>** arr, int &i)
   {
-       Node<Key,Data>* helper = this->Find(key);
-       if(ptr == NULL ||key != helper->key){
-          return false;
-       }
-      return true;
+    if(!root)
+    {
+      return;
+    }
+
+    TreeNodesToArray(root->left, arr, i);
+    arr[i] = root;
+    i++;
+    TreeNodesToArray(root->right, arr, i);
   }
 
 
 };
-
-
 
 
 #endif

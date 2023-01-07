@@ -21,7 +21,7 @@ StatusType world_cup_t::add_team(int teamId)
      // try to add the team
 	try
 	{ 
-		if(Teams.checkifexist(teamId))
+		if(Teams.Find(teamId))
 		{ 
 			return StatusType::FAILURE;
 		}
@@ -55,7 +55,7 @@ StatusType world_cup_t::add_player(int playerId, int teamId,
                                    const permutation_t &spirit, int gamesPlayed,
                                    int ability, int cards, bool goalKeeper)
 {
-	// TODO: Your code goes here
+
 	return StatusType::SUCCESS;
 }
 
@@ -148,29 +148,87 @@ output_t<int> world_cup_t::num_played_games_for_player(int playerId)
 	}
 	try
 	{
+		//get the root of the tree and the player node
+     NodeExtra<int,player*,permutation_modified>* playernode=ZoomInTeams.Find(playerId);	
+     NodeExtra<int,player*,permutation_modified>* rootnode=ZoomInTeams.Find(playerId);
+	 if (playernode==nullptr)
+	 {
+	  output_t<int> x(StatusType::FAILURE);
+	  return x;
+	 }
+	 // calculate the real gamesplayedgames
+	 int gamesplayed=(playernode->data->getgamesplayed()) - (playernode->data->getgamesforteams()) + 
+	 (rootnode->data->get_team()->get_num_played_games());
 
-		
-		
+    output_t<int> x(gamesplayed);
+	return x;
 	}
 	catch(const std::bad_alloc& e)
 	{
-		output_t<int> x(StatusType::ALLOCATION_ERROR);
+	   output_t<int> x(StatusType::ALLOCATION_ERROR);
 	   return x;
 	}
-	
-	return 22;
+     output_t<int> x(StatusType::FAILURE);
+	 return x;
 }
 
 StatusType world_cup_t::add_player_cards(int playerId, int cards)
 {
-	// TODO: Your code goes here
+    if (playerId<=0||cards<0)
+	{
+		return StatusType::INVALID_INPUT;
+	}
+    try
+	{
+	 NodeExtra<int,player*,permutation_modified>* playernode=ZoomInTeams.Find(playerId);
+	 if (playernode==nullptr)
+	 {
+	   return StatusType::FAILURE;
+	 }	 	
+     NodeExtra<int,player*,permutation_modified>* rootnode=ZoomInTeams.Find(playerId);
+	 if (rootnode==nullptr||rootnode->data->get_team()==nullptr||rootnode->data->get_team()->get_eleminated()==true)
+	 {
+		return StatusType::FAILURE;
+	 }
+	 playernode->data->addcards(cards);
+	 
+	}
+	catch(const std::bad_alloc& e)
+	{
+	   StatusType::ALLOCATION_ERROR;  
+	}
+
+	 
 	return StatusType::SUCCESS;
 }
 
 output_t<int> world_cup_t::get_player_cards(int playerId)
 {
-	// TODO: Your code goes here
-	return StatusType::SUCCESS;
+	if (playerId<=0)
+	{
+	 output_t<int> x(StatusType::INVALID_INPUT);
+	 return x;
+	}
+	try
+	{
+	NodeExtra<int,player*,permutation_modified>* playernode=ZoomInTeams.Find(playerId);
+	if (playernode==nullptr)
+	 {
+	  output_t<int> x(StatusType::FAILURE);
+	  return x;
+	 }
+	 int cards=playernode->data->getcards();
+	 output_t<int> x(cards);
+	  return x;
+		
+	}
+	catch(const std::exception& e)
+	{
+	   output_t<int> x(StatusType::ALLOCATION_ERROR);
+	   return x;
+	}
+	output_t<int> x(StatusType::FAILURE);
+	return x;
 }
 
 output_t<int> world_cup_t::get_team_points(int teamId)

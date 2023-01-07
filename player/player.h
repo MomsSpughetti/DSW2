@@ -4,7 +4,7 @@
 
 #include<RankedAvlTree.h>
 #include<wet2util.h>
-#include<team.h>
+#include "team/team.h"
 
 class player
 {
@@ -15,8 +15,10 @@ private:
     int GamesPlayed;
     int teamPlayedGamesCount;
     int Ability;
+    int gamesforteams;
     bool GK;
     permutation_t Spirit;
+    team* team_;
 
 public:
     player(int playerId, int teamId, const permutation_t &spirit, int gamesPlayed,int ability, int cards, bool goalKeeper):
@@ -33,6 +35,11 @@ public:
     permutation_t getspirit();
     void setcards(int x);
     void setability(int x);
+    int getgamesforteams();
+
+
+    team* get_team() const;
+    void set_team(team* val);
 
 };
 
