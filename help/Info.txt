@@ -4,6 +4,10 @@ g++ -std=c++11 -DNDEBUG -g -Wall *.cpp -o program
 
 g++ -std=c++11 -Wall -Werror -pedantic-errors -ggdb3 -DNDEBUG ./*.cpp -o main
 
+g++ -std=c++11 -Wall -Werror -pedantic-errors -ggdb3 -DNDEBUG ./*.cpp ./team/*.cpp ./player/*.cpp prime/*.cpp -o program
+
+g++ -std=c++11 -Wall -g -Werror -pedantic-errors -ggdb3 prime/*.cpp *.cpp team/*.cpp player/*.cpp .\helpers\*.cpp -o program
+
 valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind-out.txt ./main
 
 

@@ -16,7 +16,7 @@
 
 using namespace std;
 
-std::istream& operator>>(istream &in, permutation_t &obj)
+istream& operator>>(istream &in, permutation_t &obj)
 {
 	string str;
 	in >> str;

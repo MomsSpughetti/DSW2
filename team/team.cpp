@@ -57,7 +57,7 @@
     {
         this->num_played_games = val;
     }
-    void team::set_get_permutation(permutation_t& pr)
+    void team::set_permutation(const permutation_t& pr)
     {
         this->spirit = spirit * pr;
     }
@@ -93,12 +93,14 @@
     bool team::operator<(const team& obj) const
     {
         if(this->abilities < obj.abilities){return true;}
+        if(this->abilities == obj.abilities && this->teamId < obj.teamId){return true;}
         return false;
     }
 
     bool team::operator>(const team& obj) const
     {
         if(this->abilities > obj.abilities){return true;}
+        if(this->abilities == obj.abilities && this->teamId > obj.teamId){return true;}
         return false;
     }
 

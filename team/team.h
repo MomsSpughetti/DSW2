@@ -1,6 +1,10 @@
 #include <iostream>
 #include <stdlib.h>
-#include "wet2util.h"
+#include "../wet2util.h"
+
+#ifndef _Te
+#define _Te
+
 
 class team
 {
@@ -65,3 +69,6 @@ public:
     int get_permstrength() const;
 };
 
+
+
+#endif

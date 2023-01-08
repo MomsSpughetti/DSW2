@@ -2,10 +2,10 @@
 #define _player
 
 
-#include<RankedAvlTree.h>
-#include<wet2util.h>
-#include "team/team.h"
+#include "../Structures/RankedAVLTree.h"
+#include "../wet2util.h"
 
+class team;
 class player
 {
 
@@ -13,17 +13,24 @@ private:
     int Id;
     int Cards;
     int GamesPlayed;
-    int teamPlayedGamesCount;
-    int Ability;
-    int gamesforteams;
     bool GK;
+    int Ability;
     permutation_t Spirit;
+    int teamPlayedGamesCount;
+    int gamesforteams;
+
+
     team* team_;
 
 public:
     player(int playerId, int teamId, const permutation_t &spirit, int gamesPlayed,int ability, int cards, bool goalKeeper):
-    Id(playerId),Cards(cards),GamesPlayed(gamesPlayed),GK(goalKeeper),Ability(ability),
-    Spirit(spirit),teamPlayedGamesCount(0){}
+    Id(playerId),
+    Cards(cards),
+    GamesPlayed(gamesPlayed),
+    GK(goalKeeper),
+    Ability(ability),
+    Spirit(spirit),
+    teamPlayedGamesCount(0){}
     ~player() = default;
 
     player(const player& ob)=default;
@@ -32,6 +39,7 @@ public:
     int getcards();
     int getgamesplayed();
     int getability();
+    bool get_goalKeeper() const;
     permutation_t getspirit();
     void setcards(int x);
     void setability(int x);

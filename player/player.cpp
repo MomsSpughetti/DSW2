@@ -1,4 +1,4 @@
-#include<player.h>
+#include "player.h"
 
 
     int player::getid()
@@ -38,4 +38,18 @@
     int player::getgamesforteams()
     {
         return gamesforteams;
+    }
+
+    team* player::get_team() const
+    {
+        return this->team_;
+    }
+    void player::set_team(team* val)
+    {
+        this->team_ = val;
+    }
+
+    bool player::get_goalKeeper() const
+    {
+        return this->GK;
     }

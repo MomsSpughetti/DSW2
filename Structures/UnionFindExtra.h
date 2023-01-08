@@ -69,7 +69,7 @@ public:
       Obj_1Root->extra = Obj_1Root->extra - Obj_2Root->extra;
 
       //additional calculations
-      Obj_1Root->extra.extra(Obj_2Root->extra);
+      Obj_1Root->extra.extraCalc(Obj_2Root->extra);
     }
     else if (Obj_1Root->rank > Obj_2Root->rank)
     { // case 2
@@ -94,9 +94,9 @@ public:
     }
   }
 
-  NodeExtra<Key, Data, Extra> *getNode(Key key)
+  NodeExtra<Key, Data, Extra> **getNode(Key key)
   {
-    return (*forest.get(key));
+    return (forest.get(key));
   }
 
   NodeExtra<Key, Data, Extra> *Find(Key key)
@@ -126,7 +126,7 @@ public:
   }
 
   // do not forget to free the returned array
-  Data **get_all_data()
+  NodeExtra<Key, Data, Extra> ***get_all_data()
   {
     return forest.get_data();
   }
@@ -148,10 +148,10 @@ public:
   Extra get_validExtra(Key key)
   {
 
-    Data *data = forest.get(key);
+    NodeExtra<Key, Data, Extra> **data = forest.get(key);
     if (!data)
     {
-      return Data{};
+      return Extra{};
     }
     return FindSumOfExtrasFromNode_x_ToRoot(*data);
   }

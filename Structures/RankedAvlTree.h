@@ -13,12 +13,8 @@ key should have:
 */
 
 #include <iostream>
-
-//helper functions
-int max(int a, int b)
-{
-    return (a < b)? b : a;
-}
+#include <stdlib.h>
+#include <math.h>
 
 // Node class template
 template <typename Key, typename Data>
@@ -33,6 +29,8 @@ class Node {
 
   explicit Node(const Key &key, const Data &data)
       : key(key), data(data), height(1), left(nullptr), right(nullptr), size(1) {}
+
+  ~Node() = default;
 
 };
 
@@ -74,7 +72,7 @@ class RankedAVLTree {
     this->Remove(prevKey);
 
     //insert
-    this->Insert(newkey, newData)
+    this->Insert(newkey, newData);
   }
   
   // Find the value associated with a given key
@@ -139,7 +137,7 @@ Node<Key, Data>* FindByRank(int k) {
         // Update the size of the node
         node->size = 1 + GetSize(node->left) + GetSize(node->right);
         // Update the height of the node
-        node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
+        node->height = 1 + std::max(GetHeight(node->left), GetHeight(node->right));
         // Balance the tree
         return Balance(node);
         }
@@ -180,7 +178,7 @@ Node<Key, Data>* Remove(Node<Key, Data> *node, const Key &key) {
   // Update the size of the node
   node->size = 1 + GetSize(node->left) + GetSize(node->right);
   // Update the height of the node
-  node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
+  node->height = 1 + std::max(GetHeight(node->left), GetHeight(node->right));
   // Balance the tree
   return Balance(node);
 }
@@ -273,7 +271,7 @@ int GetBalanceFactor(Node<Key, Data> *node) {
 // Balance the tree
 Node<Key, Data>* Balance(Node<Key, Data> *node) {
   // Update the height of the node
-  node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
+  node->height = 1 + std::max(GetHeight(node->left), GetHeight(node->right));
   node->size = 1 + GetSize(node->left) + GetSize(node->right);
 
   // Get the balance factor
@@ -305,8 +303,8 @@ Node<Key, Data> *RotateLeft(Node<Key, Data> *node) {
   node->right = temp->left;
   temp->left = node;
   // Update the height of the nodes
-  node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
-  temp->height = 1 + max(GetHeight(temp->left), GetHeight(temp->right));
+  node->height = 1 + std::max(GetHeight(node->left), GetHeight(node->right));
+  temp->height = 1 + std::max(GetHeight(temp->left), GetHeight(temp->right));
   node->size = 1 + GetSize(node->left) + GetSize(node->right);
   temp->size = 1 + GetSize(temp->left) + GetSize(temp->right);
 
@@ -319,8 +317,8 @@ Node<Key, Data>* RotateRight(Node<Key, Data> *node) {
   node->left = temp->right;
   temp->right = node;
   // Update the height of the nodes
-  node->height = 1 + max(GetHeight(node->left), GetHeight(node->right));
-  temp->height = 1 + max(GetHeight(temp->left), GetHeight(temp->right));
+  node->height = 1 + std::max(GetHeight(node->left), GetHeight(node->right));
+  temp->height = 1 + std::max(GetHeight(temp->left), GetHeight(temp->right));
   node->size = 1 + GetSize(node->left) + GetSize(node->right);
   temp->size = 1 + GetSize(temp->left) + GetSize(temp->right);
 

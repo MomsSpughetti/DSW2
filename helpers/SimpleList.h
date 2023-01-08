@@ -1,7 +1,10 @@
+#ifndef _SN
+#define _SN
+
 #include "stdlib.h"
 
 template <class Data>
-struct SimpleNode{Data data; SimpleNode* next; SimpleNode(Data& data) : data(data), next(nullptr) {}};
+struct SimpleNode{Data data; SimpleNode* next; SimpleNode() = default; SimpleNode(Data& data) : data(data), next(nullptr) {}};
 
 template <class Data>
 class Simplelist
@@ -10,22 +13,22 @@ class Simplelist
         SimpleNode<Data>* FirstNode;
         SimpleNode<Data>* LastNode;
     public:
-        Simplelist() = default;
+        Simplelist() : FirstNode(nullptr), LastNode(nullptr){}
         SimpleNode<Data>* getFirstNode() {return FirstNode;}
         SimpleNode<Data>* getLastNode() {return LastNode;}
         
         void push_back(Data& data) {
-            if(First == nullptr){
-                FirstNode = new SimpleNode(data);
+            if(this->FirstNode == nullptr){
+                FirstNode = new SimpleNode<Data>(data);
                 LastNode = FirstNode;
             } else {
-                SimpleNode<Data>* newNode = new SimpleNode(data);
+                SimpleNode<Data>* newNode = new SimpleNode<Data>(data);
                 LastNode->next = newNode;
                 LastNode = newNode;
             }
         }
         ~Simplelist(){
-            SimpleNode<Data>* temp = FirstNode, toDelete;
+            SimpleNode<Data>* temp = FirstNode, *toDelete;
             while (temp)
             {
                 toDelete = temp;
@@ -35,3 +38,5 @@ class Simplelist
             
         }
 };
+
+#endif

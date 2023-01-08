@@ -5,12 +5,12 @@ world_cup_t::world_cup_t() = default;
 world_cup_t::~world_cup_t()
 {
 	Node<int, team*>** QTeams = this->QualifiedTeams.TreeNodesToArray();
-	player*** players = ZoomInTeams.get_all_data();
+	NodeExtra<int, player*, PlayerExtra>*** players = ZoomInTeams.get_all_data();
 
 	//delete players
 	for (int i = 0; i < ZoomInTeams.used_size(); i++)
 	{
-		delete *players[i];
+		delete (*players[i])->data;
 	}
 	
 	//delete qualified teams
@@ -20,7 +20,7 @@ world_cup_t::~world_cup_t()
 	}
 
 	//delete eleminated teams
-	SimpleNode<team*>* temp = EliminatedTeams->getFirstNode();
+	SimpleNode<team*>* temp = EliminatedTeams.getFirstNode();
 	while (!temp)
 	{
 		delete temp->data;
@@ -77,24 +77,30 @@ StatusType world_cup_t::remove_team(int teamId)
 	}
 
 	//get team
-	team** TeamToRemove = QualifiedTeams.Find(teamId);
-	if (!TeamToRemove)
+	team** ptrPtrTeamToRemove = QualifiedTeams.Find(teamId);
+	if (!ptrPtrTeamToRemove)
 	{
 		//Not found
 		return StatusType::FAILURE;
 	}
 	
+	//point to the team
+	team* ptrToTeam = *ptrPtrTeamToRemove;
+
 	//Remove from QualifiedTeams Tree
 	QualifiedTeams.Remove(teamId);
 
 	//set eliminated to True
-	(*TeamToRemove)->set_eleminated(true);
+	ptrToTeam->set_eleminated(true);
 
 	//add to Eliminated Tree
-	EliminatedTeams->push_back(*TeamToRemove);
+	EliminatedTeams.push_back(ptrToTeam);
+
+	//remove from ability tree
+	TeamsByAbility.Remove(*EliminatedTeams.getLastNode()->data);
 
 	//Exit
-	return StatusType::FAILURE;
+	return StatusType::SUCCESS;
 }
 
 StatusType world_cup_t::add_player(int playerId, int teamId,
@@ -107,13 +113,12 @@ if(playerId <= 0 ||
 	teamId <= 0 ||
 	!spirit.isvalid() ||
 	gamesPlayed < 0 ||
-	cards <0){
+	cards < 0){
 		return StatusType::INVALID_INPUT;
 	}
 
 	//check team
 	team** team_ = QualifiedTeams.Find(teamId);
-	team& TeamKey = TeamsByAbility.getIdByReference(**team_);
 
 	if(!team_){
 		//team not found
@@ -145,7 +150,8 @@ if(playerId <= 0 ||
 	ptrToTeam->set_abilities((*team_)->get_abilities() + newPLayer->getability());
 		//spirit
 	ptrToTeam->set_permutation(ptrToTeam->get_permutation() * newPLayer->getspirit());
-
+		//GK
+	if(!ptrToTeam->get_goalKeeper()){ptrToTeam->set_goalKeeper(newPLayer->get_goalKeeper());}
 	//update in Ability tree
 	TeamsByAbility.update(OutDatedCopy, *ptrToTeam, ptrToTeam);
 
@@ -281,13 +287,16 @@ StatusType world_cup_t::add_player_cards(int playerId, int cards)
 	}
     try
 	{
-	 NodeExtra<int,player*,PlayerExtra>* playernode = ZoomInTeams.getNode(playerId);
+	 NodeExtra<int,player*,PlayerExtra>** ptrToPlayernode = ZoomInTeams.getNode(playerId);
 
-	 if (playernode==nullptr)
+	 if (ptrToPlayernode==nullptr)
 	 {
 	   return StatusType::FAILURE;
-	 }	 	
-     NodeExtra<int,player*,PlayerExtra>* rootnode = ZoomInTeams.Find(playerId);
+	 }
+
+	 NodeExtra<int,player*,PlayerExtra>* playernode = *ptrToPlayernode;
+    
+	 NodeExtra<int,player*,PlayerExtra>* rootnode = ZoomInTeams.Find(playerId);
 	 if (rootnode==nullptr||rootnode->data->get_team()==nullptr||rootnode->data->get_team()->get_eleminated()==true)
 	 {
 		return StatusType::FAILURE;
@@ -297,7 +306,7 @@ StatusType world_cup_t::add_player_cards(int playerId, int cards)
 	}
 	catch(const std::bad_alloc& e)
 	{
-	   StatusType::ALLOCATION_ERROR;  
+	   return StatusType::ALLOCATION_ERROR;  
 	}
 
 	 
@@ -403,7 +412,7 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 	int playerInTeam1Id = (*team1)->get_IdOfLastPlayer();
 	int playerInTeam2Id = (*team2)->get_IdOfLastPlayer();
 
-	NodeExtra<int, player*, PlayerExtra>* root1 = ZoomInTeams.Find(playerInTeam1Id);
+	//NodeExtra<int, player*, PlayerExtra>* root1 = ZoomInTeams.Find(playerInTeam1Id);
 	NodeExtra<int, player*, PlayerExtra>* root2 = ZoomInTeams.Find(playerInTeam2Id);
 
 	//case 1: team1 and team 2 do not have players
@@ -440,17 +449,18 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 		ZoomInTeams.Union(playerInTeam1Id, playerInTeam2Id);
 	}
 
-	//remove team2
-	QualifiedTeams.Remove(teamId2);
 
 	
 
 	//update the root node
 		//get it
-	NodeExtra<int, player*, PlayerExtra>* playerInRoot = ZoomInTeams.getNode((*team1)->get_IdOfLastPlayer()); //or any other id in that team
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot = *ZoomInTeams.getNode(playerInTeam1Id); //or any other id in that team
 
 		//make sure the root points to the buyer team
 	playerInRoot->data->set_team(*team1);
+
+	//remove team2
+	remove_team(teamId2);
 
 	return StatusType::SUCCESS;
 }
@@ -462,10 +472,10 @@ void world_cup_t::increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team
 	//increase gamesPlayed extra by one in root for both teams
 		//get it
 	int Team1_lastPlayerId = (*team1)->get_IdOfLastPlayer();
-	NodeExtra<int, player*, PlayerExtra>* playerInRoot1 = ZoomInTeams.getNode(Team1_lastPlayerId); //or any other id in that team
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot1 = *ZoomInTeams.getNode(Team1_lastPlayerId); //or any other id in that team
 
 	int Team2_lastPlayerId = (*team2)->get_IdOfLastPlayer();
-	NodeExtra<int, player*, PlayerExtra>* playerInRoot2 = ZoomInTeams.getNode(Team2_lastPlayerId); //or any other id in that team
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot2 = *ZoomInTeams.getNode(Team2_lastPlayerId); //or any other id in that team
 
 		//update extra in root
 	playerInRoot1->extra.increaseGamesPlayed(val);
