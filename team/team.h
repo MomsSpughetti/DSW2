@@ -13,18 +13,19 @@ private:
     int num_played_games;
     int IdOfLastPlayer;
     
-    permutation_t permutation;
+    permutation_t spirit;
 
 
 public:
-    team(int id) : 
+    explicit team(int id) : 
     teamId(id), 
     eliminated(false), 
     goalKeeper(false), 
     points(0), 
     abilities(0), 
     num_played_games(0),
-    IdOfLastPlayer(0) {};
+    IdOfLastPlayer(0),
+    spirit(permutation_t::neutral()) {};
     
     ~team() = default;
 
@@ -46,7 +47,7 @@ public:
     void set_abilities(int val);
     void set_num_played_games(int val);
     void set_IdOfLastPlayer(int val);
-    void set_get_permutation(permutation_t&);
+    void set_permutation(const permutation_t&);
 
     //operators
     bool operator<(const team& obj) const;

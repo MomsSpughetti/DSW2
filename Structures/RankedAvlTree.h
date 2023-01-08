@@ -5,6 +5,11 @@
 /*
 first version of an AVL tree
 supports basic functions
+key should have:
+  operators:
+    - <
+    - >
+    - ==
 */
 
 #include <iostream>
@@ -51,6 +56,27 @@ class RankedAVLTree {
     root = Remove(root, key);
   }
 
+  //update : remove then insert
+  //does nothing if prevKey != newKey
+  //there are two keys receive because key could be a complex object (have more info than the real key itself)
+  void update(Key& prevKey, Key& newkey, Data& newData)
+  {
+    //check if prevKey exists and differs from newKey
+    Node<Key, Data>* temp = FindNode(root, prevKey);
+
+    //no node with that id
+    if(!temp) {return;} 
+
+    //prevKey != newKey
+    if(!(temp->key == prevKey)) {return;}
+
+    //remove
+    this->Remove(prevKey);
+
+    //insert
+    this->Insert(newkey, newData)
+  }
+  
   // Find the value associated with a given key
   Data* Find(const Key &key) {
     return Find(root, key);
@@ -85,6 +111,11 @@ Node<Key, Data>* FindByRank(int k) {
 
   int get_size() const{
     return root->size;
+  }
+
+  Key& getIdByReference(const Key& key)
+  {
+    return FindNode(root, key)->key;
   }
 
  private:
@@ -168,6 +199,19 @@ Data* Find(Node<Key, Data> *node, const Key &key) {
   }
 }
 
+// Find the Node associated with a given key
+Node<Key, Data>* FindNode(Node<Key, Data> *node, const Key &key) {
+  if (!node) {
+    return nullptr;
+  }
+  if (key == node->key) {
+    return node;
+  } else if (key < node->key) {
+    return FindNode(node->left, key);
+  } else {
+    return FindNode(node->right, key);
+  }
+}
 // Recursive helper function to find the kth smallest node in the tree (0-indexed)
 Node<Key, Data>* FindByRank(Node<Key, Data> *node, int k) {
   if (!node) {
@@ -310,17 +354,17 @@ void printInOrder_aux(Node<Key, Data>* router)
 
 }
 
-  void TreeNodesToArray(Node<Key, Data>* root, Node<Key, Data>** arr, int &i)
+  void TreeNodesToArray(Node<Key, Data>* node, Node<Key, Data>** arr, int &i)
   {
-    if(!root)
+    if(!node)
     {
       return;
     }
 
-    TreeNodesToArray(root->left, arr, i);
-    arr[i] = root;
+    TreeNodesToArray(node->left, arr, i);
+    arr[i] = node;
     i++;
-    TreeNodesToArray(root->right, arr, i);
+    TreeNodesToArray(node->right, arr, i);
   }
 
 

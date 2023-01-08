@@ -30,7 +30,7 @@
     }
     permutation_t& team::get_permutation()
     {
-        return this->permutation;
+        return this->spirit;
     }
 
     void team::set_teamId(int val)
@@ -59,7 +59,7 @@
     }
     void team::set_get_permutation(permutation_t& pr)
     {
-        this->permutation = permutation * pr;
+        this->spirit = spirit * pr;
     }
     void team::set_IdOfLastPlayer(int val)
     {
@@ -85,7 +85,7 @@
 
     int team::get_permstrength() const
     {
-      return this->permutation.strength();
+      return this->spirit.strength();
     }
 
 

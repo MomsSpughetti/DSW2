@@ -44,14 +44,14 @@ StatusType world_cup_t::add_team(int teamId)
      // try to add the team
 	try
 	{ 
-		if(!QualifiedTeams.Find(teamId))
+		if(QualifiedTeams.Find(teamId))
 		{ 
 			return StatusType::FAILURE;
 		}
 		team *newteam = new team(teamId);
 
 		QualifiedTeams.Insert(teamId, newteam);
-		TeamsByAbility.Insert(teamId, newteam);
+		TeamsByAbility.Insert(*newteam, newteam);
 	}
 
 	//bad_alloc
@@ -113,28 +113,41 @@ if(playerId <= 0 ||
 
 	//check team
 	team** team_ = QualifiedTeams.Find(teamId);
+	team& TeamKey = TeamsByAbility.getIdByReference(**team_);
+
 	if(!team_){
 		//team not found
 		return StatusType::FAILURE;
 	}
 
 	//put player in UF
+	team *ptrToTeam = (*team_);
 	player* newPLayer = new player(playerId, teamId, spirit, gamesPlayed, ability, cards, goalKeeper);
-	newPLayer->set_team(*team_);
+	newPLayer->set_team(ptrToTeam);
 	ZoomInTeams.Insert(playerId, newPLayer, PlayerExtra(spirit));
 
 
 	//union on them
 
 		//get an id of last added player in team
-	int lastPlayerId = (**team_).get_IdOfLastPlayer();
+	int lastPlayerId = (*ptrToTeam).get_IdOfLastPlayer();
 	
 	//union call
 	//nothing happens if this is the first player added
 	ZoomInTeams.Union(lastPlayerId, playerId);
 
 	//update team values
-	(*team_)->set_IdOfLastPlayer(playerId);
+		//save a copy of the team before the changes
+	team OutDatedCopy = *ptrToTeam;
+		//a player id
+	ptrToTeam->set_IdOfLastPlayer(playerId);
+		//abilitiy
+	ptrToTeam->set_abilities((*team_)->get_abilities() + newPLayer->getability());
+		//spirit
+	ptrToTeam->set_permutation(ptrToTeam->get_permutation() * newPLayer->getspirit());
+
+	//update in Ability tree
+	TeamsByAbility.update(OutDatedCopy, *ptrToTeam, ptrToTeam);
 
 	return StatusType::SUCCESS;
 }
@@ -455,6 +468,6 @@ void world_cup_t::increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team
 	NodeExtra<int, player*, PlayerExtra>* playerInRoot2 = ZoomInTeams.getNode(Team2_lastPlayerId); //or any other id in that team
 
 		//update extra in root
-	playerInRoot1->extra.increaseGamesPlayed(1);
-	playerInRoot2->extra.increaseGamesPlayed(1);
+	playerInRoot1->extra.increaseGamesPlayed(val);
+	playerInRoot2->extra.increaseGamesPlayed(val);
 }
