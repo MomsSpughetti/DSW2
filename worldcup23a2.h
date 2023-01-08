@@ -15,13 +15,25 @@
 #ifndef WORLDCUP23A2_H_
 #define WORLDCUP23A2_H_
 
-#include "wet2util.h"
+#include "wet2util.h"	
+#include "Structures/RankedAvlTree.h"
+#include "Structures/UnionFindExtra.h"
+#include "team/team.h"
+#include "player/player.h"
+#include "helpers/PlayerExtra.h"
+#include "helpers/SimpleList.h"
 
 class world_cup_t {
 private:
 	//
 	// Here you may add anything you want
-	//
+	UnionFindExtra<int, player*, PlayerExtra> ZoomInTeams;
+	RankedAVLTree<int, team*> QualifiedTeams;
+	RankedAVLTree<team, team*> TeamsByAbility;
+	Simplelist<team*> EliminatedTeams;
+	void increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team** team2);
+
+	//end of our edit
 	
 public:
 	// <DO-NOT-MODIFY> {

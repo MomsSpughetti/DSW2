@@ -1,0 +1,9 @@
+Consider adding:
+
+Must add:
+in function add plyer: update IdOfLastPlayer!
+Not sure:
+
+
+TO-Do:
+    - 
