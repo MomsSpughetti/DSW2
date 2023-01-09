@@ -2,3 +2,5 @@ move the structures code after the tests succeeded to the parent directory
 delete all comments from the DSW2 (from structures)
 
 try to change as much as possible (names ... and be careful)!
+ 
+ check for any additional std::cout

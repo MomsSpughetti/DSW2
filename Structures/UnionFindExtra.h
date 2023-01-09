@@ -42,18 +42,39 @@ template <class Key, class Data, class Extra>
 class UnionFindExtra
 {
 public:
+  UnionFindExtra() = default;
+  ~UnionFindExtra()
+  {
+    NodeExtra<Key, Data, Extra> *** GG = forest.get_data();
+    for (int i = 0; i < forest.size(); i++)
+    {
+      delete *GG[i];
+    }
+
+    delete [] GG;
+    
+  }
   // Obj_1 comes first
   void Union(Key keyForObj_1, Key keyForObj_2)
   {
 
-    NodeExtra<Key, Data, Extra> *Obj_1Root = Find(keyForObj_1);
-    NodeExtra<Key, Data, Extra> *Obj_2Root = Find(keyForObj_2);
+    if(std::is_same<int, Key>::value && keyForObj_2 == 92891)
+    {
+      std::cout << "";
+    }
+
+    NodeExtra<Key, Data, Extra> **Obj_1Rootp = forest.get(keyForObj_1);
+    NodeExtra<Key, Data, Extra> **Obj_2Rootp = forest.get(keyForObj_2);
+
 
     // at least one key does not exist
-    if (!Obj_1Root || !Obj_2Root)
+    if (!Obj_1Rootp || !Obj_2Rootp)
     {
       return;
     }
+
+    NodeExtra<Key, Data, Extra> *Obj_1Root = FindWithOutKyvoots(*Obj_1Rootp);
+    NodeExtra<Key, Data, Extra> *Obj_2Root = FindWithOutKyvoots(*Obj_2Rootp);
 
     // united
     if (Obj_1Root == Obj_2Root)
@@ -64,7 +85,7 @@ public:
 
       Obj_1Root->parent = Obj_2Root;
       // extra_b_new = extra_a_old + extra_b_old
-      Obj_2Root->extra = Obj_1Root->extra + Obj_2Root->extra;
+      Obj_2Root->extra = Obj_2Root->extra;
       // extra_a_new = extra_a_old - extra_b_new
       Obj_1Root->extra = Obj_1Root->extra - Obj_2Root->extra;
 
@@ -101,6 +122,11 @@ public:
 
   NodeExtra<Key, Data, Extra> *Find(Key key)
   {
+		
+    if(std::is_same<int, Key>::value && key == 42833)
+    {
+      std::cout << "";
+    }
 
     // get pointer to the wanted node
     NodeExtra<Key, Data, Extra> **ptrToTargetNode = forest.get(key);
@@ -187,8 +213,8 @@ private:
     Extra sumOfExtras = FindSumOfExtrasFromNode_x_ToRoot(x);
 
     //decrease the root
-    NodeExtra<Key, Data, Extra>* rootOfX = Find(x);
-    sumOfExtras = sumOfExtras - rootOfX->extra;
+    NodeExtra<Key, Data, Extra>* rootOfX = FindWithOutKyvoots(x);
+    sumOfExtras = sumOfExtras % rootOfX->extra;
 
     Extra PrevExtra; // Extra() - the empty contructor should set the new object to a neutral value => like 0 for - and +
     NodeExtra<Key, Data, Extra> *temp = x;
@@ -197,8 +223,8 @@ private:
     while (temp->parent && temp->parent->parent)
     {
       sumOfExtras -= PrevExtra;
-      temp->extra = sumOfExtras;
       PrevExtra = temp->extra;
+      temp->extra = sumOfExtras;
       temp = temp->parent;
     }
   }
@@ -226,6 +252,15 @@ private:
     forest.remove(key);
   }
 
+  NodeExtra<Key, Data, Extra>* FindWithOutKyvoots(NodeExtra<Key, Data, Extra>* tor)
+  {
+    if(!tor){return nullptr;}
+    while (tor->parent)
+    {
+      tor = tor->parent;
+    }
+    return tor;
+  }
   // Errors
 };
 
