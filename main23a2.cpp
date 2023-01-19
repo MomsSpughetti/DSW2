@@ -58,16 +58,23 @@ int main()
 		else if (!op.compare("add_player"))
 		{
 			cin >> pid >> tid >> p1 >> d1 >> d2 >> d3 >> b1;
+
 			print(op, obj->add_player(pid, tid, p1, d1, d2, d3, b1));
+			
 		}
 		else if (!op.compare("play_match"))
 		{
 			cin >> tid >> tid2;
+
 			print(op, obj->play_match(tid, tid2));
 		}
 		else if(!op.compare("num_played_games_for_player"))
 		{
 			cin >> pid;
+			if(pid == 74399)
+			{
+				std::cout << "";
+			}
 			print(op, obj->num_played_games_for_player(pid));
 		}
 		else if(!op.compare("add_player_cards"))
@@ -89,15 +96,25 @@ int main()
 		{
 			cin >> d1;
 			print(op, obj->get_ith_pointless_ability(d1));
+
 		}
 		else if(!op.compare("get_partial_spirit"))
 		{
 			cin >> pid;
+			if(pid == 74399)
+			{
+				std::cout << "";
+			}
 			print(op, obj->get_partial_spirit(pid));
 		}
 		else if(!op.compare("buy_team"))
 		{
 			cin >> tid >> tid2;
+			if(tid2 == 92891)
+			{
+
+				std::cout << "";
+			}
 			print(op, obj->buy_team(tid, tid2));
 		}
 		else
