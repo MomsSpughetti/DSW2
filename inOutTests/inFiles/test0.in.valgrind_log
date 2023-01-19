@@ -1,0 +1,15 @@
+==13389== Memcheck, a memory error detector
+==13389== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13389== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==13389== Command: ./InOutTester
+==13389== Parent PID: 13386
+==13389== 
+==13389== 
+==13389== HEAP SUMMARY:
+==13389==     in use at exit: 0 bytes in 0 blocks
+==13389==   total heap usage: 41 allocs, 41 frees, 1,889 bytes allocated
+==13389== 
+==13389== All heap blocks were freed -- no leaks are possible
+==13389== 
+==13389== For lists of detected and suppressed errors, rerun with: -s
+==13389== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

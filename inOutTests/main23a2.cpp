@@ -10,7 +10,7 @@
 // .. WILL use our file.
 // 
 
-#include "worldcup23a2.h"
+#include "../worldcup23a2.h"
 #include <string>
 #include <iostream>
 
@@ -59,7 +59,6 @@ int main()
 		{
 			cin >> pid >> tid >> p1 >> d1 >> d2 >> d3 >> b1;
 			print(op, obj->add_player(pid, tid, p1, d1, d2, d3, b1));
-			
 		}
 		else if (!op.compare("play_match"))
 		{
@@ -90,7 +89,6 @@ int main()
 		{
 			cin >> d1;
 			print(op, obj->get_ith_pointless_ability(d1));
-
 		}
 		else if(!op.compare("get_partial_spirit"))
 		{
