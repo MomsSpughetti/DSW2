@@ -20,7 +20,11 @@ public:
     void extraCalc(PlayerExtra& permutation);
     void increaseGamesPlayed(int val);
     PlayerExtra operator% (PlayerExtra& permutation_);
-
+    void Initialize(player* pl)
+    {
+        if(pl && pl->get_team()->get_eleminated())
+        this->permutation = pl->get_team()->get_permutation();
+    }
 
     permutation_t permutation;
     int gamesPlayed;

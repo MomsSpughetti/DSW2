@@ -1,0 +1,1000 @@
+add_team 42
+get_ith_pointless_ability 0
+add_team 913
+remove_team 913
+remove_team 42
+add_team 598
+add_player 203 598 1,4,5,3,2 629 6957 504 false
+add_team 161
+get_partial_spirit 203
+get_partial_spirit 203
+add_player 206 598 2,5,3,1,4 55 4340 41 false
+add_team 150
+add_player_cards 203 844
+remove_team 161
+get_partial_spirit 203
+get_partial_spirit 206
+get_team_points 150
+get_ith_pointless_ability 0
+get_partial_spirit 206
+add_player_cards 203 769
+get_ith_pointless_ability 0
+remove_team 598
+remove_team 150
+add_team 335
+remove_team 335
+get_player_cards 203
+get_player_cards 206
+get_player_cards 206
+add_team 386
+get_player_cards 206
+remove_team 386
+add_team 539
+add_team 536
+get_player_cards 203
+add_player 367 539 1,4,2,5,3 893 52 727 false
+add_player_cards 367 248
+add_team 971
+add_player 150 539 3,2,5,1,4 370 9582 966 false
+get_partial_spirit 367
+get_partial_spirit 150
+get_team_points 539
+add_team 482
+remove_team 482
+get_team_points 539
+get_partial_spirit 367
+add_player 89 971 1,4,5,2,3 941 8801 590 false
+remove_team 539
+get_ith_pointless_ability 0
+remove_team 971
+get_team_points 536
+remove_team 536
+add_team 318
+add_team 567
+get_ith_pointless_ability 1
+add_player 596 567 4,2,3,5,1 718 6169 426 false
+get_team_points 567
+get_partial_spirit 596
+get_ith_pointless_ability 1
+add_team 868
+get_partial_spirit 596
+get_player_cards 596
+remove_team 567
+remove_team 868
+get_ith_pointless_ability 0
+get_ith_pointless_ability 0
+add_team 198
+add_player 961 198 5,3,2,4,1 988 7905 395 false
+get_partial_spirit 961
+get_partial_spirit 961
+get_partial_spirit 961
+add_player 582 318 5,2,1,3,4 570 2606 227 false
+get_partial_spirit 961
+get_partial_spirit 582
+remove_team 198
+get_partial_spirit 582
+get_ith_pointless_ability 0
+get_ith_pointless_ability 0
+get_partial_spirit 582
+add_player_cards 582 244
+get_partial_spirit 582
+get_partial_spirit 582
+get_partial_spirit 582
+get_team_points 318
+remove_team 318
+add_team 427
+add_player 984 427 4,5,2,1,3 224 9775 484 false
+get_partial_spirit 984
+add_player 855 427 3,1,4,5,2 37 593 589 false
+get_player_cards 855
+add_player 164 427 1,2,3,4,5 807 7561 564 false
+get_player_cards 984
+add_player_cards 855 210
+add_player 731 427 4,5,3,1,2 386 3264 503 false
+get_team_points 427
+get_partial_spirit 984
+remove_team 427
+add_team 37
+add_player 462 37 2,4,1,5,3 996 1654 911 false
+get_ith_pointless_ability 0
+add_player_cards 462 279
+add_player_cards 462 197
+get_player_cards 206
+add_team 52
+get_player_cards 462
+get_partial_spirit 462
+get_partial_spirit 462
+add_team 352
+get_partial_spirit 462
+get_partial_spirit 462
+add_team 465
+add_team 845
+get_partial_spirit 462
+get_partial_spirit 462
+get_partial_spirit 462
+get_partial_spirit 462
+get_partial_spirit 462
+add_team 188
+get_partial_spirit 462
+get_player_cards 367
+get_partial_spirit 462
+get_team_points 465
+add_team 34
+get_team_points 188
+get_team_points 465
+remove_team 465
+get_team_points 34
+get_team_points 34
+get_partial_spirit 462
+get_player_cards 89
+add_player_cards 462 743
+get_partial_spirit 462
+get_partial_spirit 462
+get_ith_pointless_ability 4
+add_player_cards 462 130
+get_partial_spirit 462
+get_partial_spirit 462
+get_partial_spirit 462
+get_partial_spirit 462
+get_partial_spirit 462
+add_player_cards 462 889
+get_partial_spirit 462
+get_partial_spirit 462
+get_team_points 188
+get_partial_spirit 462
+get_team_points 34
+get_team_points 37
+add_player 470 352 5,1,2,4,3 470 8448 779 false
+remove_team 52
+get_partial_spirit 462
+add_player_cards 470 304
+get_player_cards 150
+add_player_cards 470 905
+get_ith_pointless_ability 3
+get_partial_spirit 462
+get_ith_pointless_ability 2
+add_team 577
+add_player 764 352 3,4,1,5,2 231 9195 961 false
+get_ith_pointless_ability 5
+get_player_cards 731
+get_partial_spirit 764
+get_partial_spirit 470
+get_player_cards 855
+add_team 260
+get_partial_spirit 470
+get_player_cards 470
+get_partial_spirit 470
+get_partial_spirit 764
+get_partial_spirit 764
+add_player_cards 470 765
+get_ith_pointless_ability 0
+add_player 832 188 1,3,5,4,2 847 6168 775 false
+get_partial_spirit 832
+add_player 392 577 3,4,2,5,1 188 7956 737 false
+get_partial_spirit 462
+get_partial_spirit 392
+add_player_cards 832 805
+get_player_cards 89
+get_team_points 845
+get_team_points 260
+get_partial_spirit 764
+get_ith_pointless_ability 1
+remove_team 260
+get_partial_spirit 764
+add_player 53 37 3,1,5,4,2 276 1940 792 false
+get_player_cards 764
+get_team_points 188
+add_player_cards 764 210
+add_team 773
+remove_team 352
+get_partial_spirit 832
+get_partial_spirit 53
+get_partial_spirit 392
+add_team 150
+get_partial_spirit 462
+add_player 584 37 3,2,1,4,5 851 4668 925 false
+add_player 116 845 2,4,3,1,5 593 8269 446 false
+get_partial_spirit 462
+get_partial_spirit 116
+add_team 860
+get_partial_spirit 832
+get_player_cards 596
+get_partial_spirit 392
+remove_team 860
+get_partial_spirit 392
+get_player_cards 89
+get_ith_pointless_ability 4
+get_partial_spirit 392
+remove_team 845
+add_player 119 150 1,4,3,5,2 717 9850 766 false
+get_partial_spirit 584
+get_partial_spirit 832
+get_team_points 34
+get_ith_pointless_ability 2
+get_team_points 577
+get_player_cards 392
+add_player_cards 584 770
+get_ith_pointless_ability 1
+get_partial_spirit 584
+get_partial_spirit 462
+get_partial_spirit 392
+get_team_points 37
+get_partial_spirit 392
+get_partial_spirit 119
+get_partial_spirit 119
+get_player_cards 584
+get_ith_pointless_ability 4
+get_ith_pointless_ability 4
+get_ith_pointless_ability 0
+get_partial_spirit 832
+get_ith_pointless_ability 1
+get_partial_spirit 53
+get_player_cards 832
+add_player_cards 584 969
+add_player_cards 53 274
+get_partial_spirit 392
+add_team 881
+remove_team 577
+get_partial_spirit 462
+add_player_cards 462 620
+add_player_cards 462 72
+get_partial_spirit 832
+get_ith_pointless_ability 3
+get_team_points 773
+get_ith_pointless_ability 4
+get_player_cards 470
+remove_team 773
+get_partial_spirit 462
+get_partial_spirit 832
+remove_team 188
+get_partial_spirit 119
+add_team 97
+get_partial_spirit 584
+remove_team 150
+add_player_cards 462 579
+add_player 970 881 5,4,1,2,3 742 6469 450 false
+get_partial_spirit 970
+add_team 936
+get_partial_spirit 970
+add_player_cards 970 34
+get_player_cards 584
+get_player_cards 119
+get_partial_spirit 53
+get_partial_spirit 462
+add_player_cards 53 246
+remove_team 37
+remove_team 97
+get_partial_spirit 970
+remove_team 34
+get_player_cards 596
+add_player_cards 970 329
+add_team 199
+get_partial_spirit 970
+add_team 974
+add_team 278
+remove_team 936
+get_player_cards 970
+get_partial_spirit 970
+add_team 111
+add_player 623 278 1,2,5,4,3 969 8091 285 false
+get_player_cards 623
+get_partial_spirit 970
+add_team 327
+get_partial_spirit 970
+remove_team 974
+get_partial_spirit 623
+get_partial_spirit 970
+add_player_cards 623 606
+add_player_cards 623 801
+get_partial_spirit 970
+remove_team 199
+get_player_cards 832
+add_player 131 881 1,5,4,3,2 600 1385 146 false
+add_player 398 278 3,5,2,1,4 566 7822 565 false
+add_player 135 881 2,4,5,1,3 105 8093 183 false
+add_player 100 327 4,2,5,3,1 724 2606 576 false
+add_team 588
+get_team_points 588
+get_team_points 278
+get_partial_spirit 970
+add_team 477
+get_partial_spirit 100
+add_player 685 881 1,3,2,4,5 135 8606 230 false
+get_partial_spirit 135
+add_team 724
+remove_team 588
+get_ith_pointless_ability 5
+add_player_cards 398 638
+get_partial_spirit 970
+get_partial_spirit 623
+get_team_points 111
+get_partial_spirit 685
+get_player_cards 131
+add_player 632 327 5,1,4,3,2 419 1561 213 false
+get_team_points 477
+add_player 130 111 2,4,5,1,3 450 9096 397 false
+get_ith_pointless_ability 1
+get_player_cards 685
+get_partial_spirit 398
+get_partial_spirit 632
+get_partial_spirit 131
+add_player_cards 135 36
+get_player_cards 685
+get_partial_spirit 685
+add_player 996 327 4,2,5,3,1 672 319 769 false
+get_partial_spirit 623
+get_player_cards 855
+get_ith_pointless_ability 0
+get_partial_spirit 623
+get_partial_spirit 100
+add_player_cards 632 752
+get_partial_spirit 100
+get_partial_spirit 632
+get_partial_spirit 996
+get_partial_spirit 996
+get_partial_spirit 970
+get_partial_spirit 632
+get_partial_spirit 131
+add_team 552
+add_player_cards 131 301
+get_player_cards 135
+get_partial_spirit 970
+add_team 623
+get_partial_spirit 623
+get_partial_spirit 398
+get_partial_spirit 398
+get_partial_spirit 130
+get_team_points 327
+get_player_cards 131
+get_partial_spirit 996
+get_partial_spirit 131
+remove_team 724
+get_team_points 278
+get_ith_pointless_ability 1
+get_team_points 327
+get_player_cards 131
+add_player 370 111 3,1,4,2,5 547 5195 481 false
+get_partial_spirit 623
+add_player_cards 623 493
+get_player_cards 685
+add_player_cards 131 816
+add_team 614
+add_player 705 111 4,5,2,3,1 465 2039 330 false
+get_partial_spirit 131
+remove_team 327
+add_player_cards 131 388
+add_player_cards 970 224
+add_player 583 477 4,3,5,1,2 300 8802 428 false
+add_team 775
+add_player_cards 370 255
+get_team_points 552
+get_team_points 623
+get_partial_spirit 623
+get_partial_spirit 135
+remove_team 614
+get_partial_spirit 130
+add_player_cards 370 414
+get_ith_pointless_ability 6
+get_partial_spirit 370
+get_player_cards 398
+add_team 114
+get_partial_spirit 130
+get_team_points 278
+get_partial_spirit 970
+get_partial_spirit 130
+get_team_points 278
+get_ith_pointless_ability 7
+get_team_points 552
+add_player 542 114 4,5,2,3,1 724 1827 457 false
+get_ith_pointless_ability 0
+add_player 553 111 5,1,3,2,4 438 450 418 false
+get_player_cards 623
+remove_team 775
+get_team_points 623
+add_player_cards 583 346
+add_player 636 552 4,1,5,2,3 402 3819 273 false
+get_player_cards 398
+get_partial_spirit 130
+get_ith_pointless_ability 5
+add_player 622 477 2,4,5,3,1 688 8187 6 false
+get_ith_pointless_ability 0
+remove_team 881
+get_player_cards 398
+get_ith_pointless_ability 1
+get_team_points 114
+get_player_cards 731
+get_partial_spirit 623
+add_player_cards 553 240
+get_player_cards 164
+get_partial_spirit 636
+remove_team 477
+remove_team 278
+get_partial_spirit 553
+add_team 105
+get_team_points 111
+add_player_cards 553 190
+add_player_cards 130 367
+get_partial_spirit 705
+get_partial_spirit 636
+add_player_cards 542 153
+get_partial_spirit 705
+get_team_points 114
+get_partial_spirit 636
+add_team 139
+get_partial_spirit 370
+get_partial_spirit 636
+add_player 585 105 5,4,2,3,1 520 2091 370 false
+get_partial_spirit 585
+get_partial_spirit 370
+get_ith_pointless_ability 4
+get_partial_spirit 370
+add_team 14
+add_player 834 139 5,1,2,4,3 856 8521 753 false
+get_partial_spirit 585
+get_partial_spirit 636
+add_player 771 105 3,4,1,5,2 5 8894 702 false
+get_ith_pointless_ability 6
+get_partial_spirit 834
+get_partial_spirit 553
+get_partial_spirit 585
+get_partial_spirit 705
+add_player_cards 130 399
+add_team 128
+remove_team 14
+remove_team 111
+get_ith_pointless_ability 3
+add_team 464
+get_partial_spirit 771
+get_player_cards 131
+add_team 23
+get_partial_spirit 834
+add_player 598 139 2,3,1,4,5 302 854 837 false
+get_partial_spirit 771
+get_player_cards 585
+get_partial_spirit 771
+get_partial_spirit 771
+get_partial_spirit 771
+get_team_points 623
+get_partial_spirit 636
+get_player_cards 130
+get_partial_spirit 598
+get_player_cards 585
+get_partial_spirit 585
+get_partial_spirit 585
+get_team_points 23
+remove_team 623
+get_partial_spirit 636
+get_partial_spirit 542
+get_partial_spirit 771
+get_partial_spirit 636
+get_partial_spirit 636
+get_partial_spirit 542
+get_ith_pointless_ability 5
+add_player 723 114 4,5,1,2,3 728 8132 330 false
+get_partial_spirit 771
+remove_team 139
+get_partial_spirit 585
+add_player 40 128 4,1,3,5,2 590 2676 52 false
+remove_team 128
+get_ith_pointless_ability 4
+get_partial_spirit 542
+get_partial_spirit 542
+get_partial_spirit 723
+get_partial_spirit 771
+get_partial_spirit 771
+get_partial_spirit 585
+get_partial_spirit 542
+get_team_points 23
+get_partial_spirit 542
+get_team_points 464
+get_ith_pointless_ability 2
+get_partial_spirit 585
+add_team 551
+get_partial_spirit 723
+get_partial_spirit 723
+add_player 400 105 3,2,1,5,4 675 1169 507 false
+add_team 496
+add_player 64 552 5,4,2,1,3 657 1066 504 false
+remove_team 464
+get_partial_spirit 771
+get_partial_spirit 585
+get_player_cards 596
+get_partial_spirit 400
+get_partial_spirit 690
+add_player 386 717 4,2,1,3,5 922 4853 945 false
+get_partial_spirit 398
+add_team 47
+get_partial_spirit 723
+get_team_points 552
+add_player 355 105 3,2,4,5,1 205 3328 95 false
+get_partial_spirit 400
+remove_team 551
+remove_team 47
+get_partial_spirit 371
+get_partial_spirit 294
+get_partial_spirit 251
+play_match 114 552
+play_match 452 552
+get_player_cards 723
+add_player_cards 723 975
+play_match 105 23
+add_team 496
+get_partial_spirit 723
+add_player_cards 355 586
+get_ith_pointless_ability 1
+add_team 799
+get_partial_spirit 355
+remove_team 799
+add_team 367
+get_team_points 105
+get_partial_spirit 771
+get_partial_spirit 355
+get_partial_spirit 723
+get_partial_spirit 355
+get_partial_spirit 585
+add_team 114
+remove_team 105
+get_partial_spirit 5
+get_partial_spirit 723
+get_ith_pointless_ability -12
+play_match 367 23
+add_player 329 410 1,5,2,4,3 737 934 905 false
+get_team_points 552
+get_partial_spirit 64
+get_partial_spirit 493
+get_partial_spirit 632
+add_team 940
+add_player 708 496 3,2,4,5,1 948 386 749 false
+add_team 23
+get_partial_spirit 335
+add_team 23
+get_ith_pointless_ability 140
+get_ith_pointless_ability 534
+get_player_cards 383
+get_partial_spirit 636
+add_team 898
+add_player 624 552 2,5,3,1,4 654 5573 747 false
+get_player_cards 769
+get_ith_pointless_ability 317
+get_partial_spirit 337
+play_match 953 552
+get_partial_spirit 15
+add_player_cards 636 383
+add_team 940
+add_player 131 425 4,2,3,5,1 516 2538 702 false
+get_partial_spirit 287
+get_partial_spirit 400
+get_player_cards 708
+get_partial_spirit 542
+add_player 228 592 5,2,3,1,4 344 1446 695 false
+get_partial_spirit 731
+get_partial_spirit 219
+get_ith_pointless_ability 2
+get_partial_spirit 553
+get_partial_spirit 636
+get_partial_spirit 708
+get_partial_spirit 64
+play_match 40 940
+play_match 496 377
+get_partial_spirit 598
+remove_team 552
+add_team 704
+remove_team 940
+add_player_cards 598 904
+get_partial_spirit 542
+add_team 4
+play_match 114 367
+play_match 496 447
+get_player_cards 589
+get_partial_spirit 150
+add_team 114
+get_player_cards 553
+add_player 183 454 3,5,1,2,4 707 7099 569 false
+get_partial_spirit 350
+add_player 358 4 3,4,2,5,1 15 1949 304 false
+add_player 54 23 1,2,4,5,3 251 2341 629 false
+get_partial_spirit 723
+play_match 704 898
+get_player_cards 542
+get_partial_spirit 370
+play_match 114 4
+get_partial_spirit 470
+add_player_cards 54 941
+add_player 250 704 3,5,4,2,1 539 8477 658 false
+get_partial_spirit 250
+get_partial_spirit 131
+get_partial_spirit 764
+get_partial_spirit 462
+get_partial_spirit 54
+get_player_cards 334
+get_partial_spirit 949
+add_team 898
+get_partial_spirit 542
+get_partial_spirit 250
+get_partial_spirit 54
+get_player_cards 723
+remove_team 4
+remove_team 367
+play_match 23 114
+remove_team 786
+add_player_cards 203 771
+add_player_cards 553 973
+add_player 391 23 3,2,4,5,1 805 5757 704 false
+get_partial_spirit 855
+get_team_points 496
+remove_team 114
+get_partial_spirit 250
+get_ith_pointless_ability 339
+get_player_cards 391
+get_partial_spirit 40
+add_player 64 23 4,1,5,2,3 648 4565 239 false
+add_team 704
+get_player_cards 581
+get_partial_spirit 416
+get_partial_spirit 708
+play_match 23 704
+get_partial_spirit 391
+play_match 29 471
+get_partial_spirit 708
+remove_team 862
+add_team 23
+get_partial_spirit 250
+get_partial_spirit 309
+get_team_points 704
+get_ith_pointless_ability -3
+get_team_points 195
+get_partial_spirit 250
+get_ith_pointless_ability 671
+get_partial_spirit 687
+get_player_cards 542
+add_player_cards 53 458
+get_player_cards 741
+add_player 636 800 2,1,4,3,5 97 6137 832 false
+add_team 496
+add_player 855 704 3,4,2,5,1 617 9750 640 false
+play_match 496 704
+get_partial_spirit 54
+get_ith_pointless_ability 0
+get_partial_spirit 708
+get_partial_spirit 391
+get_player_cards 913
+remove_team 76
+get_ith_pointless_ability 2
+get_partial_spirit 622
+get_partial_spirit 869
+get_partial_spirit 200
+get_partial_spirit 391
+get_ith_pointless_ability 1
+add_player_cards 558 127
+get_partial_spirit 391
+get_partial_spirit 708
+remove_team 901
+get_partial_spirit 771
+add_player 296 898 2,5,4,3,1 36 4773 283 false
+get_partial_spirit 296
+add_player_cards 54 133
+add_player 410 704 4,3,2,1,5 45 6447 125 false
+remove_team 23
+remove_team 192
+get_partial_spirit 9
+get_ith_pointless_ability -7
+get_ith_pointless_ability 0
+add_player_cards 296 413
+get_partial_spirit 410
+play_match 496 704
+get_partial_spirit 690
+add_player_cards 250 518
+get_team_points 496
+get_partial_spirit 708
+get_partial_spirit 296
+get_partial_spirit 724
+get_partial_spirit 250
+get_partial_spirit 708
+get_partial_spirit 584
+add_player_cards 296 278
+remove_team 6
+get_partial_spirit 410
+add_team 704
+get_partial_spirit 296
+get_team_points 898
+play_match 898 496
+add_player 761 156 5,1,4,2,3 583 3687 848 false
+add_player_cards 731 310
+get_player_cards 250
+get_ith_pointless_ability 4
+get_partial_spirit 296
+get_partial_spirit 355
+get_partial_spirit 708
+get_partial_spirit 250
+get_partial_spirit 708
+play_match 704 496
+get_team_points 704
+get_partial_spirit 577
+add_team 704
+get_team_points 704
+get_partial_spirit 583
+add_player_cards 296 653
+get_partial_spirit 350
+remove_team 898
+get_partial_spirit 952
+get_partial_spirit 250
+get_ith_pointless_ability 1
+get_partial_spirit 410
+get_partial_spirit 462
+get_partial_spirit 338
+add_player_cards 410 825
+remove_team 407
+get_partial_spirit 410
+get_player_cards 708
+get_partial_spirit 624
+get_partial_spirit 832
+get_team_points 704
+get_player_cards 622
+add_team 496
+get_player_cards 540
+get_partial_spirit 832
+get_partial_spirit 970
+add_team 966
+get_partial_spirit 984
+get_partial_spirit 410
+get_team_points 462
+get_partial_spirit 296
+get_player_cards 598
+add_team 496
+get_partial_spirit 571
+play_match 890 496
+get_partial_spirit 119
+get_partial_spirit 410
+get_partial_spirit 771
+get_team_points 955
+remove_team 374
+get_partial_spirit 708
+add_team 147
+add_team 821
+remove_team 496
+get_partial_spirit 410
+get_partial_spirit 410
+get_player_cards 708
+remove_team 147
+get_team_points 966
+get_team_points 704
+get_ith_pointless_ability 1
+get_partial_spirit 250
+get_team_points 966
+add_player_cards 250 487
+get_partial_spirit 250
+get_partial_spirit 410
+get_ith_pointless_ability 2
+add_player_cards 250 416
+get_player_cards 410
+add_player 959 966 3,1,4,2,5 351 4110 737 false
+get_partial_spirit 410
+add_player_cards 959 962
+get_ith_pointless_ability 0
+get_partial_spirit 250
+add_player_cards 959 179
+add_team 992
+get_partial_spirit 410
+remove_team 992
+get_ith_pointless_ability 2
+add_player_cards 959 45
+add_player 601 966 3,2,1,4,5 741 9551 694 false
+get_ith_pointless_ability 2
+get_player_cards 130
+get_partial_spirit 959
+get_partial_spirit 959
+get_partial_spirit 410
+get_player_cards 410
+add_player_cards 959 193
+get_partial_spirit 601
+add_team 559
+get_partial_spirit 959
+get_partial_spirit 959
+get_partial_spirit 250
+remove_team 559
+get_partial_spirit 250
+get_player_cards 410
+add_player_cards 410 121
+get_partial_spirit 601
+get_team_points 821
+get_partial_spirit 959
+get_partial_spirit 959
+get_team_points 821
+get_partial_spirit 601
+get_partial_spirit 250
+get_partial_spirit 410
+add_player_cards 250 363
+add_player 619 821 1,4,2,5,3 608 3939 664 false
+add_player_cards 410 26
+get_ith_pointless_ability 2
+get_team_points 704
+remove_team 966
+get_partial_spirit 250
+remove_team 821
+add_player_cards 250 173
+get_partial_spirit 410
+remove_team 704
+add_team 836
+add_player 384 836 2,4,1,5,3 127 4097 96 false
+get_team_points 836
+get_partial_spirit 384
+get_team_points 836
+get_partial_spirit 384
+get_player_cards 384
+add_player_cards 384 768
+get_partial_spirit 384
+get_partial_spirit 384
+get_partial_spirit 384
+add_team 204
+get_partial_spirit 384
+get_partial_spirit 384
+remove_team 836
+add_team 135
+get_team_points 204
+add_player 726 204 3,4,2,1,5 681 1150 804 false
+get_player_cards 391
+get_player_cards 619
+get_partial_spirit 726
+remove_team 135
+add_player 983 204 1,4,5,3,2 701 8843 995 false
+add_team 784
+get_partial_spirit 726
+get_partial_spirit 983
+get_team_points 784
+remove_team 784
+get_player_cards 624
+get_partial_spirit 983
+add_player_cards 983 300
+get_partial_spirit 983
+get_team_points 204
+add_player 753 204 1,4,2,5,3 450 634 962 false
+get_ith_pointless_ability 0
+get_partial_spirit 726
+get_partial_spirit 753
+get_ith_pointless_ability 0
+get_team_points 204
+get_team_points 204
+get_partial_spirit 983
+get_player_cards 392
+add_team 208
+get_team_points 204
+get_partial_spirit 753
+get_ith_pointless_ability 1
+add_player 994 204 2,1,5,4,3 968 9415 948 false
+add_player 781 204 1,3,2,4,5 448 1660 316 false
+get_ith_pointless_ability 1
+get_player_cards 753
+get_partial_spirit 726
+add_player_cards 753 614
+get_player_cards 636
+add_team 498
+add_team 889
+get_partial_spirit 726
+get_player_cards 596
+add_team 549
+get_partial_spirit 983
+remove_team 498
+get_partial_spirit 726
+add_player_cards 781 137
+get_partial_spirit 726
+get_partial_spirit 983
+add_player 365 889 5,3,1,4,2 633 8904 12 false
+add_player 438 889 4,3,2,5,1 915 2784 807 false
+add_player 746 204 1,3,5,4,2 884 7651 900 false
+add_team 334
+get_player_cards 984
+add_player 862 334 4,5,1,2,3 61 9990 266 false
+add_team 868
+add_team 240
+get_player_cards 438
+add_team 487
+add_player_cards 753 203
+get_player_cards 708
+get_partial_spirit 746
+get_partial_spirit 994
+add_player 326 204 5,2,4,1,3 410 6396 286 false
+add_team 213
+get_partial_spirit 983
+add_team 399
+get_partial_spirit 994
+get_partial_spirit 365
+add_team 961
+remove_team 208
+get_partial_spirit 983
+get_team_points 961
+add_team 659
+get_team_points 204
+get_team_points 868
+get_partial_spirit 983
+get_partial_spirit 862
+get_partial_spirit 781
+add_player 3 399 1,4,2,5,3 393 5655 297 false
+get_partial_spirit 326
+get_team_points 961
+get_ith_pointless_ability 5
+get_partial_spirit 994
+get_partial_spirit 781
+get_partial_spirit 326
+get_partial_spirit 326
+get_partial_spirit 781
+add_player 442 868 4,1,3,5,2 151 2537 509 false
+get_partial_spirit 3
+add_player_cards 983 176
+add_player 668 399 2,1,5,3,4 290 9479 1000 false
+add_player_cards 668 962
+get_partial_spirit 753
+get_partial_spirit 326
+get_ith_pointless_ability 4
+get_partial_spirit 781
+get_partial_spirit 726
+add_player 279 334 2,5,1,3,4 317 7195 780 false
+get_partial_spirit 746
+get_partial_spirit 365
+add_team 734
+add_team 140
+get_ith_pointless_ability 6
+get_partial_spirit 994
+get_partial_spirit 726
+add_team 311
+get_team_points 204
+get_partial_spirit 753
+get_partial_spirit 781
+get_partial_spirit 862
+get_partial_spirit 994
+get_ith_pointless_ability 4
+add_team 398
+add_team 52
+get_partial_spirit 862
+add_team 141
+add_player 754 398 4,2,3,1,5 238 8073 580 false
+get_partial_spirit 438
+get_team_points 52
+get_partial_spirit 753
+add_team 567
+get_partial_spirit 438
+add_player_cards 365 315
+get_partial_spirit 3
+add_team 709
+get_partial_spirit 3
+get_player_cards 438
+get_partial_spirit 983
+get_player_cards 135
+get_player_cards 131
+get_partial_spirit 746
+remove_team 240
+remove_team 140
+get_partial_spirit 442
+get_partial_spirit 438
+get_player_cards 135
+get_partial_spirit 438
+get_player_cards 326
+get_partial_spirit 726
+remove_team 567
+add_player_cards 746 851
+get_partial_spirit 726
+get_ith_pointless_ability 4
+get_partial_spirit 781
+add_player 537 311 5,3,4,2,1 445 4676 777 false
+get_partial_spirit 668
+get_player_cards 961
+get_player_cards 326
+get_partial_spirit 668
+get_partial_spirit 754
+get_player_cards 781
+get_partial_spirit 365
+get_partial_spirit 994
+get_partial_spirit 726
+get_partial_spirit 862
+get_team_points 709
+get_partial_spirit 668
+remove_team 961
+add_player_cards 279 664
+add_player_cards 438 775
+get_partial_spirit 746
+get_partial_spirit 746
+get_ith_pointless_ability 1
+add_player_cards 726 581
+add_player 734 52 2,4,3,1,5 775 111 466 false
+get_ith_pointless_ability 12
+add_team 681
+get_player_cards 131

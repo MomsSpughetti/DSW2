@@ -87,7 +87,7 @@ public:
       // extra_b_new = extra_a_old + extra_b_old
       Obj_2Root->extra = Obj_2Root->extra;
       // extra_a_new = extra_a_old - extra_b_new
-      Obj_1Root->extra = Obj_1Root->extra - Obj_2Root->extra;
+      //Obj_1Root->extra = Obj_1Root->extra - Obj_2Root->extra;
 
       //additional calculations
       Obj_1Root->extra.extraCalc(Obj_2Root->extra);
@@ -198,6 +198,7 @@ private:
   Extra FindSumOfExtrasFromNode_x_ToRoot(NodeExtra<Key, Data, Extra> *x)
   {
     Extra sum;
+    sum.Initialize(x->extra.player_);
     NodeExtra<Key, Data, Extra> *temp = x; // no need for temp, but looks nicer with it
     while (temp)
     {
@@ -206,7 +207,6 @@ private:
     }
     return sum;
   }
-
   void updateExtrasFromNode_x_ToRoot(NodeExtra<Key, Data, Extra> *x)
   {
 

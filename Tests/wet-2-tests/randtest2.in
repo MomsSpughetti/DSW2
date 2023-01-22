@@ -1,0 +1,1000 @@
+add_team 5975
+add_player 4655 5975 4,1,3,2,5 3083 7617 4874 false
+add_player 165 5975 5,1,2,4,3 5894 9713 7166 false
+remove_team 5975
+add_team 6044
+add_team 2654
+add_player 7202 2654 4,5,1,3,2 5220 8955 6845 false
+remove_team 6044
+add_player 7698 2654 5,3,2,4,1 612 2395 9054 false
+add_player 4734 2654 4,3,2,1,5 6932 3760 7267 false
+add_player 7435 2654 5,4,3,1,2 1335 8062 1274 false
+remove_team 2654
+add_team 7821
+remove_team 7821
+add_team 3410
+add_team 1842
+add_player 7071 1842 3,5,4,2,1 4142 8631 5415 false
+add_player 1827 3410 2,4,1,5,3 2869 9925 3432 false
+remove_team 3410
+add_team 1501
+add_team 226
+add_player 6457 1501 4,3,5,1,2 2819 7383 6029 false
+add_player 8186 1501 4,1,3,5,2 9984 991 7352 false
+remove_team 226
+remove_team 1501
+add_team 1777
+add_player 8247 1777 2,3,5,1,4 4309 8191 316 false
+add_player 789 1842 1,2,5,4,3 7982 5700 636 false
+add_team 1535
+add_team 4580
+add_player 7230 4580 4,3,1,5,2 984 7744 2585 false
+add_team 7190
+add_team 8579
+add_player 7542 8579 2,1,4,3,5 8343 1470 7671 false
+add_team 3496
+add_player 4180 8579 4,5,3,2,1 2943 4228 613 false
+remove_team 1535
+add_team 7923
+add_player 1572 4580 2,4,1,5,3 7817 8026 7755 false
+remove_team 1842
+add_player 9784 7923 5,1,2,4,3 7282 8068 7324 false
+add_player 9542 7190 2,4,5,1,3 3875 7753 1639 false
+remove_team 7190
+add_player 5645 4580 2,3,5,1,4 9071 5851 7983 false
+add_player 483 3496 1,5,3,2,4 6191 1983 2858 false
+remove_team 8579
+add_player 4591 4580 5,1,3,4,2 7147 9488 4943 false
+remove_team 7923
+add_team 3304
+add_team 6906
+add_team 4099
+remove_team 3496
+add_team 3332
+add_player 1764 4099 1,3,5,2,4 1716 5116 9406 false
+remove_team 4099
+remove_team 6906
+add_team 5235
+add_player 6039 1777 2,4,3,5,1 3077 6141 5739 false
+add_player 7849 4580 4,5,2,3,1 814 3605 1853 false
+add_team 116
+add_player 8147 3304 1,5,2,3,4 5289 4209 3987 false
+remove_team 3332
+add_player 1816 4580 3,2,5,1,4 5687 3466 4590 false
+remove_team 1777
+remove_team 5235
+add_team 3538
+add_player 4516 116 2,4,3,1,5 3810 7881 5282 false
+add_player 9264 3304 2,5,3,1,4 7782 1551 8959 false
+remove_team 3538
+remove_team 116
+add_team 3505
+add_player 1134 3304 4,2,1,5,3 8651 7081 1189 false
+add_team 645
+add_player 5066 3304 4,5,3,2,1 1730 9224 9102 false
+add_player 7649 645 1,4,5,2,3 7463 5940 699 false
+add_player 7708 3304 1,4,5,2,3 6363 899 7202 false
+add_team 3892
+add_player 2471 645 4,1,3,2,5 544 5454 335 false
+add_team 8724
+add_team 7111
+add_player 3815 8724 3,4,2,5,1 662 3517 8152 false
+remove_team 4580
+add_player 1573 7111 1,5,2,4,3 7144 9662 7365 false
+remove_team 645
+add_team 408
+add_team 512
+remove_team 3892
+remove_team 408
+remove_team 7111
+add_player 883 8724 4,2,3,1,5 9172 5871 6587 false
+add_team 6639
+remove_team 6639
+add_team 8407
+add_player 7090 8724 1,5,3,4,2 5083 207 9323 false
+add_team 733
+add_player 3107 3304 3,1,2,5,4 7089 2985 9339 false
+add_team 5978
+add_team 5876
+remove_team 5876
+add_team 9790
+add_player 7931 8407 3,4,1,2,5 284 1517 852 false
+remove_team 8407
+add_team 9432
+add_player 5472 733 3,4,2,1,5 8293 8397 4982 false
+add_player 9382 733 3,2,4,1,5 9843 4644 5466 false
+add_player 9229 733 3,5,4,1,2 9229 5680 4770 false
+remove_team 9790
+remove_team 3304
+add_team 9004
+add_team 3877
+remove_team 3505
+remove_team 3877
+add_team 7450
+add_team 3396
+remove_team 512
+remove_team 9004
+add_player 2081 733 3,2,5,4,1 4186 5948 9989 false
+add_player 847 7450 1,5,4,3,2 7258 364 707 false
+add_team 6950
+add_team 2466
+add_player 1318 6950 4,5,2,3,1 8027 3828 7784 false
+add_team 8285
+remove_team 9432
+add_player 8604 6950 2,1,5,4,3 5966 1667 7220 false
+add_team 1113
+add_player 5343 8724 4,3,5,1,2 6732 2615 3264 false
+add_team 6622
+add_player 7905 8724 1,3,2,5,4 5350 8602 2448 false
+add_player 4766 8285 4,5,1,3,2 9080 6956 6737 false
+add_player 8398 3396 2,1,3,5,4 6399 9267 9438 false
+add_player 4741 7450 2,1,5,3,4 4711 320 2331 false
+remove_team 7450
+add_team 1648
+add_team 4630
+add_player 9366 4630 3,5,2,1,4 4626 1399 1249 false
+add_team 432
+add_player 5431 3396 3,5,1,2,4 7983 1334 2798 false
+remove_team 8724
+add_team 2872
+add_team 4213
+remove_team 6950
+add_player 8309 3396 5,1,3,2,4 4815 3344 8840 false
+add_player 8907 5978 5,4,1,3,2 4991 9530 8157 false
+remove_team 5978
+add_player 2220 733 2,5,1,3,4 261 1551 9208 false
+remove_team 8285
+add_player 6664 1113 2,1,3,5,4 1371 5944 4687 false
+remove_team 1648
+add_player 4809 4630 3,4,1,2,5 1200 2619 7653 false
+add_team 781
+add_player 7544 4630 1,3,2,5,4 4456 1811 2208 false
+add_team 8926
+add_team 6129
+remove_team 2872
+add_team 1647
+remove_team 432
+remove_team 2466
+add_player 2519 4213 3,1,5,2,4 2320 9142 5689 false
+add_player 5469 1113 4,1,5,3,2 3647 5028 3330 false
+remove_team 6622
+add_player 948 1113 4,1,2,3,5 1345 3104 9337 false
+remove_team 1113
+add_team 4087
+remove_team 6129
+remove_team 4087
+add_player 370 8926 2,4,3,5,1 4962 8404 4133 false
+add_player 5419 8926 2,1,3,5,4 4218 2134 2023 false
+remove_team 4630
+remove_team 781
+add_team 5713
+add_player 8483 8926 4,3,1,5,2 2339 438 9844 false
+add_team 2701
+add_team 1581
+add_team 3327
+add_team 373
+add_player 7887 3327 3,2,4,5,1 4981 2550 2752 false
+add_team 7423
+add_player 6965 3327 1,2,5,3,4 3165 6730 465 false
+add_player 9110 3327 2,4,5,1,3 9151 9068 5131 false
+remove_team 733
+remove_team 5713
+add_player 6113 1581 2,4,5,3,1 5052 6659 4556 false
+add_team 7703
+add_team 6847
+remove_team 7703
+remove_team 2701
+remove_team 3396
+add_team 7771
+add_team 3315
+add_team 493
+remove_team 8926
+add_player 307 7423 5,3,2,1,4 7384 2202 9745 false
+add_team 4442
+add_team 9030
+remove_team 7423
+remove_team 493
+add_player 8564 1647 3,1,2,5,4 9756 4499 2945 false
+add_player 5685 9030 2,3,1,5,4 7681 1135 1792 false
+add_player 9759 1647 4,2,5,3,1 3673 727 9062 false
+remove_team 4442
+remove_team 4213
+remove_team 7771
+add_player 2561 9030 1,3,4,5,2 3401 7358 9183 false
+add_team 8711
+add_player 1731 3327 2,4,1,5,3 3472 1930 3101 false
+add_player 6588 3315 1,5,4,3,2 3671 6845 181 false
+remove_team 8711
+add_player 5054 1581 4,3,2,5,1 8634 8347 6252 false
+add_team 7310
+add_team 9310
+add_player 3333 3327 2,4,3,1,5 9221 6604 4958 false
+add_team 754
+add_team 8355
+remove_team 3315
+add_team 2308
+add_player 8711 8355 3,2,1,5,4 1420 2008 4352 false
+add_player 7374 1647 3,2,4,5,1 3338 5579 8471 false
+add_team 9657
+add_team 4144
+remove_team 6847
+remove_team 3327
+remove_team 373
+remove_team 8355
+add_player 9668 4144 4,2,3,5,1 8686 4232 5546 false
+remove_team 7310
+remove_team 1647
+add_player 979 4144 2,4,3,1,5 8686 6612 4289 false
+remove_team 1581
+remove_team 9030
+remove_team 2308
+remove_team 754
+remove_team 9310
+add_player 7512 4144 3,1,5,2,4 6272 3695 8029 false
+add_player 821 9657 1,3,5,2,4 9454 2997 7967 false
+add_team 9237
+add_team 4168
+add_player 8741 9237 5,3,4,2,1 9637 2974 4280 false
+add_team 5497
+remove_team 4168
+add_player 5975 9657 4,3,5,2,1 5301 1209 4350 false
+remove_team 9657
+add_player 4841 5497 1,5,4,3,2 6910 2224 6540 false
+add_player 8109 5497 2,3,4,1,5 1539 3231 8306 false
+add_player 93 5497 4,2,1,5,3 5017 7202 8689 false
+add_player 3139 9237 4,3,5,1,2 9022 5426 3716 false
+add_team 4771
+add_player 495 9237 1,3,4,5,2 8798 7775 9985 false
+add_team 3811
+add_player 4619 4144 5,1,4,3,2 5352 4855 481 false
+add_team 4317
+add_player 8949 5497 3,2,5,1,4 1575 3342 7712 false
+remove_team 4144
+remove_team 9237
+add_player 7097 4317 1,2,5,4,3 9102 6728 7479 false
+add_team 3156
+remove_team 4771
+add_team 1953
+add_team 6377
+add_team 8817
+add_team 7152
+remove_team 6377
+remove_team 5497
+add_team 3689
+add_team 5446
+remove_team 4317
+remove_team 3156
+add_player 3865 5446 4,3,5,1,2 3884 5316 9593 false
+add_player 4909 8817 1,5,2,3,4 3364 6861 2888 false
+add_team 667
+remove_team 3811
+remove_team 7152
+add_player 6408 8817 5,4,2,3,1 6196 5182 4115 false
+remove_team 3689
+add_team 5507
+add_team 7317
+add_team 1047
+add_player 161 7317 3,1,2,4,5 9979 113 2168 false
+remove_team 1953
+add_team 4618
+add_player 7146 1047 3,2,5,1,4 877 8588 3163 false
+add_team 8598
+add_player 6154 1047 2,5,4,3,1 4442 7451 4661 false
+remove_team 7317
+remove_team 4618
+remove_team 667
+add_player 9031 8817 5,2,1,3,4 9868 4932 7261 false
+remove_team 8817
+add_team 6681
+add_team 7616
+add_player 5804 5507 5,3,1,4,2 9440 3520 2339 false
+remove_team 6681
+add_player 150 5507 3,1,4,2,5 582 3399 8893 false
+add_player 5406 1047 4,1,2,3,5 458 8495 2671 false
+add_player 8355 5507 3,2,5,1,4 7726 672 4628 false
+add_player 194 1047 3,1,2,4,5 2340 9829 167 false
+add_team 4051
+remove_team 8598
+add_player 6872 5507 3,1,5,4,2 4917 998 536 false
+add_player 7564 5446 2,1,4,3,5 8069 3735 9874 false
+remove_team 7616
+remove_team 1047
+add_team 1175
+add_team 8348
+add_player 3256 4051 1,5,2,3,4 8449 6307 6424 false
+add_player 2262 5446 2,3,1,4,5 4563 3990 2487 false
+add_player 717 4051 1,4,3,2,5 3646 6231 8303 false
+remove_team 8348
+add_team 6196
+add_player 2398 5446 2,1,4,3,5 2190 4751 3543 false
+remove_team 1175
+add_team 1372
+add_player 2755 5446 5,3,1,2,4 4656 3025 5758 false
+remove_team 5507
+add_team 2255
+remove_team 4051
+add_player 4272 6196 4,1,2,3,5 5019 9718 7882 false
+remove_team 5446
+add_player 7800 6196 1,5,3,2,4 872 4361 9811 false
+add_player 6550 6196 3,4,5,2,1 2104 3921 3955 false
+remove_team 1372
+add_player 4206 6196 2,1,3,5,4 3025 8274 8085 false
+remove_team 2255
+add_player 5944 6196 5,2,4,1,3 6332 582 979 false
+add_player 9774 6196 2,1,3,4,5 2927 7767 231 false
+add_team 8397
+remove_team 6196
+remove_team 8397
+add_team 4968
+add_team 8409
+remove_team 8409
+add_player 2741 4968 2,4,5,1,3 4751 9004 134 false
+add_player 1002 4968 2,1,3,5,4 1165 4325 2683 false
+add_team 2991
+add_player 7660 4968 5,4,2,3,1 8566 9400 9795 false
+add_team 5026
+add_player 7150 4968 2,1,4,3,5 7999 8769 9219 false
+remove_team 2991
+add_player 8854 4968 5,3,4,2,1 2157 2255 8700 false
+add_team 4884
+add_team 1490
+add_team 7293
+add_player 1128 7293 2,3,5,1,4 5522 3359 8223 false
+add_team 7778
+add_player 6936 4968 5,1,3,4,2 1864 9026 5640 false
+remove_team 1490
+remove_team 4884
+remove_team 5026
+remove_team 7778
+remove_team 4968
+add_team 5051
+add_player 1338 7293 4,1,2,5,3 4705 2717 3380 false
+add_player 7429 5051 5,3,2,4,1 6348 2034 8808 false
+add_player 1703 7293 3,4,2,5,1 7844 9238 8170 false
+add_team 3673
+add_player 6405 3673 3,5,4,1,2 4316 541 4420 false
+remove_team 7293
+remove_team 5051
+add_player 1311 3673 2,4,1,5,3 1575 2899 8113 false
+add_player 9706 3673 1,3,2,5,4 1055 3508 1340 false
+add_player 6730 3673 1,4,3,5,2 951 4783 2109 false
+remove_team 3673
+add_team 9285
+add_player 7791 9285 2,5,3,1,4 9471 5549 1853 false
+remove_team 9285
+add_team 2233
+add_team 987
+add_player 7172 2233 3,2,5,1,4 8949 4912 1478 false
+add_team 2411
+add_player 6869 2233 5,4,2,1,3 8507 4512 4358 false
+remove_team 2411
+remove_team 987
+add_player 4225 2233 5,2,1,4,3 8529 1990 8340 false
+add_player 9831 2233 4,5,2,3,1 5567 6749 2888 false
+add_player 5426 2233 1,3,5,2,4 9422 7558 7954 false
+add_team 2548
+add_team 9958
+add_team 1879
+add_team 4424
+add_team 2979
+remove_team 4424
+add_player 3012 1879 5,1,2,4,3 4115 7526 6418 false
+add_player 1509 2233 3,1,4,5,2 4315 8466 6456 false
+add_player 3454 9958 3,2,4,1,5 3239 2315 9915 false
+add_player 9765 1879 3,5,4,2,1 3623 2876 8863 false
+remove_team 2548
+add_player 7297 1879 2,5,1,4,3 8378 6495 7278 false
+add_team 1842
+add_player 6411 1879 4,2,3,5,1 3584 1438 7567 false
+add_team 4668
+remove_team 1879
+remove_team 9958
+add_team 3088
+remove_team 4668
+add_player 9642 3088 1,2,3,5,4 8888 6597 4969 false
+remove_team 2979
+remove_team 3088
+add_team 2026
+add_team 1611
+add_team 7354
+remove_team 1842
+remove_team 2233
+remove_team 7354
+add_player 4328 1611 3,2,5,1,4 9400 7109 9413 false
+add_team 4686
+add_team 4145
+add_team 5583
+add_player 7331 4145 4,5,2,1,3 3212 3190 2903 false
+remove_team 2026
+add_player 7083 5583 3,4,1,5,2 6231 8725 9166 false
+add_team 941
+add_player 412 5583 3,2,5,4,1 8873 8775 6284 false
+remove_team 4686
+add_player 6285 1611 1,2,5,3,4 6313 7683 8005 false
+add_team 8973
+add_player 1000 5583 4,2,3,1,5 287 3301 5184 false
+add_player 2638 4145 5,4,1,2,3 1895 1784 7285 false
+add_team 9323
+add_player 6863 4145 1,2,5,3,4 2805 5772 5263 false
+add_team 3743
+add_team 1952
+add_player 3602 1952 3,4,5,1,2 6628 534 3618 false
+add_team 5525
+remove_team 3743
+remove_team 941
+remove_team 5583
+add_player 1137 1952 3,1,5,2,4 9441 1416 4229 false
+add_team 5499
+remove_team 5499
+add_player 1735 9323 2,5,1,4,3 6107 5112 7768 false
+add_player 2161 4145 3,1,4,5,2 3377 850 31 false
+add_team 5652
+remove_team 5525
+add_player 2500 1952 2,5,1,4,3 7180 2791 2775 false
+remove_team 4145
+add_player 4675 1952 1,2,4,3,5 8735 7082 7057 false
+remove_team 1611
+remove_team 9323
+add_team 6277
+add_team 8161
+add_player 2576 5652 4,1,3,2,5 5882 7368 326 false
+add_player 2925 1952 4,3,2,1,5 13 7609 7783 false
+add_player 2279 8973 2,5,1,3,4 4797 2331 4768 false
+add_player 2514 5652 3,5,1,4,2 6970 7163 4816 false
+add_team 2914
+remove_team 6277
+add_team 4230
+add_player 8354 8161 5,1,2,4,3 7485 4939 2717 false
+add_team 8530
+remove_team 4230
+add_player 9918 2914 1,5,2,3,4 6653 228 419 false
+add_team 4352
+add_player 4647 5652 5,3,2,4,1 5182 7169 2103 false
+remove_team 2914
+add_team 4382
+add_player 9708 1952 4,5,3,1,2 5054 3434 8525 false
+add_team 3639
+remove_team 4382
+remove_team 3639
+add_player 5417 5652 2,4,3,1,5 6931 7193 4621 false
+add_team 1653
+add_team 5493
+add_team 144
+remove_team 8973
+add_team 3694
+remove_team 1952
+remove_team 3694
+add_team 3525
+add_player 7436 4352 5,3,1,2,4 1628 4981 3622 false
+add_player 2252 4352 4,1,5,2,3 2027 1417 3563 false
+remove_team 5652
+add_player 2129 8530 4,1,2,5,3 5204 4381 642 false
+remove_team 3525
+remove_team 8161
+add_player 5094 5493 3,5,1,4,2 8647 2408 5786 false
+add_team 3029
+add_player 2510 3029 5,1,4,3,2 6331 7104 5099 false
+remove_team 5493
+add_team 5213
+add_player 3655 1653 2,1,3,5,4 7813 5775 1852 false
+remove_team 4352
+add_team 7601
+remove_team 8530
+add_player 1905 1653 5,2,3,4,1 5613 3493 4428 false
+add_team 5202
+remove_team 1653
+add_team 4355
+add_team 9192
+add_player 6765 3029 5,1,4,2,3 1280 3392 8864 false
+add_team 1313
+remove_team 5202
+remove_team 4355
+remove_team 7601
+add_team 9202
+add_team 9348
+add_team 6808
+add_player 7223 3029 4,5,1,3,2 3619 4895 1714 false
+add_team 6264
+add_player 4629 6264 5,2,1,3,4 849 4674 836 false
+add_team 7855
+add_player 2634 9348 5,2,4,3,1 7542 9913 1120 false
+add_team 274
+add_player 2196 1565 4,2,3,5,1 7943 4840 2110 false
+add_team 274
+remove_team 6009
+add_player 18 5349 1,5,4,2,3 3634 9536 551 false
+add_team 3955
+remove_team 4881
+add_team 3058
+add_team 3955
+add_player 4328 7855 5,2,1,3,4 3887 5971 4161 false
+remove_team 9202
+add_team 6547
+remove_team 3029
+remove_team 3058
+remove_team 5213
+remove_team 6733
+add_player 9044 7263 3,1,4,5,2 5126 7063 4857 false
+add_player 9205 6728 2,1,3,4,5 776 8463 6179 false
+add_team 6264
+add_player 1404 6547 5,1,3,2,4 4931 860 6295 false
+add_team 8766
+remove_team 800
+remove_team 3955
+add_player 1628 8766 3,1,4,5,2 6177 5071 4602 false
+add_team 6808
+add_team 7085
+add_team 830
+add_team 830
+add_team 8677
+remove_team 5949
+add_team 7855
+add_team 5108
+add_player 3068 6547 3,2,5,1,4 9351 225 6381 false
+add_team 2582
+add_team 2565
+add_player 4186 2565 1,3,5,4,2 1924 4627 6631 false
+remove_team 6199
+remove_team 274
+remove_team 9348
+add_player 1311 6547 2,1,4,5,3 8140 1188 8209 false
+add_team 5273
+add_player 1667 337 4,3,1,5,2 8978 9565 5581 false
+add_player 8971 830 5,2,3,1,4 5362 507 7851 false
+remove_team 334
+add_team 6808
+remove_team 8248
+add_player 2650 7319 5,2,1,3,4 3688 7417 3066 false
+add_team 6264
+remove_team 2582
+add_team 7855
+add_player 135 5108 4,2,3,1,5 9467 6252 2376 false
+add_player 1052 830 2,1,3,4,5 8972 4796 5602 false
+add_player 1137 8677 5,2,4,3,1 2484 5814 3347 false
+add_team 3564
+add_team 4595
+remove_team 8677
+add_team 9103
+add_player 3412 7085 1,2,3,4,5 8959 7480 7795 false
+add_player 2755 7436 4,3,5,1,2 2832 7687 5487 false
+add_team 6547
+add_player 4089 3564 3,4,5,1,2 9292 6730 5617 false
+add_player 9918 5108 1,2,5,3,4 4833 7573 1154 false
+add_team 2565
+add_team 8766
+add_team 4595
+add_player 194 6085 4,1,3,2,5 5074 896 2827 false
+add_team 4595
+add_team 2565
+add_team 5837
+add_team 5865
+add_team 2582
+add_team 7337
+remove_team 1457
+add_player 4978 830 1,5,4,2,3 5929 5711 3803 false
+add_team 7337
+add_player 7849 8527 4,2,3,5,1 1029 2198 7426 false
+add_team 2560
+add_team 3192
+add_team 7898
+remove_team 5837
+add_team 8460
+add_player 4082 2565 3,1,2,5,4 8640 4741 6698 false
+remove_team 534
+remove_team 830
+remove_team 2565
+remove_team 27
+add_player 7901 1007 1,2,3,5,4 7152 675 2758 false
+remove_team 4595
+add_player 7649 9103 3,5,4,2,1 5131 5458 3899 false
+add_player 3962 5273 3,4,2,1,5 2221 9582 6796 false
+add_player 5975 1806 3,2,4,5,1 1754 3544 3622 false
+remove_team 9192
+add_player 4572 3564 2,4,3,5,1 9649 1229 5168 false
+add_player 955 8402 1,4,3,5,2 6430 8841 9291 false
+add_team 3192
+add_player 4889 8460 2,1,4,3,5 7657 5124 5615 false
+add_player 8564 5701 4,3,2,1,5 5801 8033 6047 false
+remove_team 5669
+add_player 7690 4282 4,3,1,2,5 4262 8680 1029 false
+add_player 7083 7898 2,4,1,3,5 9838 3417 6657 false
+add_player 8907 4695 2,4,1,5,3 8400 1888 9186 false
+add_team 7337
+add_player 3348 8766 3,4,5,1,2 5201 3230 5587 false
+add_player 7905 5108 1,5,3,4,2 946 1960 3635 false
+remove_team 3192
+add_player 1218 6264 3,1,2,4,5 7464 3806 388 false
+remove_team 5383
+remove_team 6547
+remove_team 8766
+add_player 4192 43 5,3,1,4,2 5319 3830 3508 false
+remove_team 1295
+remove_team 1817
+add_team 7337
+remove_team 5897
+remove_team 3599
+add_player 7660 3195 5,3,1,2,4 9376 1710 523 false
+add_player 3838 655 1,4,2,3,5 7838 5258 8887 false
+add_player 2755 8460 3,5,1,2,4 4564 5265 7065 false
+add_team 5149
+add_team 5149
+add_player 6913 6264 4,5,3,1,2 8940 4505 5273 false
+add_player 2561 6264 4,5,3,1,2 914 4814 2614 false
+remove_team 2582
+remove_team 3424
+add_team 9103
+remove_team 144
+add_player 5677 7337 4,2,3,1,5 7703 9308 7310 false
+add_player 7172 3067 4,1,3,2,5 5789 9951 9023 false
+add_team 7586
+add_team 7337
+add_player 8387 7337 2,3,5,1,4 6151 4868 8296 false
+add_player 8147 1313 2,3,4,1,5 8809 7764 171 false
+remove_team 6888
+add_team 9103
+remove_team 5802
+add_player 1000 7898 2,1,4,5,3 6622 3862 9382 false
+remove_team 3564
+add_team 6808
+add_team 6153
+remove_team 1313
+add_player 7004 9103 3,2,1,4,5 1748 782 5276 false
+add_team 2560
+add_team 2363
+add_player 4532 3593 3,2,4,5,1 1782 1842 3333 false
+add_player 2690 5865 1,4,5,2,3 7785 5329 9927 false
+add_player 5707 6153 3,5,1,2,4 2503 2504 2267 false
+remove_team 7855
+add_team 7586
+add_team 2560
+add_team 6485
+add_player 3981 5273 5,3,1,2,4 6064 479 1416 false
+add_player 3012 7586 3,2,5,1,4 9816 7326 6757 false
+remove_team 7337
+add_player 9784 7898 3,1,5,2,4 7693 5804 1228 false
+add_team 6264
+add_team 9820
+add_player 5823 3265 1,3,4,5,2 360 8046 3473 false
+add_player 5921 7898 4,5,2,1,3 495 1694 1970 false
+remove_team 6264
+add_team 5108
+add_team 9466
+add_player 1827 5273 1,5,4,2,3 1348 6307 8302 false
+remove_team 7889
+remove_team 565
+add_team 341
+add_team 9721
+add_team 6153
+remove_team 9820
+add_player 5826 7898 4,5,1,3,2 2502 2589 7486 false
+add_team 7868
+add_player 5426 6491 4,2,3,5,1 2897 3592 8392 false
+remove_team 6146
+add_player 3256 6485 2,5,1,3,4 2757 2767 2615 false
+remove_team 9466
+add_player 3454 5273 2,3,1,4,5 8563 4076 5601 false
+remove_team 2363
+add_player 2765 7898 5,1,3,4,2 5150 7201 6112 false
+add_player 8354 5865 5,3,2,4,1 9817 5090 2552 false
+remove_team 6318
+add_player 1197 6619 1,2,3,4,5 1029 9564 6207 false
+add_team 7586
+add_team 5865
+remove_team 9103
+remove_team 6822
+add_team 1424
+remove_team 341
+add_team 6333
+add_team 6333
+add_player 8202 5108 3,5,1,2,4 4755 6011 2819 false
+add_team 7085
+add_player 150 3442 5,3,4,1,2 3938 2701 1191 false
+add_team 8460
+remove_team 6808
+add_team 4843
+remove_team 304
+add_player 6949 4843 4,3,1,5,2 4129 9130 3072 false
+remove_team 2154
+remove_team 6364
+add_player 9016 5149 5,4,3,2,1 7095 7212 3164 false
+remove_team 6710
+add_player 5248 7868 4,1,2,5,3 7317 6774 4930 false
+remove_team 2260
+add_player 2340 5108 2,1,3,4,5 7569 6126 3024 false
+remove_team 6153
+add_team 7773
+remove_team 2560
+remove_team 2158
+remove_team 7898
+add_player 9119 8460 2,5,1,3,4 5259 1243 8674 false
+remove_team 5273
+remove_team 5489
+add_player 1016 1326 2,4,3,1,5 2034 7371 1661 false
+add_team 9721
+remove_team 6333
+add_team 7868
+add_team 8692
+add_team 4670
+add_player 4088 7868 3,5,2,1,4 6339 6179 6455 false
+add_player 3491 5108 1,2,5,3,4 5851 5493 5340 false
+add_player 4351 5149 2,4,3,1,5 9487 2409 9729 false
+remove_team 2163
+remove_team 1954
+add_player 4225 7605 5,2,4,1,3 6298 6997 9897 false
+add_team 5108
+remove_team 2407
+remove_team 5865
+remove_team 6485
+remove_team 4959
+remove_team 7085
+add_team 7586
+add_player 6170 8692 4,1,2,3,5 8356 175 9899 false
+add_player 2638 5108 5,3,2,4,1 3824 7150 5511 false
+remove_team 7047
+add_team 2135
+add_team 740
+add_team 2135
+add_player 9556 5604 1,4,5,3,2 6211 4831 7256 false
+remove_team 2135
+remove_team 5108
+add_team 3769
+add_team 9721
+remove_team 9451
+remove_team 4843
+add_team 7586
+add_team 8460
+add_team 113
+add_player 9331 136 4,1,3,2,5 6792 9782 5379 false
+add_player 1223 1984 3,1,4,5,2 467 8905 650 false
+add_team 113
+remove_team 7631
+add_team 6290
+add_player 9330 5149 3,1,5,2,4 2022 4787 8649 false
+add_player 5926 8460 3,4,2,5,1 9389 2137 5585 false
+add_team 5633
+remove_team 6290
+add_team 62
+remove_team 5633
+add_team 3112
+add_player 4923 740 5,1,4,3,2 9217 4567 3003 false
+add_player 5076 7773 5,1,2,4,3 6083 2153 5234 false
+remove_team 113
+add_team 8438
+add_player 9762 4670 3,4,1,5,2 3809 750 5309 false
+remove_team 1424
+add_player 8713 8460 1,3,5,4,2 4710 4677 6990 false
+remove_team 5149
+add_team 9436
+add_team 6181
+add_team 6062
+remove_team 9436
+add_team 5607
+add_team 3929
+add_team 3
+add_team 7531
+remove_team 4670
+remove_team 5607
+remove_team 7531
+remove_team 7773
+remove_team 62
+remove_team 8438
+add_player 9283 3112 2,4,1,3,5 9172 3039 1768 false
+remove_team 3
+add_team 9087
+remove_team 9721
+add_team 3284
+add_team 5935
+add_team 9789
+remove_team 8460
+add_player 8619 7586 5,3,2,1,4 6424 2005 9467 false
+add_player 6637 9087 2,3,1,4,5 4134 4089 9193 false
+add_player 6272 5935 4,1,3,2,5 6194 2107 2435 false
+remove_team 3112
+remove_team 5935
+add_team 5876
+add_team 6416
+remove_team 8692
+remove_team 3769
+add_team 6272
+remove_team 6062
+add_player 1093 7586 3,4,1,5,2 9161 6718 5395 false
+add_player 1281 740 1,5,3,2,4 8212 6875 2763 false
+remove_team 740
+add_team 915
+remove_team 3284
+add_player 7179 7868 5,1,2,3,4 8891 7409 1811 false
+remove_team 6416
+remove_team 6272
+add_team 8756
+remove_team 915
+remove_team 6181
+remove_team 9087
+add_player 4391 5876 4,1,5,2,3 2664 1233 6015 false
+add_player 8300 3929 1,5,4,2,3 5806 9712 4785 false
+remove_team 9789
+add_player 5874 7586 3,5,1,4,2 5235 8208 1325 false
+remove_team 3929
+remove_team 8756
+add_team 257
+remove_team 7586
+add_player 4049 7868 4,3,2,5,1 9665 3680 4184 false
+add_team 6706
+remove_team 6706
+add_player 129 5876 5,2,1,4,3 5925 4070 3007 false
+add_player 1856 5876 1,3,4,5,2 2715 6152 7694 false
+add_player 452 7868 5,2,3,1,4 2090 6909 9888 false
+add_player 9555 5876 2,3,5,1,4 1284 86 1924 false
+remove_team 7868
+add_player 8704 5876 4,3,1,2,5 9344 5362 5538 false
+add_player 9041 5876 3,1,5,4,2 491 63 9374 false
+remove_team 5876
+add_team 8060
+add_player 2155 8060 1,5,2,3,4 320 5994 6856 false
+remove_team 8060
+add_team 7644
+add_player 9029 7644 2,5,4,3,1 9656 4575 1101 false
+remove_team 7644
+add_team 6889
+add_player 820 6889 4,3,1,2,5 3455 4957 4796 false
+add_team 1808
+add_player 5001 1808 5,4,1,3,2 1577 8874 3725 false
+add_player 6258 6889 2,3,1,4,5 141 5642 489 false
+remove_team 6889
+remove_team 1808
+add_team 3147
+remove_team 3147
+remove_team 257
+add_team 2858
+add_team 2791
+add_player 5512 2791 4,3,1,2,5 5675 2009 8725 false
+add_player 9849 2791 2,1,3,4,5 4397 223 7709 false
+add_team 6156
+remove_team 6156
+add_player 740 2791 5,2,4,1,3 7806 1248 7252 false
+add_player 7733 2791 5,4,3,1,2 7002 3868 7163 false
+add_player 3731 2858 3,5,4,1,2 9104 9181 182 false
+add_player 980 2858 4,1,2,5,3 7126 256 5424 false
+add_player 2478 2791 2,5,4,1,3 2227 2046 6061 false
+add_player 7959 2858 1,5,4,2,3 1004 2744 3315 false
+add_team 8546
+remove_team 8546
+add_team 6587
+add_player 4039 2791 1,4,2,5,3 7847 4082 7633 false
+add_player 6082 2791 5,3,2,4,1 9251 4147 741 false
+remove_team 2791
+add_player 3743 6587 4,3,2,5,1 4242 6184 9564 false
+add_team 2906
+remove_team 6587
+remove_team 2858
+add_player 7769 2906 1,3,2,5,4 9210 1440 5100 false
+add_player 6769 2906 4,5,1,3,2 149 6770 5155 false
+remove_team 2906
+add_team 7027
+add_team 7890
+add_player 8122 7027 1,3,2,4,5 7552 8472 3738 false
+add_player 2550 7027 1,2,4,3,5 7231 9143 2560 false
+add_team 6058
+add_team 826
+remove_team 7890
+add_team 8749
+remove_team 8749
+add_player 5714 6058 3,2,1,5,4 9142 5208 3966 false
+add_player 4880 7027 2,3,1,5,4 606 2889 6896 false
+add_player 3428 826 4,3,1,2,5 5266 3501 5420 false
+add_player 6391 826 4,3,5,2,1 4939 5947 3054 false
+remove_team 7027
+add_player 6556 6058 4,2,3,1,5 4498 5702 9867 false
+add_player 6593 826 5,2,1,3,4 3103 617 4676 false
+add_player 7535 826 4,5,3,2,1 9101 6157 4470 false
+remove_team 826
+add_team 9443
+add_team 2550
+remove_team 9443
+add_team 7469
+add_team 9850
+add_team 2680
+remove_team 7469
+add_team 6886
+add_player 9571 2680 4,1,3,5,2 6543 4683 1263 false
+remove_team 9850
+remove_team 2680
+add_team 4368
+add_player 9312 6886 3,1,4,2,5 103 7348 8653 false
+add_team 5931
+remove_team 6886
+add_player 2727 6058 4,5,1,2,3 1864 4175 362 false
+add_player 6843 5931 4,2,3,5,1 8690 7224 6155 false
+add_player 6453 6058 5,1,4,3,2 5 8418 6812 false
+add_player 8563 2550 5,1,3,4,2 9981 3091 3735 false
+add_player 9392 5931 2,1,4,5,3 1509 6191 4424 false
+add_team 5101
+add_player 7813 4368 1,2,3,5,4 5965 3903 3354 false
+add_player 2490 2550 4,1,5,2,3 2925 3428 9845 false
+remove_team 5931
+remove_team 5101
+add_team 1223
+remove_team 6058
+add_team 92
+add_team 769
+remove_team 769
+add_team 3713
+add_player 649 3713 1,2,3,5,4 7921 3691 9049 false
+add_player 9147 3713 2,5,1,3,4 3660 3468 6365 false
+remove_team 3713
+remove_team 1223
+add_team 1944
+add_team 5904
+remove_team 1944
+remove_team 4368
+add_team 1154
+add_team 2459
+remove_team 2459
+remove_team 92
+add_team 5340
+remove_team 2550
+remove_team 5904
+add_team 1946
+add_team 5494
+add_player 3681 1946 1,5,3,4,2 3373 6072 8952 false
+add_player 2130 1154 4,3,5,1,2 7199 3168 7972 false
+add_player 3324 1154 4,3,2,1,5 3622 1075 3977 false
+add_player 462 5340 2,1,5,3,4 6872 4913 9681 false
+add_player 7549 5340 3,1,4,2,5 4273 1376 9406 false
+add_team 5301
+remove_team 5340
+add_team 26
+add_player 3738 5301 3,1,5,2,4 7302 5531 8273 false
+add_player 3391 5494 1,4,5,2,3 4792 49 7900 false
+add_player 6143 1154 5,1,2,4,3 7969 2631 70 false
+add_player 6300 1154 3,1,5,4,2 689 9383 9313 false
+add_player 9512 1154 2,1,4,5,3 196 9353 3886 false
+add_team 8533
+remove_team 26
+add_team 9090
+remove_team 1946
+remove_team 8533
+remove_team 1154
+add_team 7734
+add_player 9384 9090 5,4,1,2,3 196 3777 1837 false
+add_team 4708
+add_team 9914
+remove_team 5301
+add_player 5729 9090 5,2,4,1,3 6534 2224 1284 false
+remove_team 9914
+add_team 1290
+add_team 62
+add_player 9210 7734 2,1,3,4,5 7947 9241 3482 false
+remove_team 4708
+add_team 8415
+add_team 9049
+remove_team 8415
+add_player 7066 1290 3,1,2,4,5 1249 7250 4008 false
+add_player 6862 9090 3,2,1,5,4 5585 8006 4824 false
+add_team 1191
+add_player 3584 1290 5,4,2,3,1 7586 828 2875 false
+add_team 564
+add_team 5422
+remove_team 9049
+add_team 2767
+add_player 7303 564 3,4,2,1,5 6050 8820 2204 false
+add_player 5980 564 1,5,2,3,4 7050 5497 7675 false
+add_team 482
+remove_team 482
+remove_team 1290
+remove_team 564
+remove_team 2767
+add_player 2623 5422 2,4,1,5,3 941 2093 6412 false
+add_team 3516
+add_team 2082
+add_team 7472
+add_player 5963 62 1,2,5,4,3 9970 9969 7682 false
+add_player 7560 9090 3,1,4,5,2 8488 351 5888 false
+add_team 3505
+remove_team 1191
+add_team 9597
+add_team 7877
+add_team 8236
+add_player 5375 62 3,1,2,4,5 3278 846 4814 false
+add_player 4369 8236 5,3,1,4,2 7625 7330 9469 false
+add_team 225
+add_player 7472 225 5,4,1,2,3 6912 5249 6038 false

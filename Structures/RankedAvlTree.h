@@ -84,6 +84,8 @@ Node<Key, Data>* FindByRank(int k) {
 
   Node<Key, Data>** TreeNodesToArray()
   {
+    if(!this->root)
+    return nullptr;
     Node<Key, Data>** array = new Node<Key, Data>*[this->root->size];
     int place = 0;
     TreeNodesToArray(this->root, array, place);

@@ -7,7 +7,6 @@ world_cup_t::~world_cup_t()
 	Node<int, team*>** QTeams = this->QualifiedTeams.TreeNodesToArray();
 	NodeExtra<int, player*, PlayerExtra>*** players = ZoomInTeams.get_all_data();
 
-
 	//delete players
 	for (int i = 0; i < ZoomInTeams.used_size(); i++)
 	{
@@ -19,6 +18,7 @@ world_cup_t::~world_cup_t()
 	}
 	
 	//delete qualified teams
+	if(QTeams)
 	for(int i = 0; i < this->QualifiedTeams.get_size(); i++)
 	{
 		if(QTeams[i])
@@ -146,7 +146,7 @@ if(playerId <= 0 ||
 
 	player* newPLayer = new player(playerId, teamId, spirit, gamesPlayed, ability, cards, goalKeeper);
 	newPLayer->set_team(ptrToTeam);
-	ZoomInTeams.Insert(playerId, newPLayer, PlayerExtra(spirit, newPLayer->getgamesplayed(), newPLayer));
+	ZoomInTeams.Insert(playerId, newPLayer, PlayerExtra((*team_)->get_permutation()*spirit, newPLayer->getgamesplayed(), newPLayer));
 
 	NodeExtra<int, player *, PlayerExtra> ** pp1 = ZoomInTeams.getNode(playerId);
 	pp = pp1;
@@ -352,13 +352,13 @@ output_t<int> world_cup_t::get_player_cards(int playerId)
 	}
 	try
 	{
-	NodeExtra<int,player*,PlayerExtra>* playernode=ZoomInTeams.Find(playerId);
+	NodeExtra<int,player*,PlayerExtra>** playernode=ZoomInTeams.getNode(playerId);
 	if (playernode==nullptr)
 	 {
 	  output_t<int> x(StatusType::FAILURE);
 	  return x;
 	 }
-	 int cards=playernode->data->getcards();
+	 int cards=(*playernode)->data->getcards();
 	 output_t<int> x(cards);
 	  return x;
 		
@@ -416,7 +416,7 @@ output_t<permutation_t> world_cup_t::get_partial_spirit(int playerId)
 	{
 	  	return StatusType::FAILURE;
 	}
-
+	
 	 //calculate the partial permutation
 	permutation_t permutation_ = ZoomInTeams.get_validExtra(playerId).permutation;
 
@@ -466,7 +466,9 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 			//make the root2 player points to team1
 			//update IdOfLastPlayer in team1
 		root2->data->set_team(*team1);
+		(*team1)->set_permutation((*team2)->get_permutation());
 		(*team1)->set_IdOfLastPlayer((*team2)->get_IdOfLastPlayer());
+		(*team2)->set_permutation(permutation_t::neutral());
 
 		//remove team2
 			//removed later
@@ -475,8 +477,11 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 	//case 4: both has players
 	if(playerInTeam1Id && playerInTeam2Id)
 	{
+		permutation_t toTeam2 = (*team1)->get_permutation();
 		(*team1)->set_permutation((*team1)->get_permutation() * (*team2)->get_permutation());
-		(*team2)->set_permutation(permutation_t::neutral());
+		//(*team2)->set_permutation(permutation_t::neutral());
+		(*team2)->set_permutation(toTeam2);
+
 		//merge team 2 into team 1
 		ZoomInTeams.Union(playerInTeam1Id, playerInTeam2Id);
 	}
@@ -533,7 +538,7 @@ void world_cup_t::update_team_after_buy(team* BuyerTeam, team* SoldTeam)
 	playerInRoot->data->set_team(BuyerTeam);
 
 		//update spirit of team1 to +> team1.spirit * team2.spirit
-	playerInRoot->data->get_team()->set_permutation(playerInRoot->data->get_team()->get_permutation() *(SoldTeam)->get_permutation());
+		//updated previously
 
 		//update abilities for team1
 	playerInRoot->data->get_team()->set_abilities(playerInRoot->data->get_team()->get_abilities() + (SoldTeam)->get_abilities());
