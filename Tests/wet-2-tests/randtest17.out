@@ -1,0 +1,2000 @@
+get_ith_pointless_ability: FAILURE
+get_team_points: FAILURE
+add_player_cards: FAILURE
+remove_team: FAILURE
+add_player_cards: FAILURE
+get_team_points: FAILURE
+remove_team: FAILURE
+get_player_cards: FAILURE
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 491190
+get_partial_spirit: SUCCESS, 4,1,2,3,5
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 299262
+remove_team: FAILURE
+add_player: FAILURE
+get_team_points: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+get_player_cards: FAILURE
+get_player_cards: FAILURE
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+add_team: SUCCESS
+remove_team: SUCCESS
+get_player_cards: FAILURE
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: SUCCESS, 138807
+get_ith_pointless_ability: SUCCESS, 138807
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 138807
+add_player: SUCCESS
+get_player_cards: SUCCESS, 648474
+get_partial_spirit: FAILURE
+remove_team: FAILURE
+get_player_cards: SUCCESS, 299262
+get_ith_pointless_ability: SUCCESS, 138807
+remove_team: FAILURE
+remove_team: FAILURE
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 138807
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 736381
+add_player: FAILURE
+get_ith_pointless_ability: SUCCESS, 138807
+get_ith_pointless_ability: SUCCESS, 138807
+get_ith_pointless_ability: SUCCESS, 138807
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,4,3,2,5
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 138807
+get_ith_pointless_ability: SUCCESS, 138807
+get_ith_pointless_ability: SUCCESS, 138807
+add_player: SUCCESS
+get_partial_spirit: FAILURE
+get_partial_spirit: SUCCESS, 1,5,3,2,4
+add_team: SUCCESS
+get_player_cards: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+get_team_points: FAILURE
+play_match: FAILURE
+buy_team: SUCCESS
+buy_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 626444
+get_partial_spirit: SUCCESS, 1,4,3,2,5
+buy_team: FAILURE
+get_team_points: FAILURE
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+add_player_cards: FAILURE
+remove_team: SUCCESS
+add_player: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 922175
+add_player: FAILURE
+add_player: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 299262
+get_ith_pointless_ability: SUCCESS, 922175
+get_player_cards: SUCCESS, 902810
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 902810
+add_team: SUCCESS
+add_team: FAILURE
+add_team: FAILURE
+add_player_cards: FAILURE
+add_player: SUCCESS
+add_player_cards: SUCCESS
+add_team: FAILURE
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+get_team_points: FAILURE
+add_player: FAILURE
+get_ith_pointless_ability: FAILURE
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+get_ith_pointless_ability: FAILURE
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_player: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+remove_team: FAILURE
+get_player_cards: SUCCESS, 299262
+get_player_cards: SUCCESS, 902810
+get_ith_pointless_ability: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 385759
+get_partial_spirit: SUCCESS, 4,3,5,1,2
+get_ith_pointless_ability: SUCCESS, 385759
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 387815
+get_ith_pointless_ability: SUCCESS, 753146
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 1473985
+get_player_cards: SUCCESS, 387815
+get_partial_spirit: SUCCESS, 3,1,2,5,4
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 2187710
+get_ith_pointless_ability: SUCCESS, 128526
+remove_team: SUCCESS
+remove_team: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player_cards: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+get_team_points: FAILURE
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+get_team_points: FAILURE
+get_player_cards: SUCCESS, 918615
+remove_team: FAILURE
+get_player_cards: SUCCESS, 2187710
+get_player_cards: FAILURE
+get_player_cards: SUCCESS, 918615
+get_ith_pointless_ability: FAILURE
+get_team_points: FAILURE
+add_player: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: FAILURE
+get_player_cards: SUCCESS, 2187710
+add_player_cards: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 918615
+remove_team: SUCCESS
+get_team_points: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 648474
+get_team_points: SUCCESS, 0
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 2187710
+add_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_player_cards: SUCCESS, 650800
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_player: FAILURE
+get_team_points: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+get_team_points: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+add_player_cards: FAILURE
+get_team_points: FAILURE
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+play_match: FAILURE
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+buy_team: SUCCESS
+play_match: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+get_team_points: FAILURE
+play_match: FAILURE
+get_player_cards: FAILURE
+add_player_cards: SUCCESS
+add_team: SUCCESS
+get_team_points: FAILURE
+get_partial_spirit: SUCCESS, 1,2,5,4,3
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+buy_team: FAILURE
+remove_team: SUCCESS
+remove_team: SUCCESS
+add_player_cards: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 726700
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+play_match: FAILURE
+remove_team: FAILURE
+add_player_cards: FAILURE
+add_player: SUCCESS
+buy_team: FAILURE
+get_partial_spirit: SUCCESS, 1,4,2,5,3
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,4,2,5,3
+add_team: FAILURE
+buy_team: SUCCESS
+buy_team: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+buy_team: SUCCESS
+add_player: FAILURE
+add_player_cards: SUCCESS
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,4,2,5,3
+get_player_cards: SUCCESS, 1473985
+get_partial_spirit: SUCCESS, 3,2,5,4,1
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 1,4,2,5,3
+get_ith_pointless_ability: SUCCESS, 107224
+add_player: SUCCESS
+add_player_cards: FAILURE
+get_partial_spirit: SUCCESS, 3,2,5,4,1
+get_player_cards: FAILURE
+add_player: SUCCESS
+get_player_cards: SUCCESS, 902810
+remove_team: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+play_match: FAILURE
+add_team: SUCCESS
+add_player_cards: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 95024
+add_player_cards: SUCCESS
+buy_team: FAILURE
+get_partial_spirit: SUCCESS, 4,3,5,2,1
+get_player_cards: SUCCESS, 650800
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 107224
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+get_player_cards: FAILURE
+add_player_cards: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+get_player_cards: SUCCESS, 603551
+get_player_cards: SUCCESS, 336774
+get_ith_pointless_ability: SUCCESS, 95024
+get_ith_pointless_ability: SUCCESS, 107224
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 918615
+get_player_cards: SUCCESS, 902810
+get_team_points: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: SUCCESS, 95024
+add_player: FAILURE
+get_team_points: FAILURE
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 3,2,1,4,5
+add_player_cards: FAILURE
+remove_team: SUCCESS
+add_player_cards: FAILURE
+get_team_points: FAILURE
+add_player_cards: FAILURE
+add_player: FAILURE
+remove_team: FAILURE
+get_ith_pointless_ability: FAILURE
+get_player_cards: SUCCESS, 299262
+get_player_cards: SUCCESS, 902810
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+get_team_points: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 650800
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+remove_team: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 403299
+remove_team: SUCCESS
+add_player: FAILURE
+add_player: FAILURE
+get_player_cards: SUCCESS, 1657855
+add_player: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+get_team_points: FAILURE
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 679670
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+add_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 679670
+get_partial_spirit: SUCCESS, 1,2,3,4,5
+get_player_cards: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+play_match: FAILURE
+get_ith_pointless_ability: FAILURE
+play_match: FAILURE
+get_player_cards: SUCCESS, 551866
+play_match: FAILURE
+play_match: FAILURE
+get_partial_spirit: SUCCESS, 3,5,2,4,1
+play_match: FAILURE
+get_partial_spirit: SUCCESS, 1,2,3,4,5
+get_ith_pointless_ability: SUCCESS, 679670
+get_partial_spirit: SUCCESS, 3,5,2,4,1
+get_partial_spirit: SUCCESS, 2,1,4,5,3
+get_player_cards: SUCCESS, 803710
+add_player: SUCCESS
+buy_team: FAILURE
+buy_team: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 679670
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 695497
+buy_team: SUCCESS
+play_match: FAILURE
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 95599
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 95599
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 4,5,2,1,3
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 299262
+add_player: SUCCESS
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_player_cards: FAILURE
+get_player_cards: SUCCESS, 650800
+get_ith_pointless_ability: SUCCESS, 95599
+get_ith_pointless_ability: SUCCESS, 95599
+add_player: SUCCESS
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 1473985
+get_player_cards: FAILURE
+add_team: SUCCESS
+remove_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 618226
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+get_team_points: FAILURE
+get_player_cards: SUCCESS, 701795
+play_match: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+play_match: FAILURE
+buy_team: SUCCESS
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 805363
+get_ith_pointless_ability: SUCCESS, 223491
+get_player_cards: SUCCESS, 1270593
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+add_player_cards: FAILURE
+play_match: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+play_match: FAILURE
+play_match: FAILURE
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 650800
+buy_team: FAILURE
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+get_team_points: FAILURE
+add_player: SUCCESS
+add_team: FAILURE
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 618226
+remove_team: SUCCESS
+remove_team: FAILURE
+get_player_cards: SUCCESS, 1514842
+add_player: FAILURE
+get_partial_spirit: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: FAILURE
+add_player_cards: FAILURE
+get_player_cards: SUCCESS, 902810
+add_player: FAILURE
+remove_team: FAILURE
+get_player_cards: SUCCESS, 885485
+get_partial_spirit: FAILURE
+get_player_cards: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+get_player_cards: SUCCESS, 802986
+get_player_cards: SUCCESS, 1473985
+add_team: FAILURE
+get_player_cards: SUCCESS, 648474
+add_player: SUCCESS
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 5,2,4,1,3
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: FAILURE
+buy_team: SUCCESS
+get_partial_spirit: SUCCESS, 5,2,4,1,3
+add_team: SUCCESS
+add_player: SUCCESS
+buy_team: FAILURE
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+get_partial_spirit: SUCCESS, 5,2,4,1,3
+play_match: FAILURE
+get_player_cards: SUCCESS, 701795
+get_player_cards: SUCCESS, 1657855
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 5,2,4,1,3
+play_match: FAILURE
+add_player: FAILURE
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+play_match: FAILURE
+get_player_cards: SUCCESS, 300061
+remove_team: SUCCESS
+add_player_cards: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 1514842
+buy_team: FAILURE
+get_partial_spirit: SUCCESS, 1,2,5,4,3
+get_partial_spirit: SUCCESS, 1,2,5,4,3
+add_player: SUCCESS
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+get_team_points: SUCCESS, 0
+buy_team: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+add_team: FAILURE
+remove_team: FAILURE
+add_team: SUCCESS
+buy_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+add_team: SUCCESS
+play_match: FAILURE
+play_match: FAILURE
+get_player_cards: FAILURE
+get_partial_spirit: FAILURE
+buy_team: FAILURE
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 817198
+get_ith_pointless_ability: SUCCESS, 791076
+buy_team: SUCCESS
+remove_team: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+buy_team: FAILURE
+play_match: FAILURE
+get_partial_spirit: FAILURE
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+add_player: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+add_player_cards: SUCCESS
+add_team: FAILURE
+get_partial_spirit: SUCCESS, 4,1,5,3,2
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+play_match: FAILURE
+remove_team: SUCCESS
+buy_team: FAILURE
+add_team: FAILURE
+remove_team: SUCCESS
+play_match: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+remove_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 9870
+get_partial_spirit: SUCCESS, 4,1,5,3,2
+add_player: SUCCESS
+get_player_cards: FAILURE
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 4,1,2,5,3
+remove_team: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+add_team: SUCCESS
+add_player_cards: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 187615
+add_player: FAILURE
+add_player_cards: SUCCESS
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 83873
+play_match: FAILURE
+buy_team: FAILURE
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 909488
+get_partial_spirit: SUCCESS, 5,1,3,2,4
+play_match: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player: FAILURE
+add_team: SUCCESS
+add_player_cards: SUCCESS
+play_match: FAILURE
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 909488
+remove_team: SUCCESS
+get_partial_spirit: SUCCESS, 3,2,1,4,5
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 3,2,1,4,5
+get_ith_pointless_ability: FAILURE
+add_player_cards: FAILURE
+get_player_cards: SUCCESS, 853159
+add_player: SUCCESS
+add_team: SUCCESS
+get_player_cards: SUCCESS, 69444
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 2,5,4,1,3
+add_team: FAILURE
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 3,2,1,4,5
+get_player_cards: SUCCESS, 1270593
+get_ith_pointless_ability: SUCCESS, 9870
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 104165
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,5,2,3,4
+get_partial_spirit: SUCCESS, 2,5,4,1,3
+remove_team: FAILURE
+buy_team: SUCCESS
+add_player: FAILURE
+get_player_cards: SUCCESS, 1332639
+add_player: SUCCESS
+buy_team: FAILURE
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 1,5,2,3,4
+add_player_cards: SUCCESS
+add_player: SUCCESS
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: FAILURE
+get_ith_pointless_ability: SUCCESS, 9870
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+add_team: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+add_player_cards: SUCCESS
+buy_team: SUCCESS
+add_team: FAILURE
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 1,5,2,3,4
+get_team_points: SUCCESS, 0
+get_player_cards: FAILURE
+play_match: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+buy_team: SUCCESS
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 237776
+get_ith_pointless_ability: SUCCESS, 237776
+get_player_cards: SUCCESS, 650800
+get_ith_pointless_ability: SUCCESS, 669420
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+buy_team: FAILURE
+play_match: FAILURE
+remove_team: FAILURE
+buy_team: FAILURE
+play_match: FAILURE
+buy_team: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+remove_team: FAILURE
+get_partial_spirit: SUCCESS, 2,5,4,1,3
+get_ith_pointless_ability: SUCCESS, 669420
+get_partial_spirit: FAILURE
+add_player_cards: SUCCESS
+add_player_cards: FAILURE
+remove_team: SUCCESS
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 237776
+add_player: FAILURE
+add_player: SUCCESS
+remove_team: SUCCESS
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_player: FAILURE
+get_team_points: FAILURE
+get_ith_pointless_ability: FAILURE
+get_team_points: FAILURE
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 214228
+remove_team: SUCCESS
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 480716
+remove_team: SUCCESS
+get_player_cards: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player: FAILURE
+get_player_cards: SUCCESS, 1270593
+get_partial_spirit: FAILURE
+remove_team: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player: FAILURE
+get_player_cards: SUCCESS, 1473985
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+remove_team: FAILURE
+add_player: FAILURE
+get_team_points: FAILURE
+remove_team: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+get_player_cards: FAILURE
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+remove_team: SUCCESS
+remove_team: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+get_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 420089
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 900784
+add_player: SUCCESS
+add_player: SUCCESS
+add_team: SUCCESS
+add_player_cards: SUCCESS
+add_player: FAILURE
+play_match: FAILURE
+get_player_cards: SUCCESS, 1433348
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 420089
+add_player_cards: SUCCESS
+add_team: SUCCESS
+add_player: FAILURE
+buy_team: SUCCESS
+add_team: FAILURE
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 43693
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+get_player_cards: FAILURE
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 207309
+remove_team: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,2,5,4,3
+buy_team: SUCCESS
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,2,5,4,3
+add_team: FAILURE
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+buy_team: FAILURE
+add_player_cards: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+add_team: FAILURE
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 2939187
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 3233062
+add_player: SUCCESS
+remove_team: SUCCESS
+buy_team: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 463296
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 128202
+get_partial_spirit: SUCCESS, 1,4,5,3,2
+get_player_cards: SUCCESS, 701795
+get_partial_spirit: SUCCESS, 1,4,5,3,2
+add_player_cards: FAILURE
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: FAILURE
+get_team_points: FAILURE
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 311364
+get_team_points: SUCCESS, 0
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: SUCCESS, 311364
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 1,3,2,5,4
+get_ith_pointless_ability: SUCCESS, 311364
+remove_team: FAILURE
+buy_team: FAILURE
+buy_team: SUCCESS
+play_match: FAILURE
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+play_match: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+add_player: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 3,1,2,4,5
+add_team: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+get_player_cards: SUCCESS, 1696617
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 1,3,2,5,4
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 520894
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 1561174
+add_player: SUCCESS
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 1,3,2,5,4
+add_team: SUCCESS
+add_player_cards: SUCCESS
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 1,3,2,5,4
+get_player_cards: SUCCESS, 198898
+get_ith_pointless_ability: SUCCESS, 741172
+play_match: FAILURE
+get_partial_spirit: SUCCESS, 3,2,5,1,4
+get_ith_pointless_ability: SUCCESS, 520894
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+buy_team: FAILURE
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_player_cards: SUCCESS, 1332639
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 1,3,2,5,4
+get_player_cards: SUCCESS, 124512
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+get_player_cards: SUCCESS, 551485
+play_match: FAILURE
+remove_team: SUCCESS
+add_player: SUCCESS
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+buy_team: SUCCESS
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+play_match: FAILURE
+play_match: FAILURE
+play_match: FAILURE
+remove_team: SUCCESS
+remove_team: SUCCESS
+get_player_cards: FAILURE
+get_player_cards: SUCCESS, 739898
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 1663468
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+add_player: SUCCESS
+get_team_points: FAILURE
+play_match: FAILURE
+get_player_cards: SUCCESS, 739898
+buy_team: SUCCESS
+play_match: FAILURE
+play_match: FAILURE
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 5,4,3,1,2
+buy_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+get_player_cards: SUCCESS, 1094567
+get_player_cards: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 3,5,1,2,4
+get_ith_pointless_ability: SUCCESS, 58625
+buy_team: SUCCESS
+get_partial_spirit: SUCCESS, 2,4,3,1,5
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 58625
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 609217
+get_partial_spirit: SUCCESS, 1,4,3,2,5
+get_ith_pointless_ability: SUCCESS, 489563
+get_ith_pointless_ability: SUCCESS, 489563
+add_team: SUCCESS
+add_player: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: SUCCESS, 58625
+add_team: FAILURE
+get_player_cards: SUCCESS, 801136
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 757326
+play_match: FAILURE
+add_player: FAILURE
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+add_player: SUCCESS
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 198898
+get_partial_spirit: SUCCESS, 4,5,1,3,2
+get_partial_spirit: FAILURE
+play_match: FAILURE
+get_player_cards: SUCCESS, 739898
+add_player_cards: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 801136
+add_player: FAILURE
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+add_player: FAILURE
+get_ith_pointless_ability: SUCCESS, 609217
+add_player: SUCCESS
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+get_player_cards: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+get_player_cards: SUCCESS, 1076263
+get_player_cards: FAILURE
+get_team_points: FAILURE
+get_team_points: FAILURE
+get_player_cards: SUCCESS, 198898
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 1815777
+get_ith_pointless_ability: SUCCESS, 785462
+remove_team: FAILURE
+get_player_cards: SUCCESS, 1290010
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+add_player: SUCCESS
+get_player_cards: SUCCESS, 69444
+add_player: SUCCESS
+play_match: FAILURE
+get_player_cards: SUCCESS, 140649
+add_team: SUCCESS
+play_match: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 217989
+play_match: FAILURE
+buy_team: SUCCESS
+play_match: FAILURE
+get_player_cards: SUCCESS, 140649
+play_match: FAILURE
+get_player_cards: SUCCESS, 217989
+get_ith_pointless_ability: SUCCESS, 603279
+play_match: FAILURE
+buy_team: FAILURE
+add_team: SUCCESS
+remove_team: SUCCESS
+add_player_cards: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+buy_team: SUCCESS
+add_player_cards: FAILURE
+add_team: SUCCESS
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 169854
+remove_team: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 837169
+add_player: SUCCESS
+get_team_points: FAILURE
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 169854
+buy_team: FAILURE
+play_match: FAILURE
+get_partial_spirit: FAILURE
+buy_team: FAILURE
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 169854
+add_player_cards: SUCCESS
+add_team: SUCCESS
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 5,1,3,2,4
+get_player_cards: SUCCESS, 1230311
+add_player: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+buy_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 372239
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,2,5,4,3
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 467519
+remove_team: SUCCESS
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 1230311
+buy_team: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+buy_team: SUCCESS
+add_player: FAILURE
+get_player_cards: SUCCESS, 1230311
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: SUCCESS, 169854
+add_player_cards: FAILURE
+remove_team: FAILURE
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 909488
+add_team: SUCCESS
+add_player_cards: FAILURE
+remove_team: SUCCESS
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 652863
+get_player_cards: SUCCESS, 802986
+get_ith_pointless_ability: SUCCESS, 652863
+add_team: SUCCESS
+get_player_cards: SUCCESS, 853159
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 938494
+add_player: FAILURE
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 551485
+get_team_points: FAILURE
+add_team: SUCCESS
+buy_team: SUCCESS
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 652863
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 739898
+play_match: FAILURE
+play_match: FAILURE
+add_player: SUCCESS
+get_team_points: FAILURE
+remove_team: FAILURE
+get_partial_spirit: SUCCESS, 5,2,1,3,4
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 652863
+add_player: FAILURE
+add_player: SUCCESS
+add_player_cards: SUCCESS
+add_team: SUCCESS
+remove_team: SUCCESS
+add_player: SUCCESS
+play_match: FAILURE
+remove_team: FAILURE
+add_player_cards: FAILURE
+get_player_cards: SUCCESS, 603551
+add_team: SUCCESS
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 951704
+play_match: FAILURE
+remove_team: SUCCESS
+get_partial_spirit: SUCCESS, 1,4,2,5,3
+get_ith_pointless_ability: SUCCESS, 626915
+remove_team: SUCCESS
+remove_team: SUCCESS
+get_player_cards: FAILURE
+get_player_cards: SUCCESS, 1514842
+add_player_cards: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 921590
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 112274
+get_team_points: FAILURE
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_partial_spirit: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 112274
+play_match: FAILURE
+add_player: SUCCESS
+get_partial_spirit: FAILURE
+get_partial_spirit: SUCCESS, 1,5,3,2,4
+buy_team: FAILURE
+get_team_points: FAILURE
+add_team: FAILURE
+add_player: FAILURE
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 644423
+add_team: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 918615
+get_ith_pointless_ability: SUCCESS, 644423
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 369899
+get_ith_pointless_ability: SUCCESS, 644423
+get_partial_spirit: SUCCESS, 1,2,4,5,3
+buy_team: FAILURE
+remove_team: SUCCESS
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 624408
+get_partial_spirit: SUCCESS, 1,5,3,2,4
+get_player_cards: SUCCESS, 793685
+add_team: FAILURE
+get_player_cards: SUCCESS, 793685
+play_match: FAILURE
+buy_team: FAILURE
+buy_team: FAILURE
+remove_team: SUCCESS
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_player_cards: SUCCESS, 603551
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+buy_team: FAILURE
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 624408
+add_team: SUCCESS
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 660401
+buy_team: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+get_team_points: FAILURE
+play_match: FAILURE
+buy_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+add_player_cards: SUCCESS
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+remove_team: FAILURE
+get_player_cards: SUCCESS, 471009
+get_player_cards: FAILURE
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 1230311
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 5,1,4,2,3
+add_player: SUCCESS
+buy_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 742467
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 742467
+get_team_points: SUCCESS, 0
+buy_team: FAILURE
+play_match: FAILURE
+get_player_cards: SUCCESS, 336879
+add_player: SUCCESS
+get_player_cards: SUCCESS, 422440
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 660401
+add_player: SUCCESS
+remove_team: FAILURE
+get_partial_spirit: SUCCESS, 5,2,3,4,1
+buy_team: SUCCESS
+get_partial_spirit: SUCCESS, 4,2,1,5,3
+buy_team: SUCCESS
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 624408
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_player: SUCCESS
+remove_team: SUCCESS
+add_player_cards: SUCCESS
+get_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 624408
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+add_player: SUCCESS
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 5,4,1,3,2
+get_partial_spirit: SUCCESS, 1,3,5,2,4
+add_player: SUCCESS
+remove_team: SUCCESS
+remove_team: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+get_team_points: FAILURE
+get_player_cards: SUCCESS, 1290010
+remove_team: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 1164213
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 1076263
+add_team: SUCCESS
+remove_team: SUCCESS
+play_match: FAILURE
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 4,3,2,5,1
+buy_team: FAILURE
+play_match: FAILURE
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 63153
+buy_team: FAILURE
+add_player: FAILURE
+add_player: SUCCESS
+get_player_cards: SUCCESS, 26577
+get_partial_spirit: FAILURE
+get_team_points: FAILURE
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_ith_pointless_ability: FAILURE
+buy_team: FAILURE
+add_player: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 433030
+get_ith_pointless_ability: SUCCESS, 51201
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 627052
+buy_team: FAILURE
+get_partial_spirit: SUCCESS, 4,5,3,2,1
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+get_player_cards: SUCCESS, 369899
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+get_partial_spirit: SUCCESS, 4,3,2,5,1
+remove_team: SUCCESS
+get_team_points: FAILURE
+get_team_points: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+remove_team: FAILURE
+add_player: FAILURE
+add_team: SUCCESS
+remove_team: SUCCESS
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: SUCCESS, 817619
+get_ith_pointless_ability: SUCCESS, 817619
+get_ith_pointless_ability: SUCCESS, 817619
+remove_team: SUCCESS
+remove_team: FAILURE
+get_player_cards: SUCCESS, 61465
+get_player_cards: SUCCESS, 1696617
+remove_team: FAILURE
+remove_team: FAILURE
+get_player_cards: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+get_team_points: FAILURE
+get_team_points: FAILURE
+add_player: FAILURE
+add_player: FAILURE
+add_player: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 227630
+get_ith_pointless_ability: SUCCESS, 227630
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 661947
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 227630
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: SUCCESS, 227630
+add_player: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 227630
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 227630
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 4,2,1,5,3
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 378449
+buy_team: FAILURE
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 1230311
+get_player_cards: SUCCESS, 887700
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+add_team: SUCCESS
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 756858
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+buy_team: SUCCESS
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 1007044
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+add_player: FAILURE
+get_player_cards: SUCCESS, 500457
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 72313
+add_team: SUCCESS
+add_player_cards: FAILURE
+add_player: SUCCESS
+get_player_cards: FAILURE
+get_player_cards: SUCCESS, 627254
+play_match: FAILURE
+add_player: SUCCESS
+add_player: FAILURE
+play_match: FAILURE
+get_player_cards: SUCCESS, 290597
+add_player: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 427365
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 900784
+add_player: SUCCESS
+get_ith_pointless_ability: SUCCESS, 640340
+get_player_cards: SUCCESS, 356981
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 3,2,4,1,5
+get_player_cards: SUCCESS, 628051
+add_team: SUCCESS
+add_team: SUCCESS
+add_player: FAILURE
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 72313
+buy_team: SUCCESS
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 518920
+add_team: SUCCESS
+buy_team: FAILURE
+buy_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 462163
+play_match: FAILURE
+add_player_cards: SUCCESS
+buy_team: SUCCESS
+add_team: FAILURE
+get_partial_spirit: SUCCESS, 5,2,4,3,1
+add_team: SUCCESS
+get_player_cards: SUCCESS, 628051
+get_ith_pointless_ability: SUCCESS, 462163
+get_team_points: SUCCESS, 0
+get_team_points: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+play_match: FAILURE
+add_team: SUCCESS
+play_match: FAILURE
+get_partial_spirit: SUCCESS, 3,2,4,1,5
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 518920
+remove_team: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+remove_team: SUCCESS
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 169173
+play_match: FAILURE
+add_player: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+get_player_cards: FAILURE
+remove_team: SUCCESS
+get_partial_spirit: SUCCESS, 3,2,4,1,5
+add_player: SUCCESS
+remove_team: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+buy_team: SUCCESS
+add_team: SUCCESS
+add_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 980153
+add_player: SUCCESS
+get_player_cards: FAILURE
+remove_team: SUCCESS
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 5,2,4,3,1
+get_ith_pointless_ability: SUCCESS, 980153
+play_match: FAILURE
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 847892
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 695497
+get_ith_pointless_ability: FAILURE
+remove_team: FAILURE
+add_player: FAILURE
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_team_points: FAILURE
+remove_team: FAILURE
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+add_player_cards: FAILURE
+add_player: SUCCESS
+get_player_cards: SUCCESS, 983326
+add_team: SUCCESS
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_team_points: SUCCESS, 0
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 235446
+add_team: SUCCESS
+add_team: SUCCESS
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 676528
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 551703
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 676528
+get_partial_spirit: SUCCESS, 4,1,5,2,3
+add_player: SUCCESS
+play_match: FAILURE
+add_team: FAILURE
+add_player: FAILURE
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 551703
+get_ith_pointless_ability: SUCCESS, 551703
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 5,1,3,2,4
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 906661
+get_player_cards: SUCCESS, 2011349
+get_team_points: FAILURE
+add_player: FAILURE
+add_player: FAILURE
+get_player_cards: SUCCESS, 26577
+add_team: SUCCESS
+get_team_points: FAILURE
+add_team: SUCCESS
+add_team: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 716907
+get_player_cards: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 716907
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 4,2,1,3,5
+get_player_cards: SUCCESS, 596399
+get_team_points: FAILURE
+get_player_cards: SUCCESS, 847892
+remove_team: SUCCESS
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 4,2,1,3,5
+add_team: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 633332
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+get_player_cards: SUCCESS, 179090
+add_team: SUCCESS
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 716907
+add_team: SUCCESS
+remove_team: SUCCESS
+play_match: FAILURE
+add_team: SUCCESS
+get_player_cards: FAILURE
+buy_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 596399
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 739898
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 4,3,1,2,5
+play_match: FAILURE
+remove_team: FAILURE
+get_partial_spirit: SUCCESS, 4,2,1,3,5
+remove_team: FAILURE
+remove_team: FAILURE
+buy_team: FAILURE
+remove_team: SUCCESS
+buy_team: SUCCESS
+remove_team: SUCCESS
+add_team: FAILURE
+get_player_cards: SUCCESS, 596399
+play_match: FAILURE
+add_team: SUCCESS
+add_player: SUCCESS
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 894252
+add_team: SUCCESS
+get_player_cards: SUCCESS, 42898
+add_player_cards: SUCCESS
+play_match: FAILURE
+get_player_cards: FAILURE
+remove_team: SUCCESS
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_player_cards: FAILURE
+remove_team: SUCCESS
+add_team: SUCCESS
+remove_team: SUCCESS
+get_team_points: FAILURE
+remove_team: FAILURE
+get_ith_pointless_ability: FAILURE
+add_player: FAILURE
+get_ith_pointless_ability: FAILURE
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+add_player: FAILURE
+get_player_cards: SUCCESS, 1007044
+remove_team: FAILURE
+add_team: SUCCESS
+get_player_cards: SUCCESS, 370048
+add_player_cards: FAILURE
+add_team: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 38007
+get_ith_pointless_ability: SUCCESS, 38007
+add_player: FAILURE
+get_ith_pointless_ability: SUCCESS, 38007
+get_team_points: SUCCESS, 0
+get_team_points: FAILURE
+add_player_cards: FAILURE
+get_player_cards: SUCCESS, 490587
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+add_player_cards: FAILURE
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: FAILURE
+add_player_cards: FAILURE
+get_team_points: FAILURE
+get_player_cards: SUCCESS, 596399
+remove_team: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 912318
+add_team: SUCCESS
+add_player: SUCCESS
+buy_team: FAILURE
+buy_team: FAILURE
+buy_team: FAILURE
+get_player_cards: SUCCESS, 673251
+get_ith_pointless_ability: SUCCESS, 912318
+buy_team: FAILURE
+buy_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 722201
+play_match: FAILURE
+add_team: SUCCESS
+get_team_points: FAILURE
+add_player_cards: SUCCESS
+get_partial_spirit: SUCCESS, 5,2,4,1,3
+get_ith_pointless_ability: SUCCESS, 829117
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 829117
+buy_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 829117
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 854529
+play_match: FAILURE
+buy_team: FAILURE
+add_player: SUCCESS
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 535220
+add_player: SUCCESS
+add_team: SUCCESS
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 5,4,2,3,1
+get_player_cards: SUCCESS, 1004525
+add_player: SUCCESS
+remove_team: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 1004525
+remove_team: SUCCESS
+add_player_cards: FAILURE
+remove_team: FAILURE
+get_player_cards: FAILURE
+get_player_cards: SUCCESS, 458216
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 906661
+add_player: SUCCESS
+add_player: SUCCESS
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+add_team: FAILURE
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_partial_spirit: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+add_team: SUCCESS
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 886827
+play_match: FAILURE
+get_ith_pointless_ability: SUCCESS, 538414
+get_partial_spirit: FAILURE
+add_player_cards: FAILURE
+add_team: FAILURE
+buy_team: FAILURE
+get_player_cards: SUCCESS, 2391712
+get_player_cards: SUCCESS, 476701
+add_team: SUCCESS
+add_player: SUCCESS
+play_match: FAILURE
+play_match: FAILURE
+add_player_cards: SUCCESS
+add_team: SUCCESS
+play_match: FAILURE
+get_team_points: FAILURE
+add_team: SUCCESS
+get_player_cards: FAILURE
+play_match: FAILURE
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 1025051
+add_team: FAILURE
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 211263
+add_player: SUCCESS
+remove_team: SUCCESS
+play_match: FAILURE
+get_player_cards: SUCCESS, 336879
+add_team: SUCCESS
+add_team: SUCCESS
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 60232
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 772334
+play_match: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+buy_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 538414
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 772334
+play_match: FAILURE
+remove_team: SUCCESS
+buy_team: SUCCESS
+add_player: SUCCESS
+get_player_cards: SUCCESS, 826269
+get_player_cards: SUCCESS, 772334
+get_team_points: SUCCESS, 0
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 211263
+get_player_cards: SUCCESS, 370048
+add_player: SUCCESS
+add_player: SUCCESS
+buy_team: SUCCESS
+get_partial_spirit: FAILURE
+get_ith_pointless_ability: SUCCESS, 534658
+add_player: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+get_player_cards: FAILURE
+play_match: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_player_cards: SUCCESS, 107154
+get_ith_pointless_ability: SUCCESS, 211263
+get_player_cards: FAILURE
+add_player: FAILURE
+add_player: FAILURE
+add_team: SUCCESS
+get_partial_spirit: SUCCESS, 5,4,1,2,3
+play_match: FAILURE
+add_player_cards: SUCCESS
+add_team: SUCCESS
+get_player_cards: SUCCESS, 569406
+get_ith_pointless_ability: SUCCESS, 211263
+remove_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 538414
+play_match: FAILURE
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 4,2,5,1,3
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 534658
+add_team: FAILURE
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+add_player: FAILURE
+add_player: SUCCESS
+buy_team: SUCCESS
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 244867
+play_match: FAILURE
+remove_team: SUCCESS
+buy_team: FAILURE
+add_player_cards: SUCCESS
+play_match: FAILURE
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+get_partial_spirit: SUCCESS, 1,2,3,4,5
+get_ith_pointless_ability: SUCCESS, 244867
+add_player: SUCCESS
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+add_player: FAILURE
+get_ith_pointless_ability: FAILURE
+add_team: SUCCESS
+add_team: SUCCESS
+add_player_cards: FAILURE
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player_cards: FAILURE
+get_team_points: SUCCESS, 0
+get_partial_spirit: FAILURE
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 653771
+remove_team: SUCCESS
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 106528
+add_team: SUCCESS
+add_player_cards: FAILURE
+add_player: SUCCESS
+get_ith_pointless_ability: FAILURE
+add_player_cards: FAILURE
+get_ith_pointless_ability: SUCCESS, 958059
+get_player_cards: SUCCESS, 179090
+get_ith_pointless_ability: SUCCESS, 958059
+remove_team: SUCCESS
+add_player_cards: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 220041
+add_team: SUCCESS
+add_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+remove_team: FAILURE
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player: SUCCESS
+get_partial_spirit: SUCCESS, 5,4,1,2,3
+get_team_points: FAILURE
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 890694
+get_ith_pointless_ability: SUCCESS, 890694
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+add_player_cards: SUCCESS
+add_team: FAILURE
+add_player: SUCCESS
+add_player: SUCCESS
+add_team: SUCCESS
+remove_team: SUCCESS
+add_player: SUCCESS
+add_team: SUCCESS
+buy_team: FAILURE
+add_player: SUCCESS
+play_match: FAILURE
+buy_team: FAILURE
+add_player_cards: SUCCESS
+add_team: SUCCESS
+add_player_cards: SUCCESS
+get_ith_pointless_ability: SUCCESS, 277529
+play_match: FAILURE
+play_match: FAILURE
+add_player: SUCCESS
+buy_team: SUCCESS
+get_player_cards: SUCCESS, 793301
+add_player_cards: FAILURE
+buy_team: FAILURE
+add_team: SUCCESS
+buy_team: FAILURE
+add_player: SUCCESS
+remove_team: SUCCESS
+get_team_points: SUCCESS, 0
+add_player_cards: SUCCESS
+remove_team: SUCCESS
+get_player_cards: SUCCESS, 1270593
+get_partial_spirit: SUCCESS, 1,5,3,4,2
+get_ith_pointless_ability: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+get_player_cards: SUCCESS, 1340790
+get_partial_spirit: SUCCESS, 1,2,4,3,5
+add_player: SUCCESS
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 277529
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_player_cards: SUCCESS, 1668094
+add_player: SUCCESS
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+remove_team: SUCCESS
+get_ith_pointless_ability: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+add_player_cards: FAILURE
+get_partial_spirit: FAILURE
+get_team_points: FAILURE
+get_ith_pointless_ability: FAILURE
+get_player_cards: SUCCESS, 3233062
+get_ith_pointless_ability: FAILURE
+get_ith_pointless_ability: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+get_partial_spirit: FAILURE
+add_player: FAILURE
+add_player: FAILURE
+get_player_cards: SUCCESS, 61465
+get_team_points: FAILURE
+remove_team: FAILURE
+remove_team: FAILURE
+get_team_points: FAILURE
+add_team: SUCCESS
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: SUCCESS, 198632
+get_player_cards: SUCCESS, 3233062
+get_partial_spirit: FAILURE
+add_player: SUCCESS
+get_player_cards: SUCCESS, 756755
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+add_player: FAILURE
+add_team: SUCCESS
+get_ith_pointless_ability: SUCCESS, 665836
+remove_team: FAILURE
+get_ith_pointless_ability: SUCCESS, 198632
+add_team: SUCCESS
+play_match: FAILURE
+buy_team: SUCCESS
+add_player_cards: SUCCESS
+get_team_points: SUCCESS, 0
+get_team_points: SUCCESS, 0
+get_ith_pointless_ability: FAILURE
+add_player: SUCCESS
+buy_team: FAILURE
+get_team_points: SUCCESS, 0
+get_player_cards: SUCCESS, 1357230
+get_partial_spirit: SUCCESS, 2,1,5,4,3
+add_team: FAILURE
+add_team: SUCCESS

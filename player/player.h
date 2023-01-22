@@ -4,8 +4,8 @@
 
 #include "../Structures/RankedAVLTree.h"
 #include "../wet2util.h"
+#include "../team/team.h"
 
-class team;
 class player
 {
 

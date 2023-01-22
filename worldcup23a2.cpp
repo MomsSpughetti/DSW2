@@ -10,20 +10,30 @@ world_cup_t::~world_cup_t()
 	//delete players
 	for (int i = 0; i < ZoomInTeams.used_size(); i++)
 	{
-		delete (*players[i])->data;
+		if(*players[i])
+		{
+			player* pp = (*players[i])->data;
+			delete pp;
+		}
 	}
 	
 	//delete qualified teams
+	if(QTeams)
 	for(int i = 0; i < this->QualifiedTeams.get_size(); i++)
 	{
-		delete QTeams[i]->data;
+		if(QTeams[i])
+		{
+			team* tt = (QTeams[i])->data;
+			delete tt;
+		}
 	}
 
 	//delete eleminated teams
 	SimpleNode<team*>* temp = EliminatedTeams.getFirstNode();
-	while (!temp)
+	while (temp)
 	{
 		delete temp->data;
+		temp = temp->next;
 	}
 	
 
@@ -125,21 +135,28 @@ if(playerId <= 0 ||
 		return StatusType::FAILURE;
 	}
 
+
+		//check if player exists
+	NodeExtra<int, player *, PlayerExtra> ** pp = ZoomInTeams.getNode(playerId);
+	if(pp){return StatusType::FAILURE;}
+	
 	//put player in UF
 	team *ptrToTeam = (*team_);
+
+
 	player* newPLayer = new player(playerId, teamId, spirit, gamesPlayed, ability, cards, goalKeeper);
 	newPLayer->set_team(ptrToTeam);
-	ZoomInTeams.Insert(playerId, newPLayer, PlayerExtra(spirit));
+	ZoomInTeams.Insert(playerId, newPLayer, PlayerExtra((*team_)->get_permutation()*spirit, newPLayer->getgamesplayed(), newPLayer));
 
+	NodeExtra<int, player *, PlayerExtra> ** pp1 = ZoomInTeams.getNode(playerId);
+	pp = pp1;
+	
 
 	//union on them
 
 		//get an id of last added player in team
 	int lastPlayerId = (*ptrToTeam).get_IdOfLastPlayer();
 	
-	//union call
-	//nothing happens if this is the first player added
-	ZoomInTeams.Union(lastPlayerId, playerId);
 
 	//update team values
 		//save a copy of the team before the changes
@@ -150,10 +167,17 @@ if(playerId <= 0 ||
 	ptrToTeam->set_abilities((*team_)->get_abilities() + newPLayer->getability());
 		//spirit
 	ptrToTeam->set_permutation(ptrToTeam->get_permutation() * newPLayer->getspirit());
+	
 		//GK
 	if(!ptrToTeam->get_goalKeeper()){ptrToTeam->set_goalKeeper(newPLayer->get_goalKeeper());}
 	//update in Ability tree
 	TeamsByAbility.update(OutDatedCopy, *ptrToTeam, ptrToTeam);
+
+	//union call
+	//nothing happens if this is the first player added
+	ZoomInTeams.Union(lastPlayerId, playerId);
+
+	pp1 = ZoomInTeams.getNode(playerId);
 
 	return StatusType::SUCCESS;
 }
@@ -171,9 +195,15 @@ output_t<int> world_cup_t::play_match(int teamId1, int teamId2)
 	team **team1 = this->QualifiedTeams.Find(teamId1); 
 	team **team2 = this->QualifiedTeams.Find(teamId2);
 	
-	if((*team1)==nullptr||(*team2)==nullptr||(*team1)->get_teamId()!=teamId1||(*team2)->get_teamId()!=teamId2)
+	if(!team1 || !team2 || 
+		(*team1)==nullptr||
+		(*team2)==nullptr||
+		(*team1)->get_teamId()!=teamId1||
+		(*team2)->get_teamId()!=teamId2 ||
+		!(*team1)->get_goalKeeper() ||
+		!(*team2)->get_goalKeeper())
 	{
-	  output_t<int> x(StatusType::INVALID_INPUT);
+	  output_t<int> x(StatusType::FAILURE);
 	   return x;
 	}
 	int resultforteam1=(*team1)->get_points()+(*team1)->get_abilities();
@@ -322,13 +352,13 @@ output_t<int> world_cup_t::get_player_cards(int playerId)
 	}
 	try
 	{
-	NodeExtra<int,player*,PlayerExtra>* playernode=ZoomInTeams.Find(playerId);
+	NodeExtra<int,player*,PlayerExtra>** playernode=ZoomInTeams.getNode(playerId);
 	if (playernode==nullptr)
 	 {
 	  output_t<int> x(StatusType::FAILURE);
 	  return x;
 	 }
-	 int cards=playernode->data->getcards();
+	 int cards=(*playernode)->data->getcards();
 	 output_t<int> x(cards);
 	  return x;
 		
@@ -382,11 +412,11 @@ output_t<permutation_t> world_cup_t::get_partial_spirit(int playerId)
 	//get the root node of that team
     NodeExtra<int, player* ,PlayerExtra>* playernode = ZoomInTeams.Find(playerId);	
 	 
-	if (playernode == nullptr || playernode->data->get_team()->get_eleminated() == true)
+	if (playernode == nullptr || (playernode)->data->get_team()->get_eleminated() == true)
 	{
 	  	return StatusType::FAILURE;
 	}
-
+	
 	 //calculate the partial permutation
 	permutation_t permutation_ = ZoomInTeams.get_validExtra(playerId).permutation;
 
@@ -436,7 +466,9 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 			//make the root2 player points to team1
 			//update IdOfLastPlayer in team1
 		root2->data->set_team(*team1);
+		(*team1)->set_permutation((*team2)->get_permutation());
 		(*team1)->set_IdOfLastPlayer((*team2)->get_IdOfLastPlayer());
+		(*team2)->set_permutation(permutation_t::neutral());
 
 		//remove team2
 			//removed later
@@ -445,19 +477,26 @@ StatusType world_cup_t::buy_team(int teamId1, int teamId2) //cannot buy eliminat
 	//case 4: both has players
 	if(playerInTeam1Id && playerInTeam2Id)
 	{
+		permutation_t toTeam2 = (*team1)->get_permutation();
+		(*team1)->set_permutation((*team1)->get_permutation() * (*team2)->get_permutation());
+		//(*team2)->set_permutation(permutation_t::neutral());
+		(*team2)->set_permutation(toTeam2);
+
 		//merge team 2 into team 1
 		ZoomInTeams.Union(playerInTeam1Id, playerInTeam2Id);
 	}
 
 
+	playerInTeam1Id = (!playerInTeam1Id) ? playerInTeam2Id : playerInTeam1Id;
 	
-
-	//update the root node
+	//update the root node of Buyer (if there is one) and the team itself
 		//get it
-	NodeExtra<int, player*, PlayerExtra>* playerInRoot = *ZoomInTeams.getNode(playerInTeam1Id); //or any other id in that team
+	if(playerInTeam1Id)
+	{
+	
+	update_team_after_buy(*team1, *team2);
 
-		//make sure the root points to the buyer team
-	playerInRoot->data->set_team(*team1);
+	}
 
 	//remove team2
 	remove_team(teamId2);
@@ -472,12 +511,44 @@ void world_cup_t::increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team
 	//increase gamesPlayed extra by one in root for both teams
 		//get it
 	int Team1_lastPlayerId = (*team1)->get_IdOfLastPlayer();
-	NodeExtra<int, player*, PlayerExtra>* playerInRoot1 = *ZoomInTeams.getNode(Team1_lastPlayerId); //or any other id in that team
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot1 = ZoomInTeams.Find(Team1_lastPlayerId); //or any other id in that team
 
 	int Team2_lastPlayerId = (*team2)->get_IdOfLastPlayer();
-	NodeExtra<int, player*, PlayerExtra>* playerInRoot2 = *ZoomInTeams.getNode(Team2_lastPlayerId); //or any other id in that team
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot2 = ZoomInTeams.Find(Team2_lastPlayerId); //or any other id in that team
 
 		//update extra in root
-	playerInRoot1->extra.increaseGamesPlayed(val);
-	playerInRoot2->extra.increaseGamesPlayed(val);
+	if((playerInRoot1))
+	(playerInRoot1)->extra.increaseGamesPlayed(val);
+	if((playerInRoot2))
+	(playerInRoot2)->extra.increaseGamesPlayed(val);
+}
+
+Node<team, team*>** world_cup_t::TeamsByAbilityArray()
+{
+	return this->TeamsByAbility.TreeNodesToArray();
+}
+
+void world_cup_t::update_team_after_buy(team* BuyerTeam, team* SoldTeam)
+{
+	NodeExtra<int, player*, PlayerExtra>* playerInRoot = ZoomInTeams.Find(BuyerTeam->get_IdOfLastPlayer()); //or any other id in that team
+
+	team BuyerOldVersion = *BuyerTeam;
+
+		//make sure the root points to the buyer team
+	playerInRoot->data->set_team(BuyerTeam);
+
+		//update spirit of team1 to +> team1.spirit * team2.spirit
+		//updated previously
+
+		//update abilities for team1
+	playerInRoot->data->get_team()->set_abilities(playerInRoot->data->get_team()->get_abilities() + (SoldTeam)->get_abilities());
+
+		//update points
+	playerInRoot->data->get_team()->set_points(playerInRoot->data->get_team()->get_points() + (SoldTeam)->get_points());
+
+		//goalKeeperrrrr
+	bool flag = (!BuyerTeam->get_goalKeeper()) ? SoldTeam->get_goalKeeper() : BuyerTeam->get_goalKeeper();
+	playerInRoot->data->get_team()->set_goalKeeper(flag);
+
+	TeamsByAbility.update(BuyerOldVersion, *BuyerTeam, BuyerTeam);
 }

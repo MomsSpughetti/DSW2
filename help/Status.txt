@@ -6,4 +6,8 @@ Not sure:
 
 
 TO-Do:
-    - 
+   V - (in buy team) set bougth team spirit to be the current spirit of buying team (before any changes to its spirit)
+   V - instead of buyingTeamSpirit*b do b*a.inv()!
+   V - when calculating partial... if the first node (that has the given key) was in a bought team, then 
+        set the sum to be the spirit of that team (the member we changed in the first step)
+    - done!

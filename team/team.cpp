@@ -59,7 +59,7 @@
     }
     void team::set_permutation(const permutation_t& pr)
     {
-        this->spirit = spirit * pr;
+        this->spirit = pr;
     }
     void team::set_IdOfLastPlayer(int val)
     {

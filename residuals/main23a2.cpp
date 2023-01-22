@@ -29,7 +29,7 @@ void print(string cmd, StatusType res);
 template<typename T>
 void print(string cmd, output_t<T> res);
 
-int main()
+int main1()
 {
 	cin >> std::boolalpha;
 	
@@ -58,7 +58,10 @@ int main()
 		else if (!op.compare("add_player"))
 		{
 			cin >> pid >> tid >> p1 >> d1 >> d2 >> d3 >> b1;
+			if(pid == 89943 || tid == 77623 || tid == 72895)
+			std::cout << "";
 			print(op, obj->add_player(pid, tid, p1, d1, d2, d3, b1));
+			
 		}
 		else if (!op.compare("play_match"))
 		{
@@ -77,6 +80,7 @@ int main()
 		}
 		else if(!op.compare("get_player_cards"))
 		{
+			
 			cin >> pid;
 			print(op, obj->get_player_cards(pid));
 		}
@@ -89,10 +93,13 @@ int main()
 		{
 			cin >> d1;
 			print(op, obj->get_ith_pointless_ability(d1));
+
 		}
 		else if(!op.compare("get_partial_spirit"))
 		{
 			cin >> pid;
+			if(pid == 89943)
+			std::cout << "";
 			print(op, obj->get_partial_spirit(pid));
 		}
 		else if(!op.compare("buy_team"))

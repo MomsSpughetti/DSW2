@@ -1,0 +1,1000 @@
+add_team 3475
+remove_team 3475
+add_team 7115
+get_team_points 7115
+add_team 7219
+add_player 9847 7115 2,5,3,1,4 9995 6150 4323 false
+add_team 9006
+remove_team 7115
+add_team 8550
+remove_team 8550
+get_team_points 7219
+add_player 4355 7219 4,2,3,1,5 2333 809 2813 false
+remove_team 9006
+get_ith_pointless_ability 0
+add_player 3102 7219 3,2,5,4,1 8077 944 6568 false
+get_ith_pointless_ability 0
+remove_team 7219
+get_player_cards 4355
+get_player_cards 4355
+add_team 6979
+add_team 734
+get_team_points 734
+get_team_points 734
+get_team_points 6979
+remove_team 6979
+get_team_points 734
+get_team_points 734
+remove_team 734
+get_player_cards 3102
+get_player_cards 4355
+get_player_cards 9847
+add_team 6564
+get_team_points 6564
+add_player 4816 6564 5,1,4,3,2 2491 6847 9046 false
+get_player_cards 3102
+get_ith_pointless_ability 0
+add_team 7916
+remove_team 7916
+get_player_cards 9847
+remove_team 6564
+get_player_cards 4816
+add_team 2059
+get_team_points 2059
+add_player 1084 2059 4,1,3,2,5 4917 8231 4831 false
+get_team_points 2059
+get_player_cards 1084
+get_player_cards 1084
+remove_team 2059
+add_team 4438
+add_player 8358 4438 4,2,3,1,5 2263 4749 276 false
+remove_team 4438
+add_team 5887
+add_team 567
+get_player_cards 1084
+remove_team 567
+remove_team 5887
+add_team 136
+add_player 7169 136 2,1,3,4,5 251 7168 3728 false
+get_team_points 136
+get_player_cards 7169
+add_player 6385 136 5,3,1,4,2 4943 452 664 false
+get_ith_pointless_ability 0
+get_player_cards 6385
+add_team 4159
+get_player_cards 9847
+remove_team 136
+remove_team 4159
+add_team 1904
+get_team_points 1904
+add_team 1729
+get_team_points 1729
+add_player 7445 1729 5,1,2,3,4 1347 2648 662 false
+add_player 2760 1729 4,5,2,3,1 4024 26 5433 false
+remove_team 1904
+get_ith_pointless_ability 0
+get_ith_pointless_ability 0
+get_ith_pointless_ability 0
+remove_team 1729
+get_player_cards 1084
+get_player_cards 9847
+add_team 6761
+get_player_cards 6385
+get_ith_pointless_ability 0
+get_team_points 6761
+add_player 9182 6761 5,2,3,4,1 4015 6401 280 false
+get_ith_pointless_ability 0
+add_player 9056 6761 4,3,1,5,2 3683 948 5528 false
+add_player 8984 6761 2,4,3,5,1 2176 7109 7265 false
+add_team 1124
+add_team 6721
+add_team 9479
+get_player_cards 9182
+get_team_points 6761
+add_player 4994 1124 2,4,1,5,3 7998 9368 9076 false
+get_ith_pointless_ability 2
+get_player_cards 9847
+get_player_cards 8984
+add_player 9481 6761 2,4,1,3,5 8903 3189 6440 false
+add_team 424
+get_ith_pointless_ability 1
+get_ith_pointless_ability 2
+add_team 6178
+add_team 8370
+add_team 5473
+add_player 5299 6178 2,1,3,4,5 9805 5750 5737 false
+get_team_points 9479
+add_team 8711
+add_team 4315
+get_team_points 6761
+get_team_points 6178
+get_ith_pointless_ability 7
+get_player_cards 7169
+add_player 2410 8711 3,5,2,4,1 1415 9265 9593 false
+get_team_points 5473
+get_player_cards 6385
+get_team_points 6178
+add_player 3140 6761 3,1,5,4,2 497 6679 4456 false
+add_team 6446
+remove_team 424
+get_player_cards 6385
+get_ith_pointless_ability 1
+remove_team 6446
+get_ith_pointless_ability 0
+add_team 1260
+get_player_cards 9056
+add_team 454
+add_team 9657
+get_ith_pointless_ability 4
+get_team_points 4315
+add_player 3615 1260 3,5,1,4,2 3252 4731 5867 false
+add_team 5715
+get_player_cards 7445
+add_player 9096 6178 5,1,4,3,2 9024 1047 2817 false
+remove_team 8711
+add_team 7331
+get_player_cards 8984
+get_player_cards 4816
+get_team_points 1124
+add_team 3506
+remove_team 6721
+add_player 3947 6761 3,1,4,5,2 3065 3490 3237 false
+add_team 2238
+add_player 4206 9479 1,3,2,4,5 8622 189 5788 false
+remove_team 1260
+get_player_cards 3140
+get_ith_pointless_ability 8
+get_player_cards 7445
+add_team 2160
+get_ith_pointless_ability 7
+remove_team 3506
+add_team 198
+get_ith_pointless_ability 0
+get_ith_pointless_ability 6
+get_team_points 5715
+remove_team 2160
+get_ith_pointless_ability 10
+get_ith_pointless_ability 3
+get_player_cards 4994
+get_player_cards 4816
+get_team_points 6761
+add_player 6049 9657 4,3,1,2,5 6532 4996 2593 false
+add_team 7937
+remove_team 9479
+get_player_cards 9056
+remove_team 5715
+remove_team 1124
+get_team_points 198
+get_team_points 454
+add_team 1940
+get_ith_pointless_ability 5
+get_team_points 8370
+get_ith_pointless_ability 9
+add_player 2734 4315 2,3,5,1,4 8405 856 1157 false
+add_team 3624
+get_team_points 7331
+get_team_points 4315
+add_team 7614
+get_player_cards 2760
+add_team 4815
+add_team 1034
+add_team 8300
+get_team_points 8370
+add_team 2178
+remove_team 7331
+get_player_cards 4355
+get_team_points 8370
+add_team 6914
+add_player 1261 2238 5,1,4,3,2 4024 5315 9995 false
+get_ith_pointless_ability 3
+get_player_cards 6049
+get_player_cards 3140
+add_player 7004 6178 2,1,4,3,5 8415 7205 4202 false
+remove_team 1940
+add_team 510
+add_player 6231 2238 2,5,4,1,3 6898 3214 9354 false
+get_player_cards 4355
+add_team 2202
+remove_team 6178
+get_team_points 454
+add_team 2904
+add_player 5619 6761 5,4,1,3,2 6481 7845 1454 false
+add_team 3904
+get_team_points 4315
+get_player_cards 2760
+remove_team 2202
+get_player_cards 6231
+get_ith_pointless_ability 11
+get_ith_pointless_ability 1
+get_ith_pointless_ability 14
+get_player_cards 7445
+get_ith_pointless_ability 6
+get_ith_pointless_ability 1
+add_player 9988 3624 2,3,5,1,4 4621 2267 4200 false
+get_ith_pointless_ability 11
+get_player_cards 9096
+add_team 1024
+get_player_cards 7445
+get_team_points 7937
+get_team_points 4315
+add_team 901
+remove_team 8300
+add_player 8896 4315 3,1,2,4,5 1690 3264 282 false
+get_ith_pointless_ability 0
+add_player 6544 1024 2,4,5,1,3 9880 7542 5674 false
+remove_team 510
+get_ith_pointless_ability 8
+get_ith_pointless_ability 14
+add_player 3281 1024 1,4,2,5,3 9519 1230 6 false
+remove_team 1034
+get_player_cards 4994
+remove_team 454
+add_team 7144
+get_player_cards 2760
+get_player_cards 6049
+add_team 6721
+remove_team 7144
+remove_team 8370
+add_team 2033
+add_team 340
+remove_team 9657
+get_team_points 2238
+remove_team 3904
+add_team 1780
+remove_team 4315
+get_team_points 2033
+add_player 8648 901 2,4,3,1,5 4180 4594 925 false
+get_ith_pointless_ability 5
+add_player 5055 2178 1,4,5,2,3 7615 1411 253 false
+get_ith_pointless_ability 8
+get_ith_pointless_ability 7
+remove_team 7937
+get_ith_pointless_ability 4
+get_player_cards 9847
+remove_team 6914
+get_player_cards 5299
+get_player_cards 8648
+get_ith_pointless_ability 0
+remove_team 340
+add_team 3590
+add_player 7489 2904 4,1,2,5,3 7683 2831 6965 false
+remove_team 2033
+get_team_points 7614
+add_player 660 901 1,5,2,4,3 5268 706 3694 false
+get_team_points 198
+remove_team 5473
+get_ith_pointless_ability 8
+add_team 1741
+get_team_points 1780
+remove_team 2904
+add_player 1911 3590 3,1,2,5,4 7293 7702 2144 false
+get_player_cards 6385
+add_team 8423
+add_team 5563
+add_team 3064
+get_ith_pointless_ability 11
+get_ith_pointless_ability 10
+get_ith_pointless_ability 10
+remove_team 1741
+get_player_cards 7489
+add_team 5971
+add_player 8548 901 2,5,1,3,4 5054 4920 2339 false
+get_ith_pointless_ability 4
+remove_team 1780
+get_team_points 5971
+add_team 9649
+add_team 4481
+get_ith_pointless_ability 15
+add_team 8711
+add_player 7204 901 3,2,5,4,1 9430 9610 7733 false
+get_player_cards 9988
+get_player_cards 9988
+get_team_points 8423
+add_player 530 3590 4,5,2,3,1 6154 1691 4633 false
+get_team_points 2238
+get_player_cards 8896
+add_team 6400
+add_player 8230 8423 5,4,3,2,1 1711 5074 4010 false
+get_team_points 8711
+add_player 4650 6761 5,2,4,3,1 943 7340 3796 false
+get_player_cards 5619
+add_player 1799 8711 4,3,2,1,5 3965 1852 9481 false
+remove_team 8711
+add_player 6082 1024 3,5,2,1,4 9681 4940 1385 false
+add_team 3057
+remove_team 198
+remove_team 5563
+get_player_cards 6385
+remove_team 1024
+get_ith_pointless_ability 2
+get_team_points 9649
+get_player_cards 5619
+remove_team 3590
+get_player_cards 7169
+get_team_points 8423
+remove_team 4815
+add_player 8091 7614 1,2,3,5,4 2455 6904 1401 false
+add_team 3550
+get_ith_pointless_ability 12
+get_player_cards 7204
+add_team 2932
+add_team 7026
+remove_team 2238
+get_team_points 5971
+get_ith_pointless_ability 3
+get_player_cards 9056
+get_ith_pointless_ability 5
+add_team 119
+get_team_points 6761
+get_team_points 119
+remove_team 4481
+get_ith_pointless_ability 5
+get_team_points 5971
+add_team 2477
+get_ith_pointless_ability 3
+add_player 8542 8423 4,5,3,2,1 387 9302 5201 false
+get_player_cards 7169
+get_team_points 5971
+get_player_cards 9988
+get_team_points 5971
+add_team 7034
+get_team_points 3057
+add_team 9905
+add_player 8238 5971 4,5,1,3,2 3619 258 3435 false
+get_player_cards 3102
+get_ith_pointless_ability 9
+get_player_cards 7489
+add_team 7267
+remove_team 3624
+remove_team 9905
+remove_team 8423
+remove_team 2932
+add_player 3751 7267 5,3,1,4,2 5474 9250 646 false
+add_team 2404
+remove_team 7614
+add_player 8960 2404 4,1,3,2,5 3074 8731 7966 false
+remove_team 6400
+add_player 5992 2404 2,4,3,5,1 3957 6453 6204 false
+add_player 1265 6721 3,4,1,2,5 520 1128 8652 false
+get_team_points 7267
+get_player_cards 7204
+add_player 1882 3057 1,4,3,5,2 9626 8770 8823 false
+add_team 9860
+add_player 9150 9860 3,2,4,1,5 442 5274 7918 false
+remove_team 6761
+get_ith_pointless_ability 9
+add_team 3061
+add_player 5715 7267 5,2,4,3,1 4481 1522 2338 false
+remove_team 9860
+remove_team 3064
+add_player 7679 7026 2,4,1,3,5 587 6467 7320 false
+remove_team 7026
+remove_team 901
+get_player_cards 5992
+add_team 2460
+get_ith_pointless_ability 2
+get_team_points 119
+get_player_cards 9056
+remove_team 2460
+get_player_cards 8358
+get_player_cards 5619
+get_player_cards 8238
+add_player 2872 3061 3,2,4,1,5 5093 7276 2302 false
+get_team_points 3057
+get_ith_pointless_ability 3
+add_team 2262
+get_team_points 2262
+add_team 2435
+get_ith_pointless_ability 10
+add_team 97
+remove_team 7034
+get_ith_pointless_ability 1
+get_player_cards 5055
+get_player_cards 6385
+add_team 263
+get_team_points 119
+get_player_cards 1882
+remove_team 9649
+get_team_points 6721
+add_team 4199
+get_ith_pointless_ability 8
+get_player_cards 5992
+remove_team 2178
+get_ith_pointless_ability 6
+get_ith_pointless_ability 3
+get_ith_pointless_ability 4
+add_player 9243 3057 3,1,2,4,5 7435 9528 6614 false
+get_team_points 6721
+get_team_points 3550
+get_player_cards 5992
+get_team_points 6721
+get_ith_pointless_ability 10
+get_ith_pointless_ability 11
+get_player_cards 1799
+remove_team 5971
+get_ith_pointless_ability 12
+get_team_points 3057
+get_player_cards 9096
+get_team_points 3550
+get_player_cards 7204
+get_team_points 97
+remove_team 2477
+add_team 5669
+add_player 1884 119 2,1,3,4,5 6635 8134 2458 false
+remove_team 3061
+get_ith_pointless_ability 10
+remove_team 2262
+get_player_cards 9243
+get_player_cards 7004
+remove_team 7267
+get_ith_pointless_ability 2
+add_player 7246 4199 2,5,1,4,3 8536 9770 2748 false
+get_ith_pointless_ability 4
+add_team 9719
+add_team 2336
+add_team 995
+remove_team 119
+add_player 5040 2435 3,1,5,4,2 5264 5734 1176 false
+get_player_cards 9243
+remove_team 995
+get_team_points 2404
+get_ith_pointless_ability 7
+get_team_points 3057
+add_player 4826 2404 1,2,4,5,3 8587 9556 1047 false
+get_ith_pointless_ability 6
+get_ith_pointless_ability 9
+add_team 1164
+add_team 8293
+add_player 1230 2404 2,1,4,5,3 902 2016 657 false
+get_player_cards 8960
+add_player 322 263 4,5,2,1,3 9498 5706 7759 false
+add_team 8859
+add_team 3531
+remove_team 5669
+get_ith_pointless_ability 5
+add_team 2381
+get_team_points 6721
+get_ith_pointless_ability 5
+get_player_cards 4355
+get_player_cards 3947
+add_player 178 8293 4,3,2,1,5 8689 4944 4611 false
+add_team 9944
+add_player 5003 2435 4,1,2,3,5 4639 101 3156 false
+add_team 2410
+get_team_points 97
+get_player_cards 5992
+add_team 3119
+get_ith_pointless_ability 2
+get_player_cards 9056
+add_team 7452
+add_team 9306
+remove_team 1164
+get_ith_pointless_ability 6
+get_team_points 97
+add_player 870 2404 3,4,5,2,1 772 9034 8182 false
+get_ith_pointless_ability 10
+get_team_points 6721
+remove_team 2435
+remove_team 9306
+get_ith_pointless_ability 8
+remove_team 8293
+add_team 1999
+add_player 5392 97 5,2,1,4,3 4208 2946 3900 false
+add_team 9478
+get_ith_pointless_ability 0
+add_player 5087 2404 3,5,2,4,1 4944 4192 6369 false
+add_player 7836 2410 3,5,2,1,4 9449 1789 1219 false
+add_player 1333 3550 2,5,4,3,1 7093 7451 8497 false
+add_team 3049
+add_player 3842 2336 4,3,1,5,2 3655 4004 8249 false
+add_player 9903 6721 3,1,4,5,2 6071 9590 1007 false
+add_player 8378 6721 1,3,2,4,5 3895 1567 4221 false
+remove_team 6721
+add_team 2576
+remove_team 9719
+get_player_cards 5392
+get_ith_pointless_ability 12
+add_team 7785
+add_team 3707
+get_player_cards 3140
+add_team 748
+add_team 8859
+add_team 9478
+get_ith_pointless_ability 13
+remove_team 5757
+remove_team 2410
+get_ith_pointless_ability 2159
+get_ith_pointless_ability 5959
+get_ith_pointless_ability 19
+get_team_points 9944
+get_ith_pointless_ability 9577
+get_team_points 3550
+add_player 3211 263 1,5,3,4,2 1356 3595 6432 false
+add_team 6308
+remove_team 5775
+add_team 3550
+add_player 8406 8859 2,3,5,4,1 1218 6226 7480 false
+get_ith_pointless_ability 7
+add_player 8195 8859 2,3,4,1,5 3413 5420 582 false
+remove_team 9806
+add_team 3707
+get_player_cards 2033
+get_ith_pointless_ability 4203
+get_ith_pointless_ability 20
+get_team_points 4199
+get_team_points 6308
+add_team 2381
+remove_team 3464
+get_team_points 6308
+add_team 6711
+add_player 9029 2404 1,2,5,4,3 7515 5103 5490 false
+get_player_cards 3730
+get_ith_pointless_ability -9
+remove_team 8906
+get_player_cards 892
+add_player 322 8238 4,2,5,3,1 4714 7747 48 false
+get_player_cards 4206
+add_player 7865 4199 1,5,3,2,4 205 4545 2804 false
+add_player 8378 3049 3,5,4,1,2 4191 8696 9316 false
+get_team_points 1246
+get_player_cards 5684
+add_team 2381
+get_team_points 8281
+get_ith_pointless_ability -20
+add_player 7836 1999 1,5,3,4,2 1899 2693 911 false
+add_player 793 7452 2,5,4,3,1 4016 7294 3660 false
+get_team_points 8360
+get_player_cards 8358
+get_team_points 2486
+add_player 8738 2336 5,4,1,2,3 4681 8534 4584 false
+get_team_points 6711
+remove_team 2336
+get_ith_pointless_ability 2751
+get_player_cards 2434
+get_team_points 3119
+get_ith_pointless_ability 7
+add_team 4199
+add_player 2595 6711 2,3,1,5,4 5538 5613 7811 false
+get_ith_pointless_ability 20
+get_player_cards 2102
+get_team_points 8242
+add_player 1314 4151 2,3,4,1,5 9263 4076 7446 false
+add_team 4199
+get_ith_pointless_ability -3
+add_player 7425 3550 1,2,4,5,3 8532 9203 2638 false
+get_team_points 1799
+get_team_points 7452
+add_team 260
+get_player_cards 1882
+get_player_cards 64
+add_team 3531
+get_ith_pointless_ability 12
+remove_team 9478
+add_player 1597 2404 3,1,4,2,5 8665 4240 1725 false
+add_team 4199
+remove_team 2044
+add_player 7575 2381 3,2,1,4,5 1975 3379 7740 false
+get_player_cards 8824
+add_team 7785
+add_team 1763
+add_team 2381
+remove_team 3531
+remove_team 260
+get_team_points 237
+remove_team 2576
+add_player 1936 263 3,1,2,5,4 687 4977 9117 false
+add_player 6821 2381 5,3,1,2,4 9984 218 6995 false
+add_player 2066 2404 4,3,5,1,2 5749 932 7218 false
+get_ith_pointless_ability 4
+get_ith_pointless_ability -12
+add_team 5894
+remove_team 2404
+add_team 5625
+add_player 8392 9944 3,2,1,4,5 2613 5369 2283 false
+get_ith_pointless_ability 1294
+get_team_points 4623
+add_player 2313 2381 3,1,2,5,4 2043 6763 9448 false
+add_team 3550
+get_team_points 1200
+remove_team 1999
+add_team 7868
+get_team_points 6308
+add_team 4199
+get_ith_pointless_ability 1737
+remove_team 3000
+remove_team 1763
+remove_team 6729
+add_team 263
+add_team 3707
+get_ith_pointless_ability 17
+add_player 4697 3049 1,2,4,5,3 5302 5056 6856 false
+get_ith_pointless_ability 5
+add_team 4199
+get_player_cards 9150
+get_team_points 6711
+add_team 4199
+get_ith_pointless_ability 10
+remove_team 2065
+get_ith_pointless_ability 2
+add_player 3854 3550 1,4,2,5,3 1992 9122 5980 false
+get_player_cards 7631
+add_team 6711
+get_team_points 3119
+get_player_cards 4914
+get_ith_pointless_ability 12
+get_team_points 6082
+remove_team 1031
+add_player 3779 7452 2,5,4,3,1 9945 4705 8120 false
+add_team 3049
+get_team_points 4918
+get_ith_pointless_ability 14
+get_team_points 9944
+get_player_cards 1799
+get_player_cards 5392
+get_ith_pointless_ability 7
+get_player_cards 7575
+remove_team 7734
+add_team 7452
+get_team_points 6308
+get_ith_pointless_ability 11
+get_ith_pointless_ability 3
+get_team_points 3707
+get_player_cards 8257
+get_player_cards 6263
+get_player_cards 276
+remove_team 7785
+get_team_points 4514
+get_player_cards 1753
+get_team_points 6013
+remove_team 8165
+add_player 841 5420 1,5,2,3,4 1396 6348 7678 false
+remove_team 9944
+get_team_points 611
+remove_team 7868
+get_ith_pointless_ability 15
+add_player 8040 8859 4,2,3,5,1 9076 5344 1076 false
+add_player 7614 9449 2,1,5,4,3 4737 2362 5162 false
+get_team_points 7656
+get_ith_pointless_ability 2
+get_team_points 9079
+add_team 3119
+add_player 6932 849 5,1,2,3,4 5347 9004 2615 false
+add_player 8648 5894 3,1,4,5,2 2138 5684 1225 false
+add_player 325 8859 2,1,5,3,4 3417 6076 5304 false
+get_ith_pointless_ability 0
+remove_team 7840
+get_team_points 1362
+get_player_cards 3116
+add_team 748
+add_team 3550
+get_ith_pointless_ability -1
+add_player 1787 3550 5,2,3,4,1 1888 1906 3710 false
+add_team 5051
+get_player_cards 5992
+get_team_points 97
+add_team 8320
+get_player_cards 322
+get_team_points 263
+remove_team 3550
+add_player 5688 6213 3,2,5,4,1 18 8994 1752 false
+add_player 8905 5894 4,3,2,5,1 1892 3773 6267 false
+get_ith_pointless_ability 13
+remove_team 1140
+get_ith_pointless_ability 7
+remove_team 3946
+get_team_points 6308
+add_team 4878
+get_ith_pointless_ability -20
+add_team 3541
+get_team_points 3707
+get_player_cards 9481
+add_team 6332
+get_team_points 4878
+get_ith_pointless_ability 6
+add_player 3211 8910 1,3,2,5,4 7575 1174 6797 false
+get_ith_pointless_ability -7
+remove_team 3057
+get_team_points 1216
+remove_team 6332
+get_player_cards 5355
+add_player 793 748 4,3,2,5,1 2442 8774 1552 false
+get_team_points 3707
+add_team 148
+get_ith_pointless_ability -3
+get_ith_pointless_ability -13
+get_team_points 3049
+get_player_cards 6156
+add_team 3707
+add_team 3707
+get_player_cards 4229
+get_ith_pointless_ability 7
+get_team_points 8133
+get_team_points 2920
+remove_team 6400
+add_team 3898
+get_team_points 1980
+get_player_cards 7836
+add_player 5670 3707 1,4,5,2,3 8083 998 1857 false
+get_team_points 1719
+get_player_cards 8909
+add_player 3281 4878 5,2,4,1,3 3879 7998 6974 false
+get_player_cards 5681
+get_ith_pointless_ability 8
+add_team 6034
+get_ith_pointless_ability -2
+get_team_points 3576
+add_team 5894
+add_player 3842 3707 2,4,3,5,1 5721 1350 561 false
+add_team 8320
+add_player 6049 9220 4,5,3,2,1 37 4233 2016 false
+get_ith_pointless_ability 1596
+get_ith_pointless_ability 801
+get_ith_pointless_ability 16
+get_team_points 5765
+remove_team 3119
+get_ith_pointless_ability -15
+add_team 3541
+add_team 9519
+get_ith_pointless_ability 3
+get_ith_pointless_ability 2390
+get_team_points 7452
+add_team 6711
+get_ith_pointless_ability 9
+get_team_points 6525
+get_team_points 713
+add_team 2381
+add_player 7621 5625 5,1,3,2,4 4605 6786 242 false
+get_team_points 7578
+get_player_cards 1084
+get_player_cards 3779
+get_player_cards 9826
+add_team 2571
+remove_team 5894
+remove_team 2381
+add_player 483 263 5,1,2,3,4 3992 2722 9794 false
+get_player_cards 1261
+get_player_cards 5670
+add_player 8411 5051 1,3,4,5,2 5484 8474 3644 false
+get_player_cards 3842
+add_team 2027
+get_team_points 2027
+get_player_cards 9096
+remove_team 9519
+add_team 1747
+add_team 4297
+add_team 5835
+remove_team 6034
+get_team_points 5051
+get_player_cards 325
+add_player 1501 2571 3,5,4,2,1 1617 5228 9893 false
+remove_team 5051
+get_team_points 8859
+get_player_cards 7836
+add_player 9043 263 3,2,4,5,1 6814 6929 9719 false
+remove_team 3541
+get_team_points 3707
+get_ith_pointless_ability 0
+add_team 8837
+get_team_points 2027
+get_ith_pointless_ability 7
+remove_team 3898
+add_player 8949 4199 1,4,2,5,3 6669 6005 8387 false
+get_team_points 3707
+add_team 4647
+get_player_cards 793
+add_player 3249 148 5,4,3,2,1 3277 4303 7074 false
+add_player 1953 3049 4,5,2,1,3 9103 4114 1096 false
+remove_team 8320
+add_player 5223 97 5,3,2,4,1 5473 78 4697 false
+get_player_cards 9043
+add_player 6624 5625 2,5,1,3,4 9496 1847 1276 false
+get_team_points 4878
+remove_team 4199
+get_ith_pointless_ability 17
+get_team_points 3707
+add_team 2139
+add_player 7170 4647 4,3,1,2,5 139 6529 1322 false
+add_player 8147 1747 2,3,5,1,4 9060 7228 1891 false
+add_player 4153 263 3,5,2,1,4 3093 7353 2282 false
+get_player_cards 7170
+add_team 6501
+add_team 2731
+get_player_cards 6231
+get_player_cards 8960
+add_player 2550 7452 2,4,5,1,3 1559 3768 1453 false
+get_team_points 3049
+get_player_cards 2734
+add_team 3700
+remove_team 8837
+add_team 9857
+remove_team 748
+get_team_points 8859
+add_team 6509
+get_team_points 6509
+get_ith_pointless_ability 22
+remove_team 263
+remove_team 4297
+add_team 6371
+get_team_points 5835
+get_team_points 5625
+add_team 674
+get_player_cards 8392
+add_team 4095
+add_team 1582
+add_team 4307
+remove_team 6711
+remove_team 3700
+get_player_cards 530
+add_team 6681
+get_player_cards 8984
+remove_team 2139
+add_player 625 6681 1,2,3,5,4 7314 9429 8052 false
+get_ith_pointless_ability 6
+add_team 7989
+remove_team 6371
+get_ith_pointless_ability 14
+get_ith_pointless_ability 20
+get_team_points 4307
+get_team_points 7989
+get_player_cards 9043
+get_player_cards 8040
+get_ith_pointless_ability 19
+add_player 2869 5835 5,2,4,3,1 2325 4149 8018 false
+add_player 403 674 4,1,5,3,2 3953 285 3652 false
+remove_team 4647
+add_team 2199
+get_ith_pointless_ability 10
+get_team_points 2731
+remove_team 7989
+remove_team 5835
+get_player_cards 4697
+get_ith_pointless_ability 4
+add_team 8358
+get_team_points 5625
+get_ith_pointless_ability 19
+add_player 4198 9857 1,5,2,4,3 8674 7882 8259 false
+add_player 8286 8358 4,3,1,2,5 257 9653 6441 false
+remove_team 1582
+add_player 5102 1747 2,4,5,3,1 7800 3334 9235 false
+remove_team 6308
+get_team_points 3049
+get_ith_pointless_ability 6
+add_team 141
+get_team_points 97
+get_ith_pointless_ability 16
+get_team_points 2731
+get_player_cards 9243
+get_team_points 2571
+add_team 193
+add_team 2435
+remove_team 4307
+get_player_cards 5102
+get_player_cards 7621
+remove_team 674
+remove_team 6681
+remove_team 6509
+get_team_points 8358
+get_player_cards 3102
+add_player 3994 7452 5,1,3,4,2 6262 4903 5584 false
+get_ith_pointless_ability 14
+get_player_cards 4697
+get_team_points 6501
+get_ith_pointless_ability 18
+get_player_cards 3779
+add_player 3536 5625 1,5,2,4,3 4593 5968 1449 false
+get_team_points 193
+get_team_points 5625
+get_player_cards 6082
+remove_team 8358
+remove_team 4095
+add_player 6652 5625 1,4,2,5,3 4001 1453 1993 false
+add_team 8359
+get_ith_pointless_ability 6
+get_ith_pointless_ability 9
+get_player_cards 8984
+add_player 979 7452 1,2,4,5,3 1404 4540 9356 false
+get_team_points 4878
+get_team_points 6501
+remove_team 193
+get_ith_pointless_ability 9
+get_ith_pointless_ability 0
+remove_team 2571
+add_team 5215
+get_player_cards 6624
+add_team 7253
+add_team 4739
+remove_team 8359
+get_team_points 2435
+get_team_points 5215
+add_team 4264
+get_team_points 2199
+remove_team 7253
+add_player 6009 9857 2,5,1,3,4 677 8272 9718 false
+remove_team 3049
+get_player_cards 7425
+get_team_points 6501
+remove_team 2435
+add_team 3658
+remove_team 141
+get_ith_pointless_ability 16
+get_ith_pointless_ability 12
+get_player_cards 793
+get_ith_pointless_ability 14
+add_player 7143 2027 4,1,5,3,2 3017 9703 9862 false
+add_player 1671 4739 3,5,2,4,1 8264 220 8175 false
+get_team_points 3707
+add_player 6282 4878 4,3,1,2,5 8343 9031 4849 false
+get_player_cards 8411
+add_team 864
+remove_team 4878
+add_team 6597
+get_ith_pointless_ability 4
+get_player_cards 403
+add_player 5910 5625 2,3,1,5,4 1032 7006 4094 false
+get_team_points 3658
+add_player 2484 97 4,2,3,1,5 2704 5674 3777 false
+get_ith_pointless_ability 15
+get_team_points 5625
+get_team_points 2199
+add_player 960 6597 1,4,5,3,2 2063 4297 7508 false
+add_player 3899 3658 3,4,2,5,1 8173 6032 4004 false
+get_ith_pointless_ability 16
+add_team 9451
+get_ith_pointless_ability 15
+add_team 4856
+get_player_cards 6624
+get_ith_pointless_ability 1
+add_player 8529 9857 4,3,2,5,1 373 2852 6690 false
+add_team 2428
+get_ith_pointless_ability 6
+add_team 2785
+get_team_points 6501
+get_player_cards 3779
+remove_team 2785
+add_player 5872 864 2,5,3,4,1 7589 8114 5194 false
+get_team_points 6597
+get_ith_pointless_ability 0
+get_player_cards 4994
+get_ith_pointless_ability 18
+remove_team 4856
+get_team_points 2027
+get_player_cards 8406
+get_ith_pointless_ability 9
+get_ith_pointless_ability 8
+remove_team 9857
+add_player 2623 148 2,4,5,3,1 3400 7763 5459 false
+get_ith_pointless_ability 13
+get_ith_pointless_ability 1
+add_player 6676 2731 3,4,2,5,1 7827 2203 4944 false
+get_team_points 3658
+remove_team 3658
+get_ith_pointless_ability 8
+remove_team 148
+add_player 7933 2428 2,4,5,1,3 1169 5404 3376 false
+get_team_points 2428
+get_player_cards 8960
+get_ith_pointless_ability 14
+add_team 436
+remove_team 4739
+get_player_cards 5872
+get_ith_pointless_ability 16
+remove_team 4264
+get_ith_pointless_ability 5
+add_team 8177
+get_ith_pointless_ability 16
+add_team 3974
+get_team_points 8859
+get_player_cards 8406
+get_ith_pointless_ability 1
+get_ith_pointless_ability 4
+add_team 8077
+get_team_points 3707
+add_player 4628 8177 4,2,5,1,3 4519 7200 2278 false
+add_team 8276
+get_ith_pointless_ability 4
+get_ith_pointless_ability 19
+get_player_cards 8147
+get_ith_pointless_ability 0
+add_player 2747 3974 4,5,2,1,3 9602 9931 4678 false
+add_player 1851 8276 3,5,2,4,1 5250 4252 2826 false
+remove_team 2027

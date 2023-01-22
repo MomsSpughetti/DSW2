@@ -16,7 +16,7 @@
 #define WORLDCUP23A2_H_
 
 #include "wet2util.h"	
-#include "Structures/RankedAvlTree.h"
+#include "Structures/RankedAVLTree.h"
 #include "Structures/UnionFindExtra.h"
 #include "team/team.h"
 #include "player/player.h"
@@ -32,12 +32,15 @@ private:
 	RankedAVLTree<team, team*> TeamsByAbility;
 	Simplelist<team*> EliminatedTeams;
 	void increaseGamesPlayedForGivenTeamsBy(int val, team** team1, team** team2);
+	void update_team_after_buy(team* BuyerTeam, team* SoldTeam);
 
 	//end of our edit
 	
 public:
 	// <DO-NOT-MODIFY> {
 	
+Node<team, team*>** TeamsByAbilityArray();//=========================================================******()(*)
+
 	world_cup_t();
 	virtual ~world_cup_t();
 	

@@ -1,0 +1,23 @@
+1- added to file "RankedAVLTree.h" line 87 and line 88 (2 lines added):
+        if(!this->root)
+        return nullptr;
+
+2- in playerExtra.cpp line 39 changed to this (1 line changed):
+            this->permutation = this->permutation * permutation_.permutation.inv();
+
+3- line 201 in UnionFindExtra.h changed to be (1 line changed):
+    		sum.Initialize(x->extra.player_);
+
+4- added function to playerExtra.h (+5 lines) line 23:
+
+    void Initialize(player* pl)
+    {
+        if(pl && pl->get_team()->get_eleminated())
+        this->permutation = pl->get_team()->get_permutation();
+    }
+
+5- commented line 90 in file UnionFindExtra.h (1 line changed).
+
+Total: 10 lines
+
+is 2 the problem?

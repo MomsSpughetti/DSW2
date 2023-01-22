@@ -18,7 +18,8 @@ class HashTable {
   ~HashTable() {
     for (int i = 0; i < size_; i++) {
       Node *node = table_[i];
-      while (node) {
+      while (node) 
+      {
         Node *temp = node;
         node = node->next;
         delete temp;
@@ -27,11 +28,13 @@ class HashTable {
     delete[] table_;
   }
 
-  void put(Key key, Data data) {
+  void put(Key key, Data data) 
+  {
     unsigned int index = hash(key, size_);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     Node *node = table_[index];
     while (node) {
-      if (node->key == key) {
+      if (node->key == key) 
+      {
         //node->data = data;
         return;
       }
@@ -40,17 +43,20 @@ class HashTable {
     node = new Node{key, data};
     node->next = table_[index];
     table_[index] = node;
-    if (++count_ > size_) {
+    if (++count_ > size_) 
+    {
       int new_size = closer_prime(size_ * 2);
       resize(new_size);
     }
   }
 
-  Data* get(Key key) {
+  Data* get(Key key) 
+  {
     unsigned int index = hash(key, size_);
     Node *node = table_[index];
     while (node) {
-      if (node->key == key) {
+      if (node->key == key) 
+      {
         return &(node->data);
       }
       node = node->next;
@@ -58,13 +64,15 @@ class HashTable {
     return nullptr;
   }
 
-  void remove(Key key) {
+  void remove(Key key) 
+  {
     unsigned int index = hash(key, size_);
     Node *node = table_[index];
     if (node && node->key == key) {
       table_[index] = node->next;
       delete node;
-      if (--count_ < size_ / 4) {
+      if (--count_ < size_ / 4) 
+      {
         int new_size = size_ / 2;
         if(!is_prime(new_size))
           new_size = closer_prime(new_size);
@@ -73,11 +81,13 @@ class HashTable {
       return;
     }
     while (node) {
-      if (node->next && node->next->key == key) {
+      if (node->next && node->next->key == key) 
+      {
         Node *temp = node->next;
         node->next = temp->next;
         delete temp;
-        if (--count_ < size_ / 4) {
+        if (--count_ < size_ / 4) 
+        {
           int new_size = closer_prime(size_ / 2);
           resize(new_size);
         }
@@ -87,11 +97,13 @@ class HashTable {
     }
   }
 
-  bool contains(Key key) {
+  bool contains(Key key) 
+  {
     unsigned int index = hash(key, size_);
     Node *node = table_[index];
     while (node) {
-      if (node->key == key) {
+      if (node->key == key) 
+      {
         return true;
       }
       node = node->next;
@@ -99,7 +111,8 @@ class HashTable {
     return false;
   }
 
-  int size() {
+  int size() 
+  {
     return count_;
   }
 
@@ -160,7 +173,8 @@ class HashTable {
   int count_ = 0;
 
 
-  void resize(int new_size) {
+  void resize(int new_size) 
+  {
     Node **new_table = new Node*[new_size]();
     for (int i = 0; i < size_; i++) {
       Node *node = table_[i];
